@@ -19,8 +19,10 @@ Fase 1
   * Parte histórica: construção de páginas dos GTs finalizados
   * Criação das páginas dos GTs atuais
     * Seria legal fazer uma página pro podcast?
+    * Aécio: Acho que seria tipo um teaser. Pode ser legal! A página black do Tecs (comunicacao.html) parece a vibe perfeita para isso...exceto que o esquema de cores talvez não bata.
   * Um parceiro é o Efestus
     * Colocar o link deles no rodapé em "Parceiros"
+      * Já estava feito (boa, Hideki!). Talvez
 
 Fase 2
 -----
