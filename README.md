@@ -1,3 +1,7 @@
+Preview
+------
+https://tecs-usp.github.io/site
+
 GTs atuais do Tecs
 ------
 
@@ -6,7 +10,7 @@ GTs atuais do Tecs
 * Vestibulandas
 * FCASA
 * Comunicação
-* Novo GT
+* LGBTecs
 
 
 Fase 1
