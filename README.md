@@ -20,11 +20,12 @@ Fase 1
 * Como compartilhar arquivo? Problema de arquivos distribuídos e único domínio
   * -> Não usar o BSS como ferramenta principal (ainda pode ser útil pra tentar várias coisas ou descobrir como fazer alguma coisa).
 * **Itens pendentes**
-  * Isolar aprtes constantes (navbar, footer (?) ) do site. (Algo tipo componentes do React? Será que compensa/precisa usar React?)
-  * Parte histórica: construção de páginas dos GTs finalizados
+  * Isolar partes constantes (navbar, footer (?) ) do site. (Algo tipo componentes do React? Será que compensa/precisa usar React?)
   * Criação das páginas dos GTs atuais
     * Seria legal fazer uma página pro podcast?
     * Aécio: Acho que seria tipo um teaser. Pode ser legal! A página black do Tecs (comunicacao.html) parece a vibe perfeita para isso...exceto que o esquema de cores talvez não bata.
+  * Página sobre anviersário do Tecs / recepção de novos membros
+  * Parte histórica: construção de páginas dos GTs finalizados
 
 Fase 2
 -----
