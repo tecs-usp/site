@@ -96,8 +96,18 @@
 
 .rodape-link {
   color: #000000;
-  opacity: 0.75;
+  opacity: 0.5;
   line-height: 35px;
+}
+
+.rodape-link:hover {
+  transition: all .7s ease;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.artigos-tecs-item .rodape-link.tecna:hover {
+  color: #d60061 !important;
 }
 
 @media (min-width: 576px) {
