@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
+* {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  /* width: 98vw; */
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.artigos-tecs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.artigos-tecs .artigos-tecs-item {
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container-fluid > .artigos-tecs .artigos-tecs-item a {
+  text-align: center;
+  color: #ffffff;
+}
+
+.artigos-tecs .artigos-tecs-item a:hover {
+  transition: all 1s ease;
+  color: #999999;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+  .navbar.navbar-light.navbar-expand-md {
+    padding: 1rem 10rem .6rem 9rem;
+    font-weight: 700;
+  }
+  .carousel-inner {
+    height: 80vh;
+  }
+}
