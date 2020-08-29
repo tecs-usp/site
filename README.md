@@ -17,7 +17,6 @@ GTs atuais do Tecs
 --------
 
  ## Navbar
- 
    * Talvez fazer uma navbar que desaparece quando você desce a tela e que reaparece quando sobe?
      * -> Aécio vê isso
      * Tipo https://www.nestle.com.br/ (com barra desaparecendo) ?
@@ -27,15 +26,18 @@ GTs atuais do Tecs
 
   ## Páginas dos GTs atuais
    * Página separada ou popup?
-     * Fazer quadradinhos com texto que sobe tipo https://www.activision.com/home ?
+     * Quadradinhos com texto que sobe tipo https://www.activision.com/home ?
    * Seria legal fazer uma página pro podcast?
      * Aécio: Acho que seria tipo um teaser. Pode ser legal! A página black do Tecs (comunicacao.html) parece a vibe perfeita para isso...exceto que o esquema de cores talvez não bata.
+     
+  ## Página sobre aniversário do Tecs / recepção de novos membros
+  * Falar do aniversário do Tecs e do evento de recepção e ligar para o forms
+  
   ## Mais
   * Tentar centralizar toda a estilização no main.css.
   * Isolar partes constantes (navbar, footer (?) ) do site. (Algo tipo componentes do React? 
     * Será que dá para falar com o Will para usar algum backend que facilite isso?)
     * Outra opção é fazer um build script que pega os arquivos "crus" e adiciona essas partes constantes.
-  * Página sobre aniversário do Tecs / recepção de novos membros
   * Parte histórica: construção de páginas dos GTs finalizados
   
 
