@@ -47,6 +47,8 @@ GTs atuais do Tecs
   * Script automático de sftp? Só tomar cuidado para não apagar arquivos que não deveriam ser apagados.
 * Trocar iconezinho de aba? 
     * Pra mim parece meio difícil visualizar a forma do país com o ícone pequeno e sem detalhes, mas talvez só veja mal.
+* Migrar textos do [medium](https://medium.com/@tecs.usp) para uma pagina bonitinha em que eles ficam organizados.
+* Migrar textos do site antigo.
 * Atualizar conteúdo
 * Tem que ter redundância nas redes
 * Revisar responsividade
