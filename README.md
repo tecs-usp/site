@@ -2,6 +2,10 @@ Preview
 ------
 https://tecs-usp.github.io/site
 
+Notion
+------
+https://www.notion.so/TECS-d481393f047441a3af9a70a96327410a
+
 GTs atuais do Tecs
 ------
 
