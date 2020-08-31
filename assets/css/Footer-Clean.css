@@ -4,6 +4,11 @@
   }
 }
 
+iframe.maps-google {
+  height: 250px;
+  width: 100%;
+}
+
 .footer-clean {
   padding: 50px 0;
   background-color: #fff;
@@ -90,7 +95,8 @@
   opacity: 0.6;
 }
 
-/*FB TELEG INSTA (os vãos têm tamanho 36px, aproximadamente equivalente a três &nsbp;)*/
+/*FB TELEG INSTA 
+(os vãos têm tamanho 36px, aproximadamente equivalente a três &nsbp;)*/
 .fa-telegram {
   margin-left:36px;
   margin-right:36px;
@@ -141,20 +147,23 @@
   font-size: 17px;
 }
 
-/*fique em casa*/
+/*fique-em-casa contém fique-emcasa-normal e fique-emcasa-destaque*/
 .fique-em-casa {
   margin-bottom: 1rem;
 }
 
-.fique-em-casa-normal {
+.fique-em-casa-normal, .fique-em-casa-destaque {
   white-space: pre;
   filter: brightness(82%) grayscale(0%);
 }
 
 .fique-em-casa-destaque {
-  white-space: pre;
   color: #fcb421;
-  filter: brightness(82%) grayscale(0%);
+}
+
+.fa-heart-o {
+  color: #fcb421;
+  /*filter: contrast(77%); prefiro sem; opiniões? é algo muito pequeno (de tamanho e importância), though*/
 }
 
 @media (min-width: 990px) {
