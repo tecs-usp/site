@@ -141,6 +141,22 @@
   font-size: 17px;
 }
 
+/*fique em casa*/
+.fique-em-casa {
+  margin-bottom: 1rem;
+}
+
+.fique-em-casa-normal {
+  white-space: pre;
+  filter: brightness(82%) grayscale(0%);
+}
+
+.fique-em-casa-destaque {
+  white-space: pre;
+  color: #fcb421;
+  filter: brightness(82%) grayscale(0%);
+}
+
 @media (min-width: 990px) {
   .text-justify.paragrafo-simples {
     padding-left: 4rem;
