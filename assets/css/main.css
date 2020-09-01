@@ -52,3 +52,17 @@ body {
     height: 80vh;
   }
 }
+
+#navbar-total {
+  top: 0; /* Stay on top */
+  transition: top 0.35s; /* Transition effect when sliding down (and up) */
+  
+  /*color: rgb(15,122,228); // era #0f7ae4*/
+  color: #1094ab; /*cor oficial fica melhor?*/
+}
+
+/*Pro fundo atrás da navbar não ficar branco; também é padding*/
+.pseudo-background { 
+  background-color:#1094ab;
+  height: 83px; /*era o padding do div embaixo da navbar; melhor deixar um tamanho relativo?*/
+}
