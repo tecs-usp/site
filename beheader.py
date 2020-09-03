@@ -16,6 +16,8 @@ def update_head (filename):
         f.write(new)
 
 def main ():
+    global new_head
+
     # Extract head from victim.
     with open(victim, "r") as f:
         match = re.match(regex, f.read())
@@ -32,7 +34,6 @@ def main ():
                 if victim not in filepath:
                     print("Updating head in", filepath, "...")
                     update_head(filepath)
-                    break
 
 if __name__ == "__main__":
     main()
