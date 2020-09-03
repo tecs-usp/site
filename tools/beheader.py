@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import sys
 import os
 import re
 
@@ -10,12 +11,13 @@ regex = "<!DOCTYPE[\s\S]+head>"
 new_head = None
 
 def update_head (filename):
-    with open(filename, "r+") as f:
-        new = re.sub(regex, new_head, f.read(), count = 1)
-        f.seek(0)
+    with open(filename, "r") as f:
+        orig = f.read()
+    with open(filename, "w") as f:
+        new = re.sub(regex, new_head, orig, count = 1)
         f.write(new)
 
-def main ():
+def behead (victim, folder):
     global new_head
 
     # Extract head from victim.
@@ -34,6 +36,30 @@ def main ():
                 if victim not in filepath:
                     print("Updating head in", filepath, "...")
                     update_head(filepath)
+
+def print_help():
+    message = """Helper script to extract the head from a specific HTML file and replicate it
+ in all HTML files contained in the given folder.
+Usage: python tools/beheader.py [FILE WITH NEW HEAD] [FOLDER CONTAINING HTML FILES]
+(Note: Running from project root.)
+"""
+    print(message)
+
+def main ():
+    try:
+        if len(sys.argv) != 3:
+            raise Exception("Wrong number of arguments.")
+        victim = sys.argv[1]
+        folder = sys.argv[2]
+        if not "html" in victim.casefold() or not os.path.exists(victim):
+            raise Exception("Invalid HTML file.")
+        if not os.path.isdir(folder):
+            raise Exception("Invalid folder.")
+        print("Using", victim, "to replace the head of files in", os.path.abspath(folder))
+        behead(victim, folder)
+    except:
+        print_help()
+        raise
 
 if __name__ == "__main__":
     main()
