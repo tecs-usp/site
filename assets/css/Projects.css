@@ -1,0 +1,15 @@
+/*Não sei se "projects" é a melhor tradução. Pensem aí.*/
+
+div.card-thing-animated {
+  position: relative;
+}
+
+div.image-description-animated {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #64c4d2;
+  color: #333333;
+  padding-left: 20px;
+  padding-right: 20px;
+}
