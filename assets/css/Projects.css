@@ -3,12 +3,14 @@
 div.card-thing-animated {
   position: relative;
   display: flex;
-  overflow: hidden !important; /* don't show scrollbars if something goes off-screen*/
+  overflow: hidden; /* don't show scrollbars if something goes off-screen*/
 }
 
 div.card-thing-animated div.card-thing-description {
   position: absolute;
-  right: 0;
+  right: -210px;
+  opacity: 0;
+  transition: opacity,right 0.8s; /*hover off*/
   background: rgba(100, 196, 210); /*#64c4d2;*/
   background: rgba(100, 196, 210, 0.5); /*opacity*/
   color: #333333;
@@ -17,10 +19,14 @@ div.card-thing-animated div.card-thing-description {
   text-align: right;
   max-width: 210px;
   height: 400px;
-  transition: opacity,right 1s;
 }
 
+/*https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition*/
+
 /*div.card-thing-animated div.card-thing-description:hover {
+  right: 0px;
+  opacity: 1;
+  transition: opacity,right 0.8s;
 }*/
 
 img.card-thing-img {

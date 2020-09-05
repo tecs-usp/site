@@ -13,6 +13,6 @@ for (var i = 0; i < elems.length; i++) {
 		var description = this.children[1];
 		description.style.right = "-210px";
 		description.style.opacity = "0";
-		//description.style.right = "-210px";
 	}
 }
+
