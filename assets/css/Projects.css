@@ -3,9 +3,10 @@
 div.card-thing-animated {
   position: relative;
   display: flex;
+  overflow: hidden !important; /* don't show scrollbars if something goes off-screen*/
 }
 
-div.card-thing-animated div.image-description-animated {
+div.card-thing-animated div.card-thing-description {
   position: absolute;
   right: 0;
   background: rgba(100, 196, 210); /*#64c4d2;*/
@@ -14,9 +15,13 @@ div.card-thing-animated div.image-description-animated {
   padding-left: 20px;
   padding-right: 20px;
   text-align: right;
-  max-width: 210px; /*https://www.w3schools.com/howto/howto_css_image_transparent.asp https://www.w3schools.com/howto/howto_css_image_text_blocks.asp*/
+  max-width: 210px;
   height: 400px;
+  transition: opacity,right 1s;
 }
+
+/*div.card-thing-animated div.card-thing-description:hover {
+}*/
 
 img.card-thing-img {
   object-fit: cover;
