@@ -8,8 +8,8 @@ div.card-thing-animated {
 
 div.card-thing-animated div.card-thing-description {
   position: absolute;
-  right: -210px;
-  opacity: 0;
+  right: -130px;
+  opacity: 0.3;
   transition: opacity,right 0.8s; /*hover off*/
   background: rgba(100, 196, 210); /*#64c4d2;*/
   background: rgba(100, 196, 210, 0.5); /*opacity*/
@@ -23,11 +23,11 @@ div.card-thing-animated div.card-thing-description {
 
 /*https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition*/
 
-/*div.card-thing-animated div.card-thing-description:hover {
+div.card-thing-animated div.card-thing-description:hover {
   right: 0px;
   opacity: 1;
   transition: opacity,right 0.8s;
-}*/
+}
 
 img.card-thing-img {
   object-fit: cover;
