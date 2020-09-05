@@ -140,36 +140,6 @@ iframe.maps-google {
   line-height: 28px;
 }
 
-/*for text in general*/
-div.text-thing.container {
-  margin-top: 30px;
-  padding-left: 16vw;
-  padding-right: 16vw;
-}
-
-.text-thing p {
-  text-align: justify;
-  letter-spacing: 0.5px;
-  line-height: 30px;
-  text-indent: 3em;
-  font-size: 17px;
-}
-
-.text-thing h2 {
-  margin-bottom: 2.5rem;
-  font-weight: 600;
-}
-
-.text-thing-tecs-1 {
-  color: #64c4d2;
-  font-weight: 600;
-}
-
-.text-thing-tecs-2 {
-  color: #999999;
-  font-weight: 600;
-}
-
 /*fique-em-casa contém fique-emcasa-normal e fique-emcasa-destaque*/
 .fique-em-casa {
   margin-bottom: 1rem;
@@ -187,13 +157,6 @@ div.text-thing.container {
 .fa-heart-o {
   color: #fcb421;
   /*filter: contrast(77%); prefiro sem; opiniões? é algo muito pequeno (de tamanho e importância), though*/
-}
-
-@media (min-width: 990px) {
-  .text-thing {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
 }
 
 @media (min-width: 300px) {
