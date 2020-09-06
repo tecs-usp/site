@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-
+n
 body {
   background-color: #ffffff;
   /* width: 98vw; */
@@ -74,17 +74,28 @@ div.text-thing.container {
   padding-right: 16vw;
 }
 
+/*decide between this and above*/
+.text-thing {
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
 .text-thing p {
-  text-align: justify;
+  text-align: left;
   letter-spacing: 0.5px;
   line-height: 30px;
-  text-indent: 3em;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .text-thing h2 {
-  margin-bottom: 2.5rem;
+  /*margin-bottom: 2.5rem;*/
+  text-align: left;
   font-weight: 600;
+}
+
+/*criar um div vazio com isso*/
+.text-thing .h2-spacing {
+  margin-bottom: 2.5rem;
 }
 
 .text-thing-tecs-1 {
@@ -101,5 +112,15 @@ div.text-thing.container {
   .text-thing {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+
+/* mobile */
+@media (max-width: 450px) {
+  .text-thing {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    /*color: crimson; for testing purposes*/
   }
 }

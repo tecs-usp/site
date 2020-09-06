@@ -23,223 +23,276 @@
   <meta property="og:image" content="assets/img/Logos/site novo.svg">
   <!--MÍDIAS SOCIAIS END-->
 
+  <!--Loads jQuery and Bootstrap.-->
+  <script src="../assets/js/script-fallback.js"></script>
+
   <link rel="icon" type="image/png" sizes="578x588" href="assets/img/Logos/grafo%20logo%20br.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/utils.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-  <link rel="stylesheet" href="assets/css/Footer-Clean.css">
-  <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-  <link rel="stylesheet" href="assets/css/Map-Clean.css">
+  <link rel="stylesheet" href="../assets/css/utils.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/Footer-Clean.css">
+  <link rel="stylesheet" href="../assets/css/Map-Clean.css">
+  <link rel="stylesheet" href="../assets/css/fcasa.css"> <!--temp-->
+  
+  <!--coisas de bootstrap (leave it to script-fallback.js) START-->
+  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" onerror="scriptFallback(this);" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+  <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" onerror="scriptFallback(this);" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+  <!--coisas de bootstrap END-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>-->
+  
+  <script src="../assets/js/img-http-fallback.js"></script>
 </head>
 
-<body style="font-family: 'Titillium Web', sans-serif;">
-    <div style="background-color: #1094ab;font-family: 'Titillium Web', sans-serif;">
-        <div class="container">
-            <div style="width: 2;height: 0.5rem;"></div>
-            <nav class="navbar navbar-light navbar-expand-md nav-coll" style="font-family: 'Titillium Web', sans-serif;color: rgb(15,122,228);padding-right: 10px;">
-                <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;filter: invert(0%);"><span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span></button>
-                    <a
-                        class="navbar-brand">
-                        <h1 class="text-center" style="font-family: 'Titillium Web', sans-serif;letter-spacing: 3px;font-size: 41px;font-weight: 500;color: #1094ab;"><a href="../index.html"><img src="../assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;"><img id="logo-principal" src="../assets/img/Logos/tecs4.png"></a></h1>
-                        </a>
-                        <div class="collapse navbar-collapse" id="navcol-1">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="../Quem_somos.html" style="color: white;">Quem somos</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="../Projetos.html" style="color: white;">Projetos</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="../Contato.html" style="color: white;">Contato</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="../inscricao.html" style="color: white;">Participe</a></li>
-                            </ul>
-                        </div>
-                </div>
-            </nav>
+<body>
+  <!--NAVBAR VAI EMBORA-->
+	
+	<div class="text-center">
+		<div class="text-center text-thing">
+			<h1>GT FCASA</h1>
+			<h6 class="after-title text">Aulas de introdução à Lógica de 
+        Programação na Fundação CASA</h6>
+		</div>
+		<br> <!--Para o pop-up não ficar em cima do subtítulo. Talvez não adiante em algum dispositivo?-->
+		
+		<div class="container">
+			<!--id pra redirecionar até aqui 
+			deixa? tira? se for manter a referência ao topo da página acho legal deixar algo parecido.
+			Também seria uma ótima oportunidade para usar o https://github.com/tholman/elevator.js-->
+			<img
+        id="programacao-desplugada"
+        class="image-thing1"
+				data-toggle="tooltip" 
+				data-bs-tooltip="" 
+				data-placement="bottom"
+				src="../assets/img/FCASA/quadro.jpg" 
+				title="Um exemplo de 'programação desplugada'"
+				alt="Quatro pessoas na frente de uma lousa, discutindo como explicar um sistema de coordenadas através de uma metáfora de campo de futebol."
+			>
+
+			<!--TODO: achar uma classe melhor pra esses negócios sem que todas as páginas sejam iguais (i.e., diversificar as coisas).-->
+			<div class="text-thing lead">
+				<h2>
+					O que é a <a href="http://fundacaocasa.sp.gov.br/View.aspx?title=a-funda%C3%A7%C3%A3o&d=10">Fundação CASA</a>?
+				</h2>
+				<p>
+					A Fundação CASA (Centro de Atendimento Socioeducativo ao Adolescente)
+					é uma instituição estadual que aplica medidas socioeducativas segundo o Estatuto da Criança 
+					e do Adolescente (ECA) e o Sistema Nacional de Atendimento Socioeducativo (SINASE). 
+					Mas, mesmo inseridos em medidas de privação de liberdade, esses adolescentes devem ter acesso
+					a educação escolar, cultura, esportes e lazer. E é aí que entra o Curso de Introdução à 
+					Lógica de Programação que o Tecs oferece na Fundação CASA.
+				</p>
+			</div>
+			<div class="text-thing lead text-justify">
+				<h2>
+					Sobre o curso...
+        </h2>
+      </div>
+      <img
+          class="image-thing1"
+					data-toggle="tooltip" 
+					data-bs-tooltip="" 
+					data-placement="bottom"
+					src="../assets/img/FCASA/2019-2.jpg" 
+					title="Equipe de voluntários em frente de uma das unidades da Fundação CASA"
+					alt="Equipe de seis voluntários em frente de uma das unidades da Fundação CASA."
+      >
+      <div class="text-thing lead text-justify">
+				<p>
+					Visamos, antes de tudo, a contribuir para o desenvolvimento pessoal e profissional de 
+					jovens inseridos em medidas socioeducativas, auxiliando-os no desenvolvimento
+					de competências que ampliem suas possibilidades de inserção no mercado de 
+					trabalho, geração de renda e participação na sociedade. Sempre permeado por 
+					uma abordagem humanista que dialogue com as vivências individuais 
+					de cada aluno, o curso não se restringe ao ensino da técnica pela técnica
+					e põe em destaque a interação e o desenvolvimento de interesses pessoais, 
+					procurando também desmistificar a crença de que Computação e Matemática 
+					seriam conteúdos inalcançavelmente complexos.
+				</p>
+				<p>
+					Para contextualizar os vários conceitos de Computação, a proposta do curso é, 
+					ao longo das dez aulas e com a ajuda dos professores-monitores, 
+					desenvolver um jogo com a ferramenta 
+					<a href=http://py.processing.org>Processing (modo Python)</a>,
+					que facilita a criação de programas visuais e expressivos. 
+					Além disso, ao longo do curso também são promovidas conversas sobre 
+					possibilidades de carreira, cursos gratuitos e a influência da Computação na sociedade. 
+					As aulas são administradas pelos membros da equipe, que se dividem entre 
+					professores e monitores. 
+				</p>
+			</div>
+
+			<div class="text-thing lead text-justify">
+				<h2>
+					Programação desplugada?
+				</h2>
+				<p>
+					A imagem na 
+					<!--NOTE: Se substituir a imagem, altere este texto também!-->
+					<a href="#programacao-desplugada">parte superior da página</a> é um exemplo do que chamamos 'programação desplugada':
+					programar (ou ensinar programação) sem usar qualquer dispositivo eletrônico.
+					Nessa foto, podemos ver quatro professores discutindo qual a melhor forma de explicar
+					o conceito de <a href="https://pt.wikipedia.org/wiki/Sistema_de_coordenadas_cartesiano">sistema de coordenadas</a> 
+					para alguém que talvez não tenha toda a bagagem matemática
+					necessária para entender a explicação tradicional e abstrata que se encontraria em um livro-texto.
+				</p>
+				<p>
+					A conclusão? Explicar sistemas de coordenadas a partir de uma comparação com um 
+					jogo de futebol: 
+					<ul style="text-indent:1em">
+						<li>o campo é o plano cartesiano;</li> 
+						<li>o meio do campo é a origem do sistema de coordenadas;</li>
+						<li>os jogadores de um time seguem em direção ao gol do time adversário, que representa o eixo horizontal;</li>
+						<li>as arquibancadas ficam na direção vertical;</li>
+						<li>os jogadores movem-se principalmente em direção ao gol do time adversário (eixo horizontal),</li>
+						<li>mas também desviam e fazem passes em direção à arquibancada (eixo vertical) ou em uma combinação das direções;</li>
+					</ul>
+				</p>
+				<p>
+					Pode parecer um desafio, mas devido às restrições de uso de internet e de dispositivos externos,
+					às vezes é preciso ser criativo e trazer as explicações ao mundo real, como nesse exemplo.
+				</p>
+			</div>
+
+			<!-- Não encaixa aqui.\
+			<p class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
+				Além de voluntários para atuar como professores-monitores 
+				— que formam um time de 6 pessoas que alternam entre a) preparar e dar aulas, 
+				e b) acompanhar o desenvolvimento dos alunos — também precisamos de voluntários 
+				para ajudar com a elaboração da apostila, divulgação do projet, 
+				preparação de outros materiais para o curso e documentação das aulas.
+
+			</p>
+			<p class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
+				Uma vez que as aulas de parceiros na Fundação CASA estão suspensas devido 
+				à COVID-19, as atividades do projeto consistem, no momento, em editar 
+				a apostila e em organizar o próximo oferecimento. Para tanto, realizamos 
+				reuniões semanais onde discutimos — tudo remotamente — abordagens didáticas 
+				para explicar conceitos de programação, aspectos das aulas a serem destacados, 
+				como estruturar os elementos do jogo a fim de facilitar seu entendimento, etc. 
+				Dito isso, sua participação é ainda mais importante neste momento crítico de planejamento.  ;)
+			</p>
+			
+			<p class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
+				OBS: Não é preciso ter nenhum(!!) conhecimento prévio de computação!! 
+				Em oferecimentos passados as equipes eram bem diversas 
+				(já tivemos voluntários das áreas de Física, de Ciências Sociais, 
+				Jornalismo, etc.), e essa diversidade de experiências enriqueceu 
+				as aulas e o projeto como um todo.
+			</p>
+			-->
+		</div>
+
+		<!--Exemplos sites/jogos alunos
+			Existe scratch.js? (provavelmente kkkkk)
+		-->
+	</div>
+	
+  <!--FOOTER PEGA DO INDEX-->
+	<div class="container-fluid pt-3">
+    <div class="row d-flex justify-content-center align-items-center">
+      <hr class="w-80">
+      <div class="col-11 text-center text-md-center text-lg-center rodape-coluna">
+        <h2 class="text-center font-weight-bold mt-5 mb-4">Parceiros</h2>
+        <div class="row artigos-tecs pb-0">
+          <div class="col-9 col-md-2 artigos-tecs-item">
+            <a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank" rel="noopener">
+              <img 
+                class="w-50 mx-5" 
+                src="https://efestus.icmc.usp.br/wp-content/uploads/2019/03/EfestusDefIcon.png" 
+                alt="Logo do Efestus, um grupo de computação social parecido com o Tecs, mas da USP São Carlos. A parte principal da figura é uma chama."
+                onerror="httpFallback(this)"
+              >
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
+            <a class="rodape-link" href="https://www.ime.usp.br" target="_blank" rel="noopener">
+              <img 
+                class="w-20 mx-5" 
+                src="https://ccsl.ime.usp.br/files/unmanaged/logos/logoIME+Texto.png" 
+                alt="Logo do Instituto de Matemática e Estatística da USP (IME-USP). No brasão, identifica-se Arquimedes."
+                onerror="httpFallback(this)"
+              >
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
+            <a class="rodape-link" href="https://www5.usp.br" target="_blank" rel="noopener">
+              <img 
+                class="w-50 mx-5" 
+                src="https://www.scs.usp.br/identidadevisual/wp-content/uploads/2013/08/usp-logo-png.png" 
+                alt="Logo da Universidade de São Paulo (USP)"
+                onerror="httpFallback(this)"
+              >
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
+            <a class="rodape-link tecna" target="_blank" href="https://tecna.ime.usp.br/">
+              TECNA
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item mt-5 my-md-0">
+            <a class="rodape-link" href="https://techshift.org" target="_blank" rel="noopener">
+              <img 
+                class="w-60 mx-5" 
+                src="https://www.ffwd.org/wp-content/uploads/TechShiftLogoHighRes.png" 
+                alt="Logo do TechShift, uma aliança global de organizações como o Tecs"
+              >
+            </a>
+          </div>
+        </div> <!--row artigos-tecs-->
+      </div> <!--col-11 text-center-->
+    </div> <!--row d-flex-->
+      <div class="row justify-content-center align-items-center my-5">
+        <div class="col-10 col-md-3 text-center text-md-center text-lg-center rodape-coluna">
+            <ul class="list-unstyled text-center text-sm-center text-md-center align-items-center">
+                <li><a class="rodape-link" href="Quem_somos.html">Quem somos</a></li>
+                <li><a class="rodape-link" href="Projetos.html">Projetos</a></li>
+                <li><a class="rodape-link" href="Contato.html">Contato</a></li>
+                <li><a class="rodape-link" href="inscricao.html">Participe</a></li>
+            </ul>
         </div>
-    </div>
-
-
-    <div class="text-center" style="margin-left: 15%;margin-right: 15%;">
-        <div class="text-center" style="margin-top: 30px;">
-            <h1 style="font-family: 'Titillium Web', sans-serif;font-weight: 600;">GT FCASA</h1>
-            <h6 style="font-family: 'Titillium Web', sans-serif;font-weight: 600;">Aulas de introdução à Lógica de Programação na Fundação CASA</h6>
+        <div class="col-10 col-md-5">
+          <iframe class="maps-google d-xl-flex" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEsbBjboQzORZ2YGR6E2bbAezZePedofg&amp;q=IMEUSP&amp;zoom=13"></iframe>
         </div>
-        <br> <!--Para o pop-up não ficar em cima do subtítulo. Talvez não adiante em algum dispositivo?-->
-        
-        <div class="container">
-            <!--id pra redirecionar até aqui 
-            deixa? tira? se for manter a referência ao topo da página acho legal deixar algo parecido.
-            Também seria uma ótima oportunidade para usar o https://github.com/tholman/elevator.js-->
-            <img
-                id="programacao-desplugada"
-                data-toggle="tooltip" 
-                data-bs-tooltip="" 
-                data-placement="bottom" 
-                style="margin-top: 2rem;width: 100%;max-width: 700px;" 
-                src="../assets/img/FCASA/quadro.jpg" 
-                title="Um exemplo de 'programação desplugada'"
-                alt="Quatro pessoas na frente de uma lousa, discutindo como explicar um sistema de coordenadas através de uma metáfora de campo de futebol."
-            >
+      </div>
+    </div> <!--container-fluid-->
+  <div class="row d-flex">
+    <div class="col">
+      <p class="text-center copyright" style="font-weight: 300;">
+        <br>
+        <span style="font-size: 27px;opacity: 0.80;filter: grayscale(100%);">
+          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
+            <i class="fa fa-telegram"></i>
+          </a>
+          <a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
+            <i class="fa fa-instagram"></i></a>
+        </span>
+        <br>
+      </p>
+      <div class="fique-em-casa text-center">
+        <span class="fique-em-casa-normal">... ah, e </span>
+        <span class="fique-em-casa-destaque">#FiqueEmCasa</span>
+        <span class="fique-em-casa-normal">se puder </span>
+        <i class="fa fa-heart-o"></i>
+      </div>
+      <div class="text-center" style="padding-top: 1rem;padding-bottom: 2rem;">
+        <img 
+          src="assets/img/Logos/tecs3.svg" 
+          style="max-width: 7rem;opacity: 1;filter: invert(100%);"
+          alt="TECS com Comput{ação social} escrito ao lado"
+        >
+      </div>
+    </div> <!--col-->
+  </div> <!--row d-flex-->
+  <!--FOOTER PEGA DO INDEX-->
 
-            <!--TODO: achar uma classe melhor pra esses negócios sem que todas as páginas sejam iguais (i.e., diversificar as coisas).-->
-            <div class="lead text-justify" style="margin-top: 2rem;margin-bottom: 2rem;font-family: 'Titillium Web', sans-serif;">
-                <h2 style="font-weight: 600;">
-                    O que é a <a href="http://fundacaocasa.sp.gov.br/View.aspx?title=a-funda%C3%A7%C3%A3o&d=10">Fundação CASA</a>?
-                </h2>
-                <p>
-                    A Fundação CASA (Centro de Atendimento Socioeducativo ao Adolescente)
-                    é uma instituição estadual que aplica medidas socioeducativas segundo o Estatuto da Criança 
-                    e do Adolescente (ECA) e o Sistema Nacional de Atendimento Socioeducativo (SINASE). 
-                    Mas, mesmo inseridos em medidas de privação de liberdade, esses adolescentes devem ter acesso
-                    a educação escolar, cultura, esportes e lazer. E é aí que entra o Curso de Introdução à 
-                    Lógica de Programação que o Tecs oferece na Fundação CASA.
-                </p>
-            </div>
-            
-            <div class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
-                <h2 style="font-weight: 600;text-indent: 0em">
-                    Sobre o curso...
-                </h2>
-                <img
-                    data-toggle="tooltip" 
-                    data-bs-tooltip="" 
-                    data-placement="bottom"width: 100% 
-                    style="display:block;margin-left:auto;margin-right:auto;margin-top: 2rem;margin-bottom: 2rem;width: 100%;max-width: 700px;" 
-                    src="../assets/img/FCASA/2019-2.jpg" 
-                    title="Equipe de voluntários em frente de uma das unidades da Fundação CASA"
-                    alt="Equipe de seis voluntários em frente de uma das unidades da Fundação CASA."
-                >
-                <p>
-                    Visamos, antes de tudo, a contribuir para o desenvolvimento pessoal e profissional de 
-                    jovens inseridos em medidas socioeducativas, auxiliando-os no desenvolvimento
-                    de competências que ampliem suas possibilidades de inserção no mercado de 
-                    trabalho, geração de renda e participação na sociedade. Sempre permeado por 
-                    uma abordagem humanista que dialogue com as vivências individuais 
-                    de cada aluno, o curso não se restringe ao ensino da técnica pela técnica
-                    e põe em destaque a interação e o desenvolvimento de interesses pessoais, 
-                    procurando também desmistificar a crença de que Computação e Matemática 
-                    seriam conteúdos inalcançavelmente complexos.
-                </p>
-                <p>
-                    Para contextualizar os vários conceitos de Computação, a proposta do curso é, 
-                    ao longo das dez aulas e com a ajuda dos professores-monitores, 
-                    desenvolver um jogo com a ferramenta 
-                    <a href=http://py.processing.org>Processing (modo Python)</a>,
-                    que facilita a criação de programas visuais e expressivos. 
-                    Além disso, ao longo do curso também são promovidas conversas sobre 
-                    possibilidades de carreira, cursos gratuitos e a influência da Computação na sociedade. 
-                    As aulas são administradas pelos membros da equipe, que se dividem entre 
-                    professores e monitores. 
-                </p>
-            </div>
-
-            <div class="lead text-justify" style="margin-top: 2rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
-                <h2 style="font-weight: 600;text-indent: 0em">
-                    Programação desplugada?
-                </h2>
-                <p>
-                    A imagem na 
-                    <!--NOTE: Se substituir a imagem, altere este texto também!-->
-                    <a href="#programacao-desplugada">parte superior da página</a> é um exemplo do que chamamos 'programação desplugada':
-                    programar (ou ensinar programação) sem usar qualquer dispositivo eletrônico.
-                    Nessa foto, podemos ver quatro professores discutindo qual a melhor forma de explicar
-                    o conceito de <a href="https://pt.wikipedia.org/wiki/Sistema_de_coordenadas_cartesiano">sistema de coordenadas</a> 
-                    para alguém que talvez não tenha toda a bagagem matemática
-                    necessária para entender a explicação tradicional e abstrata que se encontraria em um livro-texto.
-                </p>
-                <p style="text-indent:1em">
-                    A conclusão? Explicar sistemas de coordenadas a partir de uma comparação com um 
-                    jogo de futebol: 
-                    <ul style="text-indent:1em">
-                        <li>o campo é o plano cartesiano;</li> 
-                        <li>o meio do campo é a origem do sistema de coordenadas;</li>
-                        <li>os jogadores de um time seguem em direção ao gol do time adversário, que representa o eixo horizontal;</li>
-                        <li>as arquibancadas ficam na direção vertical;</li>
-                        <li>os jogadores movem-se principalmente em direção ao gol do time adversário (eixo horizontal),</li>
-                        <li>mas também desviam e fazem passes em direção à arquibancada (eixo vertical) ou em uma combinação das direções;</li>
-                    </ul>
-                </p>
-                <p>
-                    Pode parecer um desafio, mas devido às restrições de uso de internet e de dispositivos externos,
-                    às vezes é preciso ser criativo e trazer as explicações ao mundo real, como nesse exemplo.
-                </p>
-            </div>
-
-            <!-- Não encaixa aqui.
-            <p class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
-                Além de voluntários para atuar como professores-monitores 
-                — que formam um time de 6 pessoas que alternam entre a) preparar e dar aulas, 
-                e b) acompanhar o desenvolvimento dos alunos — também precisamos de voluntários 
-                para ajudar com a elaboração da apostila, divulgação do projet, 
-                preparação de outros materiais para o curso e documentação das aulas.
-
-            </p>
-            <p class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
-                Uma vez que as aulas de parceiros na Fundação CASA estão suspensas devido 
-                à COVID-19, as atividades do projeto consistem, no momento, em editar 
-                a apostila e em organizar o próximo oferecimento. Para tanto, realizamos 
-                reuniões semanais onde discutimos — tudo remotamente — abordagens didáticas 
-                para explicar conceitos de programação, aspectos das aulas a serem destacados, 
-                como estruturar os elementos do jogo a fim de facilitar seu entendimento, etc. 
-                Dito isso, sua participação é ainda mais importante neste momento crítico de planejamento.  ;)
-            </p>
-            
-            <p class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
-                OBS: Não é preciso ter nenhum(!!) conhecimento prévio de computação!! 
-                Em oferecimentos passados as equipes eram bem diversas 
-                (já tivemos voluntários das áreas de Física, de Ciências Sociais, 
-                Jornalismo, etc.), e essa diversidade de experiências enriqueceu 
-                as aulas e o projeto como um todo.
-            </p>
-            -->
-        </div>
-
-        <!--Exemplos sites/jogos alunos
-            Existe scratch.js? (provavelmente kkkkk)
-        -->
-    </div>
-    
-
-
-    <div class="container" style="padding-top: 1rem;font-family: 'Titillium Web', sans-serif;">
-        <hr>
-        <div class="row d-block d-sm-flex">
-            <div class="col text-center text-md-center text-lg-center rodape-coluna">
-                <p class="text-center text-sm-center text-md-center text-lg-center text-xl-center rodape-titulo"><strong>Nosso grupo</strong></p>
-                <ul class="list-unstyled text-center text-sm-center text-md-center text-lg-center text-xl-center">
-                    <li><a class="rodape-link" href="../Quem_somos.html">Quem somos</a></li>
-                    <li><a class="rodape-link" href="../Projetos.html">Projetos</a></li>
-                    <li><a class="rodape-link" href="../Contato.html">Contato</a></li>
-                    <li><a class="rodape-link" href="../inscricao.html">Participe</a></li>
-                </ul>
-            </div>
-            <div class="col text-center text-md-center text-lg-center rodape-coluna">
-                <p class="text-center text-sm-center text-md-center text-lg-center text-xl-center rodape-titulo"><strong>Parceiros</strong></p>
-                <ul class="list-unstyled text-center text-sm-center text-md-center text-lg-center text-xl-centerg">
-                    <li><a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank">Efestus</a></li>
-                    <li><a class="rodape-link" target="_blank" href="https://tecna.ime.usp.br/">TECNA</a></li>
-                    <li><a class="rodape-link" href="https://techshift.org" target="_blank" style="font-family: 'Titillium Web', sans-serif;">TechShift</a></li>
-                    <li><a class="rodape-link" href="https://www.ime.usp.br" target="_blank">IME-USP</a></li>
-                    <li><a class="rodape-link" href="https://www5.usp.br" target="_blank">USP</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p class="text-center copyright" style="font-family: 'Titillium Web', sans-serif;font-weight: 300;"><br><span style="font-size: 27px;opacity: 0.80;filter: grayscale(100%);"><a href="https://pt-br.facebook.com/tecs.usp/" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp; &nbsp; &nbsp;<a href="https://t.me/tecsusp" target="_blank"><i class="fa fa-telegram"></i></a>&nbsp; &nbsp; &nbsp;<a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a></span><br></p>
-                <p
-                    class="text-center" style="font-family: 'Titillium Web', sans-serif;">... ah, e&nbsp;<span style="color: #fcb421;filter: brightness(82%) grayscale(0%);">#FiqueEmCasa</span>&nbsp;se puder&nbsp;&nbsp;<span style="color: #fcb421;filter: contrast(77%);"><i class="fa fa-heart-o"></i></span><br></p>
-                    <div class="text-center"
-                        style="padding-top: 1rem;padding-bottom: 2rem;"><img src="../assets/img/Logos/tecs3.svg" style="max-width: 7rem;opacity: 1;filter: invert(100%);"></div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/smart-forms.min.js"></script>
-    <script src="../assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+  <!--<script src="assets/js/navbar-autohide.js"></script>-->
 </body>
 
 </html>

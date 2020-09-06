@@ -36,7 +36,7 @@ function scriptFallback (failedScript) {
 		console.error(failedScript);
 	}
 	newScript.setAttribute("src", "/assets/fallback/" + matches[0]);
-	newScript.setAttribute("async", undefined); // might be redundant; might be bad;
+	newScript.removeAttribute("async"); // might not do anything
 
 	/* preserve integrity and onload */
 	if (failedScript.integrity) {
