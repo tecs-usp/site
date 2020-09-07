@@ -31,22 +31,30 @@ div.card-thing-animated div.card-thing-description:hover {
 
 img.card-thing-img {
   object-fit: cover;
-  max-height: 400px;
+  max-height: 30rem;
   width: auto;
+}
+
+.text-thing h1 {
+  margin-bottom: 2rem;
+}
+
+.container div.row {
+  justify-content: center;
 }
 
 @media (min-width: 990px) {
   .text-thing {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 }
 
 /* mobile */
 @media (max-width: 450px) {
-  .text-thing {
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
+  .container.text-thing {
+    margin-left: 2rem;
+    margin-right: 2rem;
     /*color: crimson; for testing purposes*/
   }
 }
