@@ -35,3 +35,19 @@ img.card-thing-img {
   width: auto;
 }
 
+@media (min-width: 990px) {
+  .text-thing {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .text-thing {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    /*color: crimson; for testing purposes*/
+  }
+}
+
