@@ -11,7 +11,7 @@
 
   <!--MÍDIAS SOCIAIS START-->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="assets/img/Logos/site novo.svg">
+  <meta name="twitter:image" content="../assets/img/Logos/site novo.svg">
   <meta name="twitter:title" content="TECS">
   <meta name="twitter:description" content="Grupo de comput{ação social} da USP">
   <meta name="twitter:site" content="@tecsusp">
@@ -20,15 +20,16 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tecs | Grupo de comput{ação social} da USP">
   <meta property="og:description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta property="og:image" content="assets/img/Logos/site novo.svg">
+  <meta property="og:image" content="../assets/img/Logos/site novo.svg">
   <!--MÍDIAS SOCIAIS END-->
 
   <!--Loads jQuery and Bootstrap.-->
   <script src="../assets/js/script-fallback.js"></script>
 
-  <link rel="icon" type="image/png" sizes="578x588" href="assets/img/Logos/grafo%20logo%20br.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">-->
+  <link rel="icon" type="image/png" sizes="578x588" href="../assets/img/Logos/grafo%20logo%20br.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/utils.css">
   <link rel="stylesheet" href="../assets/css/main.css">
@@ -41,39 +42,69 @@
   <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
   <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" onerror="scriptFallback(this);" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
   <!--coisas de bootstrap END-->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
   
   <script src="../assets/js/img-http-fallback.js"></script>
+  
 </head>
 
 <body>
-  <!--NAVBAR VAI EMBORA-->
+  <script>
+    /* enable popper tooltips */
+    setTimeout(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    }, 5000);
+  </script>
+
+  <div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
+    <div class="container-fluid">
+      <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font" style="color: rgb(15,122,228);">
+        <div class="container-fluid">
+          <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;filter: invert(0%);">
+              <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
+            <img id="logo-principal" src="../assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
+          </a>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link" href="Quem_somos.html">Quem somos</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="Projetos.html">Projetos</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="Contato.html">Contato</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="inscricao.html">Participe</a></li>
+            </ul>
+          </div>
+        </div> <!--container-fluid-->
+      </nav>
+    </div> <!--container-fluid-->
+  </div> <!--#navbar-total.secondary-blue-bg-->
+  <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
+  
 	
-	<div class="text-center">
-		<div class="text-center text-thing">
+	<div class="text-thing container text-center">
+		<div class="text-center">
 			<h1>GT FCASA</h1>
-			<h6 class="after-title text">Aulas de introdução à Lógica de 
+			<h6 class="after-title">Aulas de introdução à Lógica de 
         Programação na Fundação CASA</h6>
-		</div>
-		<br> <!--Para o pop-up não ficar em cima do subtítulo. Talvez não adiante em algum dispositivo?-->
-		
-		<div class="container">
+    </div>
+    <br>
+    <br>	
+		<div id="programacao-desplugada" class="container">
 			<!--id pra redirecionar até aqui 
 			deixa? tira? se for manter a referência ao topo da página acho legal deixar algo parecido.
 			Também seria uma ótima oportunidade para usar o https://github.com/tholman/elevator.js-->
 			<img
-        id="programacao-desplugada"
         class="image-thing1"
 				data-toggle="tooltip" 
-				data-bs-tooltip="" 
-				data-placement="bottom"
+				data-bs-tooltip="Um exemplo de 'programação desplugada'" 
+				data-placement="top"
 				src="../assets/img/FCASA/quadro.jpg" 
 				title="Um exemplo de 'programação desplugada'"
 				alt="Quatro pessoas na frente de uma lousa, discutindo como explicar um sistema de coordenadas através de uma metáfora de campo de futebol."
-			>
+        >
 
-			<!--TODO: achar uma classe melhor pra esses negócios sem que todas as páginas sejam iguais (i.e., diversificar as coisas).-->
-			<div class="text-thing lead">
+			<div class="text-thing text-thing-h2-top lead">
 				<h2>
 					O que é a <a href="http://fundacaocasa.sp.gov.br/View.aspx?title=a-funda%C3%A7%C3%A3o&d=10">Fundação CASA</a>?
 				</h2>
@@ -86,20 +117,11 @@
 					Lógica de Programação que o Tecs oferece na Fundação CASA.
 				</p>
 			</div>
-			<div class="text-thing lead text-justify">
+			<div class="text-thing text-thing-h2-top lead text-justify">
 				<h2>
 					Sobre o curso...
         </h2>
       </div>
-      <img
-          class="image-thing1"
-					data-toggle="tooltip" 
-					data-bs-tooltip="" 
-					data-placement="bottom"
-					src="../assets/img/FCASA/2019-2.jpg" 
-					title="Equipe de voluntários em frente de uma das unidades da Fundação CASA"
-					alt="Equipe de seis voluntários em frente de uma das unidades da Fundação CASA."
-      >
       <div class="text-thing lead text-justify">
 				<p>
 					Visamos, antes de tudo, a contribuir para o desenvolvimento pessoal e profissional de 
@@ -124,11 +146,17 @@
 					professores e monitores. 
 				</p>
 			</div>
-
-			<div class="text-thing lead text-justify">
-				<h2>
-					Programação desplugada?
-				</h2>
+      <img
+          class="image-thing1"
+					data-toggle="tooltip" 
+					data-bs-tooltip="" 
+					data-placement="bottom"
+					src="../assets/img/FCASA/2019-2.jpg" 
+					title="Equipe de voluntários em frente de uma das unidades da Fundação CASA"
+					alt="Equipe de seis voluntários em frente de uma das unidades da Fundação CASA."
+      >
+			<div class="text-thing text-thing-h2-top lead text-justify">
+				<h2>Programação desplugada?</h2>
 				<p>
 					A imagem na 
 					<!--NOTE: Se substituir a imagem, altere este texto também!-->
@@ -141,15 +169,17 @@
 				</p>
 				<p>
 					A conclusão? Explicar sistemas de coordenadas a partir de uma comparação com um 
-					jogo de futebol: 
-					<ul style="text-indent:1em">
+          jogo de futebol: 
+          <div style="margin-left:3rem;">
+					<ul>
 						<li>o campo é o plano cartesiano;</li> 
 						<li>o meio do campo é a origem do sistema de coordenadas;</li>
 						<li>os jogadores de um time seguem em direção ao gol do time adversário, que representa o eixo horizontal;</li>
 						<li>as arquibancadas ficam na direção vertical;</li>
 						<li>os jogadores movem-se principalmente em direção ao gol do time adversário (eixo horizontal),</li>
 						<li>mas também desviam e fazem passes em direção à arquibancada (eixo vertical) ou em uma combinação das direções;</li>
-					</ul>
+          </ul>
+        </div>
 				</p>
 				<p>
 					Pode parecer um desafio, mas devido às restrições de uso de internet e de dispositivos externos,
@@ -157,7 +187,7 @@
 				</p>
 			</div>
 
-			<!-- Não encaixa aqui.\
+			<!-- Não encaixa aqui.
 			<p class="lead text-justify" style="margin-top: 1rem;text-indent: 2em;font-family: 'Titillium Web', sans-serif;font-style: normal;font-weight: normal;">
 				Além de voluntários para atuar como professores-monitores 
 				— que formam um time de 6 pessoas que alternam entre a) preparar e dar aulas, 
@@ -191,7 +221,7 @@
 		-->
 	</div>
 	
-  <!--FOOTER PEGA DO INDEX-->
+  <!--FOOTER-->
 	<div class="container-fluid pt-3">
     <div class="row d-flex justify-content-center align-items-center">
       <hr class="w-80">
@@ -229,7 +259,7 @@
             </a>
           </div>
           <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
-            <a class="rodape-link tecna" target="_blank" href="https://tecna.ime.usp.br/">
+            <a class="rodape-link tecna" href="https://tecna.ime.usp.br/" target="_blank" rel="noopener">
               TECNA
             </a>
           </div>
@@ -238,27 +268,27 @@
               <img 
                 class="w-60 mx-5" 
                 src="https://www.ffwd.org/wp-content/uploads/TechShiftLogoHighRes.png" 
-                alt="Logo do TechShift, uma aliança global de organizações como o Tecs"
+                alt="Logo do TechShift, uma aliança global de organizações como o Tecs, que juntam tecnologia e sociedade"
               >
             </a>
           </div>
         </div> <!--row artigos-tecs-->
       </div> <!--col-11 text-center-->
     </div> <!--row d-flex-->
-      <div class="row justify-content-center align-items-center my-5">
-        <div class="col-10 col-md-3 text-center text-md-center text-lg-center rodape-coluna">
-            <ul class="list-unstyled text-center text-sm-center text-md-center align-items-center">
-                <li><a class="rodape-link" href="Quem_somos.html">Quem somos</a></li>
-                <li><a class="rodape-link" href="Projetos.html">Projetos</a></li>
-                <li><a class="rodape-link" href="Contato.html">Contato</a></li>
-                <li><a class="rodape-link" href="inscricao.html">Participe</a></li>
-            </ul>
-        </div>
-        <div class="col-10 col-md-5">
-          <iframe class="maps-google d-xl-flex" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEsbBjboQzORZ2YGR6E2bbAezZePedofg&amp;q=IMEUSP&amp;zoom=13"></iframe>
-        </div>
+    <div class="row justify-content-center align-items-center my-5">
+      <div class="col-10 col-md-3 text-center text-md-center text-lg-center rodape-coluna">
+          <ul class="list-unstyled text-center text-sm-center text-md-center align-items-center">
+              <li><a class="rodape-link" href="Quem_somos.html">Quem somos</a></li>
+              <li><a class="rodape-link" href="Projetos.html">Projetos</a></li>
+              <li><a class="rodape-link" href="Contato.html">Contato</a></li>
+              <li><a class="rodape-link" href="inscricao.html">Participe</a></li>
+          </ul>
       </div>
-    </div> <!--container-fluid-->
+      <div class="col-10 col-md-5">
+        <iframe class="maps-google d-xl-flex" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEsbBjboQzORZ2YGR6E2bbAezZePedofg&amp;q=IMEUSP&amp;zoom=13"></iframe>
+      </div>
+    </div> <!--row justify-content-->
+  </div> <!--container-fluid-->
   <div class="row d-flex">
     <div class="col">
       <p class="text-center copyright" style="font-weight: 300;">
@@ -271,7 +301,8 @@
             <i class="fa fa-telegram"></i>
           </a>
           <a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
-            <i class="fa fa-instagram"></i></a>
+            <i class="fa fa-instagram"></i>
+          </a>
         </span>
         <br>
       </p>
@@ -283,16 +314,15 @@
       </div>
       <div class="text-center" style="padding-top: 1rem;padding-bottom: 2rem;">
         <img 
-          src="assets/img/Logos/tecs3.svg" 
+          src="../assets/img/Logos/tecs3.svg" 
           style="max-width: 7rem;opacity: 1;filter: invert(100%);"
           alt="TECS com Comput{ação social} escrito ao lado"
         >
       </div>
     </div> <!--col-->
   </div> <!--row d-flex-->
-  <!--FOOTER PEGA DO INDEX-->
 
-  <!--<script src="assets/js/navbar-autohide.js"></script>-->
+  <script src="../assets/js/navbar-autohide.js"></script>
 </body>
 
 </html>
