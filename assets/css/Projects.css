@@ -72,7 +72,7 @@ span.tab-thing-entire:hover {
 div.tab-thing-tab {
   position: absolute;
   /*right: 5rem;*/
-  right: 26.4rem;
+  right: 26rem;
   top: 0;
   opacity: 0.7; /*increase to 1*/
   transition: opacity,right 0.8s; /*hover off*/
@@ -101,21 +101,14 @@ div.tab-thing-contents {
   font-size: 20px;
 }
 
-/*div.tab-thing-tab:hover {
-  right: 20rem;
-}
-div.tab-thing-contents:hover {
-  right:0;
-}*/
-
 .tab-thing button {
   position: absolute;
-  bottom: 1.6rem;
-  right: 1.6rem;
+  bottom: 1.5rem;
+  right: 15rem;
   color: #ffffff;
   background: #fcb421;
   border-radius: 50px;
-  width: 6rem;
+  width: 8rem;
   border: 0.4rem solid #fcb421;
 }
 
