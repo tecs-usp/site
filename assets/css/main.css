@@ -76,6 +76,7 @@ div.text-thing.container {
   text-align: left;
   letter-spacing: 0.5px;
   line-height: 30px;
+  font-size: 1.25rem;
 }
 
 .text-thing h2 {
@@ -127,6 +128,7 @@ img.image-thing1 {
 
 .text-thing ul {
   margin-left: 3rem;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 990px) {

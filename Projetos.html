@@ -34,7 +34,8 @@
   <link rel="stylesheet" href="./assets/css/utils.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/Footer-Clean.css">
-  <link rel="stylesheet" href="./assets/css/Map-Clean.css">
+	<link rel="stylesheet" href="./assets/css/Map-Clean.css">
+	<link rel="stylesheet" href="./assets/css/Projects.css">
   
   <!--coisas de bootstrap (leave it to script-fallback.js) START-->
   <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" onerror="scriptFallback(this);" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
@@ -73,38 +74,41 @@
   <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
 
 	
-	<div style="background: linear-gradient(#1094ab 0%, white 18%);">
-		<div style="width: 2px;height: 30px;"></div>
-		<div class="container" style="padding-right: 20px;padding-left: 20px;">
-			<h1 class="text-center txa3" style="font-weight: bold;">Nossos projetos atuais<br></h1>
-			<div style="width: 2px;height: 1.8rem;"></div>
-			<p class="text-justify txa3" style="letter-spacing: 0.5px;line-height: 30px;">Em 2020.2, estamos desenvolvendo cinco projetos:</p>
-			<ul class="list-unstyled" style="padding-left: 1rem;line-height: 30px;">
-				<li class="txa3" style="font-weight: bold;letter-spacing: 0.5px;">Portal Indígena</li>
-				<li class="txa3" style="font-weight: bold;letter-spacing: 0.5px;">Vestibulandas</li>
-				<li class="txa3" style="font-weight: bold;letter-spacing: 0.5px;">Aulas de Programação na Fundação CASA</li>
-				<li class="txa3" style="font-weight: bold;letter-spacing: 0.5px;">Disciplina Implicações Sociais da Computação</li>
-				<li class="txa3" style="font-weight: bold;letter-spacing: 0.5px;">LGBTecs</li>
-			</ul>
-			<p class="txa3">cada um organizado por um grupo de trabalho (GT) que tem total autonomia para decidir os rumos do respectivo projeto.</p>
+	<div class="container text-thing">
+		<!--<div style="width: 2px;height: 30px;"></div>-->
+		<div class="row">
+			<h1 class="text-center">Nossos projetos atuais</h1>
+		</div>
+		<div class="row col-10 offset-1 d-block">
+			<p>Em 2020.2, estamos desenvolvendo cinco projetos:</p>
+		<!--<ul class="list-unstyled" style="padding-left: 1rem;">-->
+		<ul style="padding-left: 1rem;">
+			<li style="font-weight: bold;letter-spacing: 0.5px;">Portal Indígena</li>
+			<li style="font-weight: bold;letter-spacing: 0.5px;">Vestibulandas</li>
+			<li style="font-weight: bold;letter-spacing: 0.5px;">Aulas de Programação na Fundação CASA</li>
+			<li class="txa3" style="font-weight: bold;letter-spacing: 0.5px;">Disciplina Implicações Sociais da Computação</li>
+			<li class="txa3" style="font-weight: bold;letter-spacing: 0.5px;">LGBTecs</li>
+		</ul>
+		<p>Cada um deles é organizado por um grupo de trabalho (GT) que tem total autonomia para decidir os rumos do respectivo projeto.</p>
+		</div>
 			<div>
-				<div class="card-group" style="margin-top: 3rem;">
-					<div class="card card-thing-animated">
-						<img class="card-thing-img" src="./assets/img/Promos/Premiacao%20-%20PIPA%20Vestibulandas/Vestibulandas_noPipa.jpg" style="filter: invert(0%);">
+				<div style="margin-top: 3rem;">
+					<div class="card card-thing-animated row col-12">
+						<img class="card-thing-img w-100 d-block" src="./assets/img/Promos/Premiacao%20-%20PIPA%20Vestibulandas/Vestibulandas_noPipa.jpg" style="filter: invert(0%);">
             <div class="card-thing-description">
               <h4 class="card-title">Vestibulandas</h4>
 							<p class="card-text">Aulas de programação em Python para alunas que prestarão o vestibular.</p>
             </div>
 					</div>
-					<div class="card card-thing-animated">
-						<img class="card-thing-img" src="./assets/img/Promos/direito.jpg" style="filter: invert(0%);">
+					<div class="card card-thing-animated row col-12">
+						<img class="card-thing-img w-100 d-block" src="./assets/img/Promos/direito.jpg" style="filter: invert(0%);">
 						<div class="card-thing-description">
 							<h4 class="card-title">Implicações Sociais</h4>
 							<p class="card-text">Disciplina do IME-USP coordenada pelo <span style="font-family: 'Titillium Web', sans-serif;font-weight: 600;color: #107cab;">TECS</span> que promove discussões e reflexões acerca do impacto da Computação na sociedade.</p>
 						</div>
 					</div>
 				</div>
-				<div class="card-group" style="margin-top: 3rem;">
+				<div class="" style="margin-top: 3rem;">
 					<div class="card">
 						<a href="./GTs/fcasa.html" style="color:#212529;"">
 							<img 
