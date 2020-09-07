@@ -72,12 +72,6 @@ div.text-thing.container {
   margin-top: 30px;
 }
 
-/*decide between this and above*/
-/*.text-thing {
-	margin-left: 4rem;
-	margin-right: 4rem;
-}*/
-
 .text-thing p {
   text-align: left;
   letter-spacing: 0.5px;
@@ -130,6 +124,10 @@ img.image-thing1 {
   margin-right: auto;
 }
 /*style="display:block;margin-left:auto;margin-right:auto;margin-top: 2rem;margin-bottom: 2rem;width: 100%;max-width: 700px;"*/
+
+.text-thing ul {
+  margin-left: 3rem;
+}
 
 @media (min-width: 990px) {
   .text-thing {
