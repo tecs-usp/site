@@ -1,6 +1,3 @@
-/*What if we hover out before the slide-in is completed? 
-	How do we detect whether it is completed? Do we just avoid using CSS transitions? */
-
 const FPS = 60;
 var count = 0;
 var elems = document.getElementsByClassName("card-thing-animated");

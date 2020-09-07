@@ -70,21 +70,44 @@ body {
 /*for text in general*/
 div.text-thing.container {
   margin-top: 30px;
-  padding-left: 16vw;
-  padding-right: 16vw;
 }
 
+/*decide between this and above*/
+/*.text-thing {
+	margin-left: 4rem;
+	margin-right: 4rem;
+}*/
+
 .text-thing p {
-  text-align: justify;
+  text-align: left;
   letter-spacing: 0.5px;
   line-height: 30px;
-  text-indent: 3em;
-  font-size: 17px;
 }
 
 .text-thing h2 {
-  margin-bottom: 2.5rem;
+  /*margin-bottom: 2.5rem;*/
+  text-align: left;
   font-weight: 600;
+}
+
+.text-thing.text-thing-h2-top h2 {
+  margin-top: 2.2rem;
+}
+
+.text-thing h1 {
+	font-weight: 600;
+	font-size: 3.3rem;
+	white-space: pre-line;
+}
+
+.text-thing h6.after-title {
+	font-style: italic;
+	white-space: pre-line;
+}
+
+/*criar um div vazio com isso*/
+.text-thing .h2-spacing {
+  margin-bottom: 2.5rem;
 }
 
 .text-thing-tecs-1 {
@@ -97,9 +120,29 @@ div.text-thing.container {
   font-weight: 600;
 }
 
+img.image-thing1 {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	width: 100%;
+	max-width: 700px;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+/*style="display:block;margin-left:auto;margin-right:auto;margin-top: 2rem;margin-bottom: 2rem;width: 100%;max-width: 700px;"*/
+
 @media (min-width: 990px) {
   .text-thing {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .text-thing {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    /*color: crimson; for testing purposes*/
   }
 }
