@@ -97,9 +97,15 @@ iframe.maps-google {
 
 /*FB TELEG INSTA 
 (os vãos têm tamanho 36px, aproximadamente equivalente a três &nsbp;)*/
-.fa-telegram {
-  margin-left:36px;
-  margin-right:36px;
+span a {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+/** Prevents social media icons from being underlined on hover.
+  * Overwrites Bottstrap's _hover.scss. */
+span a:hover {
+  text-decoration: none !important;
 }
 
 .col-lg-3.item.social {
