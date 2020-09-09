@@ -10,6 +10,11 @@ body {
   /* width: 98vw; */
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -72,16 +77,11 @@ div.text-thing.container {
   margin-top: 30px;
 }
 
-/*decide between this and above*/
-/*.text-thing {
-	margin-left: 4rem;
-	margin-right: 4rem;
-}*/
-
 .text-thing p {
   text-align: left;
   letter-spacing: 0.5px;
   line-height: 30px;
+  font-size: 1.25rem;
 }
 
 .text-thing h2 {
@@ -129,7 +129,29 @@ img.image-thing1 {
 	margin-left: auto;
   margin-right: auto;
 }
-/*style="display:block;margin-left:auto;margin-right:auto;margin-top: 2rem;margin-bottom: 2rem;width: 100%;max-width: 700px;"*/
+
+img.image-thing-double {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	width: 100%;
+	max-width: 400px;
+	display: block-inline;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 450px) {
+  .image-thing-double {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+.text-thing ul {
+  margin-left: 3rem;
+  font-size: 1.25rem;
+  text-align: left;
+}
 
 @media (min-width: 990px) {
   .text-thing {
