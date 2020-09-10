@@ -4,16 +4,20 @@ import os
 import re
 
 victim = "index.html" # Where to extract the head from.
-folder = "." #Folder containing all the HTML files to have their head replaced.
-regex = "<!DOCTYPE[\s\S]+head>" # Matches something that starts with <!DOCTYPE, ends with head> and that contains
+folder = "." #Folder containing all the HTML files to have their matching content replaced.
+#regex = "<!DOCTYPE[\s\S]+head>" # replace head, starting at the beginning of the document
+# # Matches something that starts with <!DOCTYPE, ends with head> and that contains
 # either whitespace or not whitespace in-between.
+regex = "<!--FOOTER-->[\s\S]+</body>" # replace footer
 new_head = None
+SUBCAP = 1
 
 def update_head (filename):
     with open(filename, "r") as f:
         orig = f.read()
     with open(filename, "w") as f:
-        new = re.sub(regex, new_head, orig, count = 1)
+        new, count = re.subn(regex, new_head, orig, count = SUBCAP)
+        print(f"{count} substitution(s) made (capped at {SUBCAP}).")
         f.write(new)
 
 def behead (victim, folder):
@@ -21,7 +25,9 @@ def behead (victim, folder):
 
     # Extract head from victim.
     with open(victim, "r") as f:
-        match = re.match(regex, f.read())
+        match = re.search(regex, f.read())
+        if not match:
+            raise Exception(f"No match for {regex} was found in {victim}")
         new_head = match.group()
     
     # Replace head in all files
@@ -32,7 +38,7 @@ def behead (victim, folder):
             filepath = subdir + os.sep + file
 
             if filepath.endswith(".html") and not os.path.samefile(victim, filepath):
-                print("Updating head in", filepath, "...")
+                print("\nUpdating content in", filepath, "...")
                 update_head(filepath)
 
 def print_help():
@@ -53,7 +59,7 @@ def main ():
             raise Exception("Invalid HTML file.")
         if not os.path.isdir(folder):
             raise Exception("Invalid folder.")
-        print("Using", victim, "to replace the head of files in", os.path.abspath(folder))
+        print(f"Using {victim} to replace matching content of files in {os.path.abspath(folder)}.")
         behead(victim, folder)
     except:
         print_help()
