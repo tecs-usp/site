@@ -33,9 +33,24 @@ h1 {
   margin-bottom: 2rem;
 }
 
-h4 {
+h3,h4 {
   font-weight: 700;
   color: #333333;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+span.h5-green {
+  color:greenyellow;
+}
+
+span.h5-yellow {
+  color: #e2e465;
+}
+
+.h5-left {
+  margin-right: 23px;
 }
 
 .container div.row {
@@ -51,6 +66,7 @@ div.tab-thing {
   /*height: 400px;*/
   /*height: 25rem;*/
   height: 80vh;
+  max-width: 40.8rem;
   margin-top: 3rem;
   /* NOTE: padding (from .col) creates white borders around the images*/
   padding-left: 0;
@@ -64,24 +80,25 @@ div.tab-thing {
 }
 
 span.tab-thing-entire {
-  right: -25rem;
+  right: -40.8rem; /* -(img-width) */
   top: 0;
   height: inherit;
+  width: inherit;
   transition: opacity,right 0.8s;
   position: absolute;
 }
 
 span.tab-thing-entire:hover {
-  right: 5vw;
+  right: -16rem;
   transition: opacity,right 0.8s;
 }
 
 div.tab-thing-tab {
+  position: absolute;
+  right: 40.8rem; /* img-width */
+  top: 0;
   height: inherit;
   width: 3rem;
-  position: absolute;
-  right: 24.5rem;
-  top: 0;
   opacity: 0.7; /*increase to 1*/
   transition: opacity,right 0.8s; /*hover off*/
   background: rgb(221, 227, 228); /*#64c4d2;*/
@@ -94,23 +111,24 @@ div.tab-thing-tab {
 
 div.tab-thing-contents {
   position: absolute;
-  right: -17.6rem;
+  right: 0rem;
   top: 0;
   height: inherit;
-  width: max-content;
+  width: inherit;
   opacity: 0.95;
   transition: opacity,right 0.8s; /*hover off*/
   background: rgba(100, 196, 210); /*#64c4d2;*/
   background: linear-gradient(45deg, #1094AB 0%, #64C4D2 100%);
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-size: 20px;
+  margin: 0;
 }
 
 .tab-thing button {
   position: absolute;
   bottom: 1.5rem;
-  right: 15rem;
+  right: 18rem;
   width: 8rem;
   color: #ffffff;
   background: #fcb421;
@@ -129,29 +147,37 @@ div.tab-thing-contents {
 @media (max-width: 450px) {
   .container.text-thing {
     padding: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   div.tab-thing {
-    left: 20px;
+    left: -5px;
     height: 50vh;
-    /* NOTE: image has fixed-percentage width, so you can't control it with margins.*/
+    width: 22rem;
     padding: 0;
     margin: 0;
-    width: 85vw;
+    max-width: 22rem;
   }
+
   .tab-thing img {
-    width: 85vw !important;
+    width: 100% !important;
+  }
+
+  span.tab-thing-entire {
+    right: -22rem;
   }
 
   span.tab-thing-entire:hover {
-    right: -10vw;
+    right: -1rem;
     transition: opacity,right 0.8s;
   }
 
-  .tab-thing button {
+  div.tab-thing-tab {
     right: 22rem;
+  }
+  .tab-thing button {
+    right: 1rem;
   }
 }
 

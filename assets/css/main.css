@@ -153,7 +153,7 @@ img.image-thing-double {
   text-align: left;
 }
 
-.rainbow-text-oficial {
+span.rainbow-text {
   background: linear-gradient(270deg, #EB51E5 9.83%, #6752E3 31.76%, #52BB41 52.35%, #FAB811 74.73%, #F17935 91.29%, #F95858 102.25%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
