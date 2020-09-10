@@ -18,7 +18,7 @@ div.card-thing-animated div.card-thing-description {
   padding-right: 20px;
   text-align: right;
   max-width: 210px;
-  height: 400px;
+  height: 40vh;
 }
 
 /*https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition*/
@@ -27,12 +27,6 @@ div.card-thing-animated div.card-thing-description:hover {
   right: 0px;
   opacity: 1;
   transition: opacity,right 0.8s;
-}
-
-.tab-thing img {
-  object-fit: cover;
-  max-height: 30rem;
-  width: auto;
 }
 
 h1 {
@@ -50,29 +44,43 @@ h4 {
 
 /** To position things inside the img, we need a div with relative position containing
  *  both the img and the text. */
- div.tab-thing {
+div.tab-thing {
   position: relative;
   display: flex;
   overflow: hidden; /* don't show scrollbars if something goes off-screen*/
-  height: 400px;
+  /*height: 400px;*/
+  /*height: 25rem;*/
+  height: 80vh;
+  margin-top: 3rem;
+  /* NOTE: padding (from .col) creates white borders around the images*/
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tab-thing img {
+  object-fit: cover; /* NOTE: maybe crop differently?*/
+  height: inherit;
+  width: 100%; /* already comes from .w-100*/
 }
 
 span.tab-thing-entire {
-  max-width: 10rem;
   right: -25rem;
   top: 0;
+  height: inherit;
   transition: opacity,right 0.8s;
   position: absolute;
 }
+
 span.tab-thing-entire:hover {
-  right: 5rem;
+  right: 5vw;
   transition: opacity,right 0.8s;
 }
 
 div.tab-thing-tab {
+  height: inherit;
+  width: 3rem;
   position: absolute;
-  /*right: 5rem;*/
-  right: 26rem;
+  right: 24.5rem;
   top: 0;
   opacity: 0.7; /*increase to 1*/
   transition: opacity,right 0.8s; /*hover off*/
@@ -81,23 +89,21 @@ div.tab-thing-tab {
   /*padding-left: 20px;
   padding-right: 20px;
   text-align: right;*/
-  width: 3rem;
-  height: 400px;
   border-radius: 25px 0 0 25px;
 }
 
 div.tab-thing-contents {
   position: absolute;
-  right: -16rem;
+  right: -17.6rem;
   top: 0;
+  height: inherit;
+  width: max-content;
   opacity: 0.95;
   transition: opacity,right 0.8s; /*hover off*/
-  /*background: rgba(100, 196, 210);*/ /*#64c4d2;*/
+  background: rgba(100, 196, 210); /*#64c4d2;*/
   background: linear-gradient(45deg, #1094AB 0%, #64C4D2 100%);
   color: #ffffff;
   text-align: left;
-  width: max-content;
-  height: 400px;
   font-size: 20px;
 }
 
@@ -105,10 +111,10 @@ div.tab-thing-contents {
   position: absolute;
   bottom: 1.5rem;
   right: 15rem;
+  width: 8rem;
   color: #ffffff;
   background: #fcb421;
   border-radius: 50px;
-  width: 8rem;
   border: 0.4rem solid #fcb421;
 }
 
@@ -122,9 +128,30 @@ div.tab-thing-contents {
 /* mobile */
 @media (max-width: 450px) {
   .container.text-thing {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    /*color: crimson; for testing purposes*/
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  div.tab-thing {
+    left: 20px;
+    height: 50vh;
+    /* NOTE: image has fixed-percentage width, so you can't control it with margins.*/
+    padding: 0;
+    margin: 0;
+    width: 85vw;
+  }
+  .tab-thing img {
+    width: 85vw !important;
+  }
+
+  span.tab-thing-entire:hover {
+    right: -10vw;
+    transition: opacity,right 0.8s;
+  }
+
+  .tab-thing button {
+    right: 22rem;
   }
 }
 
