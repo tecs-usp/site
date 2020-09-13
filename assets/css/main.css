@@ -188,7 +188,6 @@ span.rainbow-text {
 }
 
 
-
 /* Style the Image Used to Trigger the Modal */
 #modal-trigger {
   border-radius: 10px;
@@ -210,7 +209,7 @@ span.rainbow-text {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
@@ -228,7 +227,7 @@ span.rainbow-text {
   margin-bottom: 30px;
   display: block;
   width: 80%;
-  text-align: center;
+  text-align: justify;
   color: #ccc;
   padding: 10px 0;
 }
@@ -236,11 +235,11 @@ span.rainbow-text {
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
   animation-name: zoom;
-  animation-duration: 0.6s;
+  animation-duration: 0.4s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
+  from {transform:scale(0.4)}
   to {transform:scale(1)}
 }
 
@@ -263,9 +262,18 @@ span.rainbow-text {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
+  .modal {
+    overflow: auto;
+  }
+
   .modal-content {
     width: 100%;
+  }
+
+  .close {
+    right: 15px;
+    top: 10px;
   }
 } 
 
