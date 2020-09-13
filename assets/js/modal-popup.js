@@ -1,5 +1,5 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById("modal-thing");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("modal-trigger");
@@ -8,10 +8,19 @@ var captionText = document.getElementById("caption");
 var navbar = document.getElementById("navbar-total");
 var body = document.getElementsByTagName("body");
 
-img.onclick = function(){
+/** Turns "filename.ext" into "filenameMobile.ext". */
+function mobileImgName (s) {
+	var matchExt = s.match("\\.[^.]+$"); // at the end of the string, period + [anything that's not a period]
+	return (matchExt) ? (s.slice(0, matchExt.index) + "Mobile" + matchExt[0]) : s;
+}
+
+img.onclick = function() {
 	modal.style.display = "block";
 	navbar.style.display = "none"; /* hide navbar; there is still the pseudo-background */
-  modalImg.src = this.src;
+	modalImg.src = this.src;
+	if (screen.width < 450) {
+		modalImg.src = mobileImgName(this.src);
+	}
 	captionText.innerHTML = this.alt;
 
 	/* prevent scrolling; source: https://stackoverflow.com/a/12090055/10736421 */
