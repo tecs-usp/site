@@ -171,19 +171,25 @@ span.rainbow-text {
   background-clip: text;
 }
 
-@media (min-width: 990px) {
-  .text-thing {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
+blockquote {
+  padding: 15px;
+  background: #dad3d334;
+  border: 1px solid #999999;
+  border-left-width: 10px;
 }
 
 /* mobile */
-@media (max-width: 450px) {
+/*@media only screen and (max-width: 700px){*/
   .text-thing {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
-    /*color: crimson; for testing purposes*/
+  }
+/*}*/
+
+@media only screen and (min-width: 700px) {
+  .text-thing {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
