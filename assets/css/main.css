@@ -77,6 +77,10 @@ div.text-thing.container {
   margin-top: 30px;
 }
 
+.text-thing {
+  font-weight: 300;
+}
+
 .text-thing p {
   text-align: left;
   letter-spacing: 0.5px;
@@ -180,16 +184,16 @@ blockquote {
 
 /* mobile */
 /*@media only screen and (max-width: 700px){*/
-  .text-thing {
+  div.container.text-thing {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
   }
 /*}*/
 
 @media only screen and (min-width: 700px) {
-  .text-thing {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  div.container.text-thing {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 

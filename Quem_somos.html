@@ -7,11 +7,11 @@
 
   <title>TECS | Quem somos</title>
   <meta name="description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta name="theme-color" content="#64c4d2"> <!--mobile (só chrome?)-->
+  <meta name="theme-color" content="#1094ab"> <!--mobile (só chrome?)-->
 
   <!--MÍDIAS SOCIAIS START-->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="assets/img/Logos/site novo.svg">
+  <meta name="twitter:image" content="./assets/img/Logos/site novo.svg">
   <meta name="twitter:title" content="TECS">
   <meta name="twitter:description" content="Grupo de comput{ação social} da USP">
   <meta name="twitter:site" content="@tecsusp">
@@ -20,130 +20,222 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tecs | Grupo de comput{ação social} da USP">
   <meta property="og:description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta property="og:image" content="assets/img/Logos/site novo.svg">
+  <meta property="og:image" content="./assets/img/Logos/site novo.svg">
   <!--MÍDIAS SOCIAIS END-->
 
-  <link rel="icon" type="image/png" sizes="578x588" href="assets/img/Logos/grafo%20logo%20br.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+  <!--Loads jQuery and Bootstrap.-->
+  <script src="./assets/js/script-fallback.js"></script>
+
+  <link rel="icon" type="image/png" sizes="578x588" href="./assets/img/Logos/grafo%20logo%20br.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="./assets/css/Projects.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/utils.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-  <link rel="stylesheet" href="assets/css/Footer-Clean.css">
-  <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-  <link rel="stylesheet" href="assets/css/Map-Clean.css">
+  <link rel="stylesheet" href="./assets/css/utils.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/Footer-Clean.css">
+	<link rel="stylesheet" href="./assets/css/Map-Clean.css">
+	
+  
+  <!--coisas de bootstrap (leave it to script-fallback.js) START-->
+  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" onerror="scriptFallback(this);" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
+  <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" onerror="scriptFallback(this);" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
+  <!--coisas de bootstrap END-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>-->
+  
+  <script src="./assets/js/img-http-fallback.js"></script>
 </head>
 
 <body>
-	<div style="background-color: #1094ab;font-family: 'Titillium Web', sans-serif;">
-		<div class="container">
-			<div style="width: 2;height: 0.5rem;"></div>
-			<nav class="navbar navbar-light navbar-expand-md nav-coll" style="font-family: 'Titillium Web', sans-serif;color: rgb(15,122,228);padding-right: 10px;">
-				<div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;filter: invert(0%);"><span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span></button>
-					<a
-						class="navbar-brand">
-						<h1 class="text-center" style="font-family: 'Titillium Web', sans-serif;letter-spacing: 3px;font-size: 41px;font-weight: 500;color: #1094ab;"><a href="index.html"><img src="assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;"><img id="logo-principal" src="assets/img/Logos/tecs4.png"></a></h1>
-						</a>
-						<div class="collapse navbar-collapse" id="navcol-1">
-							<ul class="nav navbar-nav">
-								<li class="nav-item" role="presentation"><a class="nav-link" href="Quem_somos.html" style="color: white;">Quem somos</a></li>
-								<li class="nav-item" role="presentation"><a class="nav-link" href="Projetos.html" style="color: white;">Projetos</a></li>
-								<li class="nav-item" role="presentation"><a class="nav-link" href="Contato.html" style="color: white;">Contato</a></li>
-								<li class="nav-item" role="presentation"><a class="nav-link" href="inscricao.html" style="color: white;">Participe</a></li>
-							</ul>
-						</div>
-				</div>
-			</nav>
-		</div>
-  </div>
+	<div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
+    <div class="container-fluid">
+      <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font" style="color: rgb(15,122,228);">
+        <div class="container-fluid">
+          <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;">
+              <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
+            <img id="logo-principal" src="./assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
+          </a>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link" href="Quem_somos.html">Quem somos</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="Projetos.html">Projetos</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="Contato.html">Contato</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="inscricao.html">Participe</a></li>
+            </ul>
+          </div>
+        </div> <!--container-fluid-->
+      </nav>
+    </div> <!--container-fluid-->
+  </div> <!--#navbar-total.secondary-blue-bg-->
+  <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
   
 
+
+
+
+
   <div class="text-thing container">
-    <h2>O Tecs</h2>
-    <p>O <span class="text-thing-tecs-1">Tecs |</span>
-      <span class="text-thing-tecs-2">Grupo de comput</span><span class="text-thing-tecs-1">{ação social}</span> 
-      <span class="text-thing-tecs-2">da USP</span> é um grupo de extensão universitária 
+    <h2>Quem somos</h2>
+    <p>
+      O 
+      <!-- colorful text start -->
+      <span class="text-thing-tecs-1">Tecs |</span> 
+      <span class="text-thing-tecs-2">Grupo de comput</span>
+      <span class="text-thing-tecs-1">{ação social}</span> 
+      <span class="text-thing-tecs-2">da USP</span> 
+      <!-- colorful text andy -->
+      é um grupo de extensão universitária 
       iniciado por alunos do Bacharelado em Ciência da Computação do 
-      <a href="https://www.ime.usp.br" target="_blank">IME-USP</a>,
+      <a href="https://www.ime.usp.br" target="_blank" rel="noopener">IME-USP</a>,
       focado no impacto social da computação e da tecnologia.
-      Ele é parte do <a href="https://techshift.org" target="_blank">TechShift</a>,
+      Ele é parte do <a href="https://techshift.org" target="_blank" rel="noopener" rel="noopener">TechShift</a>,
       uma aliança global de organizações estudantis com esse mesmo propósito.<br>
     </p>
-    <p class="text-justify paragrafo-simples">O grupo é constituído por três frentes de desenvolvimento — educação, ética e serviços. Elas visam, respectivamente, promover a educação tecnológica igualitária da população por meio de cursos, oficinas e ações promovidas pelo grupo; unir
-      esforços para formar uma sociedade e profissionais éticos e conscientes sobre o uso da tecnologia; e estimular alunos a usarem a tecnologia para solucionar problemas da comunidade local.<br></p>
-    <h3 class="text-center" style="font-weight: 500"><br>Nossos compromissos<br><br></h3>
-    <h4 class="subtitulo-rodape">Nossa missão</h4>
-    <p class="text-justify paragrafo-simples">Usar a computação para fortalecer o pilar da extensão na universidade, promovendo uma relação dinâmica e bidirecionada de contato, suporte e aprendizado entre a comunidade universitária e a sociedade em que essa está inserida.<br></p>
-    <h4 class="subtitulo-rodape"><br>Nossa visão</h4>
-    <p class="text-justify paragrafo-simples">Um cenário de equidade dos saberes, no qual as universidades superem as barreiras de restrição de conhecimentos e técnicas. Pretendemos, a longo prazo, contribuir para uma formação universitária que estimule maior consciência social, capaz
+    <p>O grupo é constituído por três frentes de desenvolvimento — educação, ética e serviços. Elas visam, respectivamente, promover a educação tecnológica igualitária da população por meio de cursos, oficinas e ações promovidas pelo grupo; unir
+      esforços para formar uma sociedade e profissionais éticos e conscientes sobre o uso da 
+      tecnologia; e estimular alunos a usarem a tecnologia para solucionar problemas da 
+      comunidade local.
+    </p>
+   
+    <h2>Nossa missão</h2>
+    <p>Usar a computação para fortalecer o pilar da extensão na universidade, promovendo uma 
+      relação dinâmica e bidirecionada de contato, suporte e aprendizado entre a comunidade 
+      universitária e a sociedade em que essa está inserida.
+    </p>
+    
+    <h2>Nossa visão</h2>
+    <p>Um cenário de equidade dos saberes, no qual as universidades superem as barreiras de restrição de conhecimentos e técnicas. Pretendemos, a longo prazo, contribuir para uma formação universitária que estimule maior consciência social, capaz
       de gerar profissionais da área de computação hábeis em refletir sobre as implicações éticas e sociais do seu trabalho, desmentindo, assim, o mito da neutralidade tecnológica. Ademais, colaborar para o melhor entendimento por parte da população
-      sobre o potencial de transformação da tecnologia, os seus usos na dinâmica social e as formas que ela pode ser usada a seu favor.<br></p>
-    <h4 class="subtitulo-rodape"><br>Nossas atividades</h4>
-    <p class="text-justify paragrafo-simples">
+      sobre o potencial de transformação da tecnologia, os seus usos na dinâmica social e as formas que ela pode ser usada a seu favor.
+    </p>
+    
+    <h2>Nossas atividades</h2>
+    <p>
       Encorajamos estudantes a encontrarem modos de combinar seu interesse pela ciência da computação e pelo impacto social.
       Fazemos isso ao:
     </p>
-    <div>
-    <ul style="margin-bottom: 0rem"> <!--override the 1rem rule from _reboot.scss-->
-      <li class="item-da-listinha">construir uma rede de estudantes interessados em melhorar a comunidade local e a sociedade, e criar oportunidades para que eles possam engajar-se em projetos com esse fim;</li>
-      <li class="item-da-listinha">unir esforços para formar uma sociedade e profissionais éticos e conscientes sobre o uso da tecnologia;</li>
-      <li class="item-da-listinha">promover a educação tecnológica igualitária da população por meio de cursos, oficinas e ações promovidas pelo grupo;</li>
-      <li class="item-da-listinha">estimular alunos a usarem a tecnologia para solucionar problemas da comunidade local;</li>
+    <ul>
+      <li>construir uma rede de estudantes interessados em melhorar a comunidade local e a sociedade, e criar oportunidades para que eles possam engajar-se em projetos com esse fim;</li>
+      <li>unir esforços para formar uma sociedade e profissionais éticos e conscientes sobre o uso da tecnologia;</li>
+      <li>promover a educação tecnológica igualitária da população por meio de cursos, oficinas e ações promovidas pelo grupo;</li>
+      <li>estimular alunos a usarem a tecnologia para solucionar problemas da comunidade local;</li>
     </ul>
-    </div>
-    <p class="text-justify paragrafo-simples" style="margin-top: 0em;">
+    <p>
       Em termos gerais, pretendemos que os estudantes entendam como a tecnologia pode ser utilizada para o bem coletivo, e utilizem esse conhecimento na prática, por meio de colaborações com a comunidade local, os serviços públicos, as organizações
       não-governamentais e as sem fins econômicos.
     </p>
+
   </div>
 
-  <!--FOOTER-->
-  <!--MAS É O FOOTER ANTIGO!-->
-	<div class="container" style="padding-top: 1rem;font-family: 'Titillium Web', sans-serif;">
-		<hr>
-		<div class="row d-block d-sm-flex">
-			<div class="col text-center text-md-center text-lg-center rodape-coluna">
-				<p class="text-center text-sm-center text-md-center text-lg-left text-xl-left rodape-titulo"><strong>Nosso grupo</strong></p>
-				<ul class="list-unstyled text-center text-sm-center text-md-center text-lg-left text-xl-left">
-					<li><a class="rodape-link" href="Quem_somos.html">Quem somos</a></li>
-					<li><a class="rodape-link" href="Projetos.html">Projetos</a></li>
-					<li><a class="rodape-link" href="Contato.html">Contato</a></li>
-					<li><a class="rodape-link" href="inscricao.html">Participe</a></li>
-				</ul>
-			</div>
-			<div class="col text-center text-md-center text-lg-center rodape-coluna">
-				<p class="text-center text-sm-center text-md-center text-lg-left text-xl-left rodape-titulo"><strong>Parceiros</strong></p>
-				<ul class="list-unstyled text-center text-sm-center text-md-center text-lg-left text-xl-left">
-					<li><a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank">Efestus</a></li>
-					<li><a class="rodape-link" target="_blank" href="https://tecna.ime.usp.br/">TECNA</a></li>
-					<li><a class="rodape-link" href="https://techshift.org" target="_blank" style="font-family: 'Titillium Web', sans-serif;">TechShift</a></li>
-					<li><a class="rodape-link" href="https://www.ime.usp.br" target="_blank">IME-USP</a></li>
-					<li><a class="rodape-link" href="https://www5.usp.br" target="_blank">USP</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<p class="text-center copyright" style="font-family: 'Titillium Web', sans-serif;font-weight: 300;"><br><span style="font-size: 27px;opacity: 0.80;filter: grayscale(100%);"><a href="https://pt-br.facebook.com/tecs.usp/" target="_blank"><i class="fa fa-facebook"></i></a>&nbsp; &nbsp; &nbsp;<a href="https://t.me/tecsusp" target="_blank"><i class="fa fa-telegram"></i></a>&nbsp; &nbsp; &nbsp;<a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a></span><br></p>
-				<p
-					class="text-center" style="font-family: 'Titillium Web', sans-serif;">... ah, e&nbsp;<span style="color: #fcb421;filter: brightness(82%) grayscale(0%);">#FiqueEmCasa</span>&nbsp;se puder&nbsp;&nbsp;<span style="color: #fcb421;filter: contrast(77%);"><i class="fa fa-heart-o"></i></span><br></p>
-					<div class="text-center"
-						style="padding-top: 1rem;padding-bottom: 2rem;"><img src="assets/img/Logos/tecs3.svg" style="max-width: 7rem;opacity: 1;filter: invert(100%);"></div>
-			</div>
-		</div>
-  </div>
-  
-  <!--coisas de bootstrap START-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <!--coisas de bootstrap END-->
-  <!--<script src="assets/js/smart-forms.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>-->
-  
-  <script src="assets/js/navbar-autohide.js"></script>
+	<!--FOOTER-->
+  <div class="container-fluid pt-3">
+    <div class="row d-flex justify-content-center align-items-center">
+      <hr class="w-80">
+      <div class="col-11 text-center text-md-center text-lg-center rodape-coluna">
+        <h2 class="text-center font-weight-bold mt-5 mb-4">Parceiros</h2>
+        <div class="row artigos-tecs pb-0">
+          <div class="col-9 col-md-2 artigos-tecs-item">
+            <a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank" rel="noopener">
+              <img 
+                class="w-50 mx-5" 
+                src="https://efestus.icmc.usp.br/wp-content/uploads/2019/03/EfestusDefIcon.png" 
+                alt="Logo do Efestus, um grupo de computação social parecido com o Tecs, mas da USP São Carlos. A parte principal da figura é uma chama."
+                onerror="httpFallback(this)"
+              >
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
+            <a class="rodape-link" href="https://www.ime.usp.br" target="_blank" rel="noopener">
+              <img 
+                class="w-20 mx-5" 
+                src="https://ccsl.ime.usp.br/files/unmanaged/logos/logoIME+Texto.png" 
+                alt="Logo do Instituto de Matemática e Estatística da USP (IME-USP). No brasão, identifica-se Arquimedes."
+                onerror="httpFallback(this)"
+              >
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
+            <a class="rodape-link" href="https://www5.usp.br" target="_blank" rel="noopener">
+              <img 
+                class="w-50 mx-5" 
+                src="https://www.scs.usp.br/identidadevisual/wp-content/uploads/2013/08/usp-logo-png.png" 
+                alt="Logo da Universidade de São Paulo (USP)"
+                onerror="httpFallback(this)"
+              >
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
+            <a class="rodape-link tecna" href="https://tecna.ime.usp.br/" target="_blank" rel="noopener">
+              TECNA
+            </a>
+          </div>
+          <div class="col-9 col-md-2 artigos-tecs-item mt-5 my-md-0">
+            <a class="rodape-link" href="https://techshift.org" target="_blank" rel="noopener">
+              <img 
+                class="w-60 mx-5" 
+                src="https://www.ffwd.org/wp-content/uploads/TechShiftLogoHighRes.png" 
+                alt="Logo do TechShift, uma aliança global de organizações como o Tecs, que juntam tecnologia e sociedade"
+              >
+            </a>
+          </div>
+        </div> <!--row artigos-tecs-->
+      </div> <!--col-11 text-center-->
+    </div> <!--row d-flex-->
+    <div class="row justify-content-center align-items-center my-5">
+      <div class="col-10 col-md-3 text-center text-md-center text-lg-center rodape-coluna">
+          <ul class="list-unstyled text-center text-sm-center text-md-center align-items-center">
+              <li><a class="rodape-link" href="Quem_somos.html">Quem somos</a></li>
+              <li><a class="rodape-link" href="Projetos.html">Projetos</a></li>
+              <li><a class="rodape-link" href="Contato.html">Contato</a></li>
+              <li><a class="rodape-link" href="inscricao.html">Participe</a></li>
+          </ul>
+      </div>
+      <div class="col-10 col-md-5">
+        <iframe class="maps-google d-xl-flex" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEsbBjboQzORZ2YGR6E2bbAezZePedofg&amp;q=IMEUSP&amp;zoom=13"></iframe>
+      </div>
+    </div> <!--row justify-content-->
+  </div> <!--container-fluid-->
+  <div class="row d-flex">
+    <div class="col">
+      <p class="text-center copyright" style="font-weight: 300;">
+        <br>
+        <span style="font-size: 27px;opacity: 0.80;filter: grayscale(100%);">
+          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
+            <i class="fa fa-telegram"></i>
+          </a>
+          <a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </span>
+        <br>
+      </p>
+      <div class="fique-em-casa text-center">
+        <span class="fique-em-casa-normal">... ah, e </span>
+        <span class="fique-em-casa-destaque">#FiqueEmCasa</span>
+        <span class="fique-em-casa-normal">se puder </span>
+        <i class="fa fa-heart-o"></i>
+      </div>
+      <div class="text-center" style="padding-top: 1rem;padding-bottom: 2rem;">
+        <img 
+          src="./assets/img/Logos/tecs3.svg" 
+          style="max-width: 7rem;opacity: 1;filter: invert(100%);"
+          alt="TECS com Comput{ação social} escrito ao lado"
+        >
+      </div>
+    </div> <!--col-->
+  </div> <!--row d-flex-->
+
+  <script src="./assets/js/navbar-autohide.js"></script>
 </body>
-
 </html>

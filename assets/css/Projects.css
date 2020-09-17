@@ -1,45 +1,18 @@
 /*Não sei se "projects" é a melhor tradução. Pensem aí.*/
 
-div.card-thing-animated {
-  position: relative;
-  display: flex;
-  overflow: hidden; /* don't show scrollbars if something goes off-screen*/
-}
-
-div.card-thing-animated div.card-thing-description {
-  position: absolute;
-  right: -130px;
-  opacity: 0.3;
-  transition: opacity,right 0.8s; /*hover off*/
-  background: rgba(100, 196, 210); /*#64c4d2;*/
-  background: rgba(100, 196, 210, 0.5); /*opacity*/
-  color: #333333;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: right;
-  max-width: 210px;
-  height: 40vh;
-}
-
-/*https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition*/
-
-div.card-thing-animated div.card-thing-description:hover {
-  right: 0px;
-  opacity: 1;
-  transition: opacity,right 0.8s;
-}
-
-h1 {
+/* NOT CURRENTLY USED */
+.text-thing h1 {
   margin-bottom: 2rem;
 }
 
-h3,h4,a {
+.tab-thing h3,.tab-thing h4,.tab-thing a {
   font-weight: 700;
   color: #333333;
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   margin-left: 0.5rem;
 }
+
 
 span.h5-green {
   color:greenyellow;
