@@ -67,19 +67,23 @@ span.tab-thing-entire:hover {
 }
 
 div.tab-thing-tab {
+  display: flex;
+  align-items: center; /* center vertically*/
+  justify-content: center;  /* center horizontally */
   position: absolute;
   right: 40.8rem; /* img-width */
   top: 0;
   height: inherit;
   width: 3rem;
-  opacity: 0.7; /*increase to 1*/
   transition: opacity,right 0.8s; /*hover off*/
-  background: rgb(221, 227, 228); /*#64c4d2;*/
-  color: #999999;
-  /*padding-left: 20px;
-  padding-right: 20px;
-  text-align: right;*/
+  background: rgba(221, 227, 228, 0.7); /*IE9 doesn't like #RGBA or rgb() with alpha; #64c4d2;*/
   border-radius: 25px 0 0 25px;
+}
+
+i.fa-angle-left {
+  color: #333333;
+  font-size: 7rem;
+  opacity: 1;
 }
 
 div.tab-thing-contents {
@@ -153,4 +157,3 @@ div.tab-thing-contents {
     right: 1rem;
   }
 }
-
