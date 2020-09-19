@@ -1,3 +1,7 @@
+/** FIXME: https://developer.mozilla.org/en-US/docs/Web/API/URL_API  
+ * NO IE SUPPORT T-T
+*/
+
 var scriptList = [
 	{
 		src: "https://code.jquery.com/jquery-3.5.1.slim.min.js", 
@@ -34,12 +38,14 @@ function scriptFallback (failedScript) {
 	var newScript = document.createElement('script');
 	var regex = "[^/]+\\.js"; /* extracts filename */
 	var matches = failedScript.src.match(regex);
-	if (matches.length < 1) {
+	if (!matches || matches.length != 1) {
 		console.error("script-fallback.js: error while parsing src in the old script element");
 		console.error(failedScript);
+		return;
 	}
-	newScript.setAttribute("src", "/assets/fallback/" + matches[0]);
+	newScript.setAttribute("src", "https://tecs.ime.usp.br/assets/fallback/" + matches[0]);
 	newScript.removeAttribute("async"); // might not do anything
+	newScript.setAttribute("crossorigin", "anonymous"); /* integrity check won't work without this */
 
 	/* preserve integrity and onload */
 	if (failedScript.integrity) {
