@@ -11,7 +11,7 @@
 
   <!--MÍDIAS SOCIAIS START-->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="./assets/img/Logos/site novo.svg">
+  <meta name="twitter:image" content="../assets/img/Logos/site novo.svg">
   <meta name="twitter:title" content="TECS">
   <meta name="twitter:description" content="Grupo de comput{ação social} da USP">
   <meta name="twitter:site" content="@tecsusp">
@@ -20,24 +20,22 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tecs | Grupo de comput{ação social} da USP">
   <meta property="og:description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta property="og:image" content="./assets/img/Logos/site novo.svg">
+  <meta property="og:image" content="../assets/img/Logos/site novo.svg">
   <!--MÍDIAS SOCIAIS END-->
 
   <!--Loads jQuery and Bootstrap.-->
-  <script src="./assets/js/script-fallback.js"></script>
+  <script src="../assets/js/script-fallback.js"></script>
 
-  <link rel="icon" type="image/png" sizes="578x588" href="./assets/img/Logos/grafo%20logo%20br.png">
+  <link rel="icon" type="image/png" sizes="578x588" href="../assets/img/Logos/grafo%20logo%20br.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">-->
-  <link rel="stylesheet" href="./assets/css/Projects.css">
+  <link rel="stylesheet" href="../assets/css/Projects.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./assets/css/utils.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="./assets/css/Footer-Clean.css">
-	<link rel="stylesheet" href="./assets/css/Map-Clean.css">
+  <link rel="stylesheet" href="../assets/css/utils.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/Footer-Clean.css">
 	
-  
   <!--coisas de bootstrap (leave it to script-fallback.js) START-->
   <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" onerror="scriptFallback(this);" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
   <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
@@ -45,35 +43,53 @@
   <!--coisas de bootstrap END-->
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>-->
   
-  <script src="./assets/js/img-http-fallback.js"></script>
+  <script src="../assets/js/img-http-fallback.js"></script>
 </head>
 
 <body>
+  <!--NAVBAR START-->
 	<div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
-    <div class="container-fluid">
-      <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font" style="color: rgb(15,122,228);">
-        <div class="container-fluid">
-          <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;">
-              <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="./assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
-            <img id="logo-principal" src="./assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
+    <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font">
+      <div class="container-fluid">
+        <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;">
+          <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
+        </button>
+        <a class="navbar-brand " href="../index.html">
+          <img src="../assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
+          <img id="logo-principal" src="../assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
+        </a>
+        <div class="collapse navbar-collapse row" id="navcol-1">
+          <ul class="nav navbar-nav ml-auto d-md-none d-lg-flex" style="min-width: max-content;">
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../Quem somos">Quem somos</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../Projetos">Projetos</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../Contato">Contato</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../Participe">Participe</a></li>
+          </ul>
+        </div>
+        
+        <span class="media-icons-1 row">
+          <!--MEDIA ICONS-->
+          <a class="collapse navbar-collapse" href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
+            <i class="fa fa-twitter"></i>
           </a>
-          <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link" href="Quem_somos.html">Quem somos</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="Projetos.html">Projetos</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="Contato.html">Contato</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="inscricao.html">Participe</a></li>
-            </ul>
-          </div>
-        </div> <!--container-fluid-->
-      </nav>
-    </div> <!--container-fluid-->
+          <a href="mailto:tecs@ime.usp.br">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
+            <i class="fa fa-telegram"></i>
+          </a>
+          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="collapse navbar-collapse" href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </span>
+      </div> <!--container-fluid-->
+    </nav>
   </div> <!--#navbar-total.secondary-blue-bg-->
   <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
-
+  <!--NAVBAR END-->
 	
 	<div class="container text-thing">
     <!-- menos texto
@@ -97,7 +113,7 @@
       <div class="tab-thing col-12">
         <img 
           class="w-100 d-block" 
-          src="./assets/img/Vestibulandas/PIPA/Vestibulandas-no-PIPA.jpg"
+          src="../assets/img/Vestibulandas/PIPA/Vestibulandas-no-PIPA.jpg"
           alt="Pessoa jovem apresenta — através de eslaides — o projeto do Vestibulandas para uma plateia no Auditório Imre Simon."
         >
         <span class="tab-thing-entire">
@@ -105,46 +121,46 @@
             <i class="fa fa-angle-left"></i>
           </div>
           <div class="tab-thing-contents">
-            <h4 class="row col-6 offset-1"><a href="./GTs/vestibulandas.html">Vestibulandas</a></h4>
+            <h4 class="row col-6 offset-1"><a href="../GTs/vestibulandas.html">Vestibulandas</a></h4>
             <h5>Início: 2019</h5>
             <h5>Status: <span class="h5-green">ativo</span></h5>
             <p class="card-text col-12 col-sm-6">Aulas de programação em Python para alunas que prestarão o vestibular.</p>
-            <a href="./GTs/vestibulandas.html"><button>Saiba mais</button></a>
+            <a href="../GTs/vestibulandas.html"><button>Saiba mais</button></a>
             <!-- Anchor elements inside buttons or vice-versa are evil, but oh well.-->
           </div>
         </span>
       </div>
       
       <div class="tab-thing col-12">
-        <img class="w-100 d-block" src="./assets/img/Promos/direito.jpg">
+        <img class="w-100 d-block" src="../assets/img/Promos/direito.jpg">
         <span class="tab-thing-entire">
           <div class="tab-thing-tab">
             <i class="fa fa-angle-left"></i>
           </div>
           <div class="tab-thing-contents">
             <!-- the title needs to occupy more horizontal space for everything to display correctly on mobile -->
-            <h4 class="row col-9 col-sm-6 offset-1"><a href="./GTs/disciplinas.html">Disciplinas</a></h4>
+            <h4 class="row col-9 col-sm-6 offset-1"><a href="../GTs/disciplinas.html">Disciplinas</a></h4>
             <h5>Início: 2020</h5>
             <h5>Status: <span class="h5-green">ativo</span></h5>
             <p class="card-text col-12 col-sm-6">Disciplina do IME-USP coordenada pelo Tecs que promove discussões e reflexões acerca do impacto da Computação na sociedade.</p>
-            <a href="./GTs/disciplinas.html"><button>Saiba mais</button></a>
+            <a href="../GTs/disciplinas.html"><button>Saiba mais</button></a>
             <!-- Anchor elements inside buttons or vice-versa are bad, but oh well.-->
           </div>
         </span>
       </div>
 
       <div class="tab-thing col-12">
-        <img class="w-100 d-block" src="./assets/img/Promos/FCasaCoelho.png">
+        <img class="w-100 d-block" src="../assets/img/Promos/FCasaCoelho.png">
         <span class="tab-thing-entire">
           <div class="tab-thing-tab">
             <i class="fa fa-angle-left"></i>
           </div>
           <div class="tab-thing-contents">
-            <h4 class="row col-6 offset-1"><a href="./GTs/fcasa.html">Fundação CASA</a></h4>
+            <h4 class="row col-6 offset-1"><a href="../GTs/fcasa.html">Fundação CASA</a></h4>
             <h5>Início: 2018</h5>
             <h5>Status: <span class="h5-green">ativo</span></h5>
             <p class="card-text col-12 col-sm-6">Curso de introdução à programação para jovens inseridos em medidas socioeducativas na Fundação CASA.</p>
-            <a href="./GTs/fcasa.html"><button>Saiba mais</button></a>
+            <a href="../GTs/fcasa.html"><button>Saiba mais</button></a>
           </div>
         </span>
       </div>
@@ -152,7 +168,7 @@
       <div class="tab-thing col-12">
         <img 
           class="w-100 d-block" 
-          src="./assets/img/PI/portal_foto.png"
+          src="../assets/img/PI/portal_foto.png"
           alt="Integrantes do Tecs e da Rede Indígena em frente à casa de reza do Instituto de Psicologia da USP, que fica ao ar livre. Há 9 pessoas no total, formando uma única fileira."
         >
         <span class="tab-thing-entire">
@@ -160,33 +176,33 @@
             <i class="fa fa-angle-left"></i>
           </div>
           <div class="tab-thing-contents">
-            <h4 class="row col-6 offset-1"><a href="./GTs/pi.html">Portal Indígena</a></h4>
+            <h4 class="row col-6 offset-1"><a href="../GTs/pi.html">Portal Indígena</a></h4>
             <h5>Início: 2019</h5>
             <h5>Status: <span class="h5-green">ativo</span></h5>
             <p class="card-text col-12 col-sm-6">Desenvolvimento de um portal centralizador de páginas web de aldeias indígenas.</p>
-            <a href="./GTs/pi.html"><button>Saiba mais</button></a>
+            <a href="../GTs/pi.html"><button>Saiba mais</button></a>
           </div>
         </span>
       </div>
     </div>
         <!--
         <div class="tab-thing col-12">
-          <img class="w-100 d-block" src="./assets/img/Logos/LGBTECS.png">
+          <img class="w-100 d-block" src="../assets/img/Logos/LGBTECS.png">
           <span class="tab-thing-entire">
             <div class="tab-thing-tab"></div>
             <div class="tab-thing-contents">
-              <h3 class="row col-6 offset-1"><span class="rainbow-text"><a href="./GTs/lgbtecs.html">LGBTecs</a></span></h3>
+              <h3 class="row col-6 offset-1"><span class="rainbow-text"><a href="../GTs/lgbtecs.html">LGBTecs</a></span></h3>
               <h5 class="h5-left">Início: 2020</h5>
               <h5 class="h5-left">Status: <span class="h5-yellow">fase inicial</span></h5>
               <p class="card-text col-12 col-sm-6">Curso introdutório de computação a ser oferecido gratuitamente junto ao Cursinho Popular Transformação.</p>
-              <a href="./GTs/lgbtecs.html"><button>Saiba mais</button></a>
+              <a href="../GTs/lgbtecs.html"><button>Saiba mais</button></a>
             </div>
           </span>
         </div>
 			</div>
 			 -->
 			<!--Página personnalité do GT Comunicação ainda necessita de finalização..-->
-			<!--<p style="color: rgb(33,72,112);">Temos também o&nbsp;<span id="GT-comunic" style="background: linear-gradient(193deg, #35bba8 0%, #6729B3 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight: bold;">GT&nbsp;<a href="./GTs/comunicacao.html">Comunicação</a></span>,
+			<!--<p style="color: rgb(33,72,112);">Temos também o&nbsp;<span id="GT-comunic" style="background: linear-gradient(193deg, #35bba8 0%, #6729B3 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight: bold;">GT&nbsp;<a href="../GTs/comunicacao.html">Comunicação</a></span>,
 				que é o responsável por eventos de divulgação, atualização deste site e muitas outras atividades.</p>-->
       
       <!--INÍCIO PROJETOS ANTERIORES-->
@@ -203,7 +219,7 @@
 					</div>
 					<div class="collapse item-1" role="tabpanel" data-parent="#accordion-1">
 						<div class="card-body">
-							<div class="text-center"><img src="./assets/img/Promos/Editatona.JPG" style="max-width: 500px;width: 100%;"></div>
+							<div class="text-center"><img src="../assets/img/Promos/Editatona.JPG" style="max-width: 500px;width: 100%;"></div>
 							<p class="card-text acc-texto" style="padding-top: 2rem;">Evento focado em expandir a Wiki com novos artigos ou adicionando contribuições àqueles já existentes.</p><a class="btn btn-info" role="button" href="GTs/finalizados/Editatona.html">Saiba +</a></div>
 					</div>
 				</div>
@@ -214,7 +230,7 @@
 					<div class="collapse item-2" role="tabpanel" data-parent="#accordion-1">
 						<div class="card-body">
 							<div class="text-center">
-								<img src="./assets/img/Promos/ID.jpg" style="max-width: 500px;width: 100%;">
+								<img src="../assets/img/Promos/ID.jpg" style="max-width: 500px;width: 100%;">
 							</div>
 							<p class="card-text acc-texto" style="padding-top: 2rem;">Aulas de computação básica para alunos e funcionários da USP.<br></p>
 							<a class="btn btn-info" role="button" href="https://tecs.ime.usp.br/id/" target="_blank" rel="noopener">Materiais</a>
@@ -228,7 +244,7 @@
 					<div class="collapse item-3" role="tabpanel" data-parent="#accordion-1">
 						<div class="card-body">
 							<div class="text-center">
-								<img src="./assets/img/Promos/Ciclo%20de%20Debates.png" style="max-width: 500px;width: 100%;">
+								<img src="../assets/img/Promos/Ciclo%20de%20Debates.png" style="max-width: 500px;width: 100%;">
 							</div>
 							<p class="card-text acc-texto">Palestras e discussões sobre assuntos de tecnologia.</p>
 						</div>
@@ -240,7 +256,7 @@
 					</div>
 					<div class="collapse item-4" role="tabpanel" data-parent="#accordion-1">
 						<div class="card-body">
-							<div class="text-center"><img src="./assets/img/Logos/Tecs%20A3%20preto.png" style="max-width: 500px;width: 100%;"></div>
+							<div class="text-center"><img src="../assets/img/Logos/Tecs%20A3%20preto.png" style="max-width: 500px;width: 100%;"></div>
 							<p class="card-text acc-texto" style="padding-top: 2rem;">Projeto social que busca dar base, estrutura e apoio ao aluno do ensino médio da rede pública.</p>
 						</div>
 					</div>
@@ -251,7 +267,7 @@
     <!--FIM PROJETOS ANTERIORES-->
   </div> <!--div container text-thing-->
 
-	<!--FOOTER-->
+  <!--FOOTER-->
   <div class="container-fluid pt-3">
     <div class="row d-flex justify-content-center align-items-center">
       <hr class="w-80">
@@ -288,11 +304,13 @@
               >
             </a>
           </div>
+          <!--
           <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
             <a class="rodape-link tecna" href="https://tecna.ime.usp.br/" target="_blank" rel="noopener">
               TECNA
             </a>
           </div>
+          -->
           <div class="col-9 col-md-2 artigos-tecs-item mt-5 my-md-0">
             <a class="rodape-link" href="https://techshift.org" target="_blank" rel="noopener">
               <img 
@@ -308,10 +326,10 @@
     <div class="row justify-content-center align-items-center my-5">
       <div class="col-10 col-md-3 text-center text-md-center text-lg-center rodape-coluna">
           <ul class="list-unstyled text-center text-sm-center text-md-center align-items-center">
-              <li><a class="rodape-link" href="Quem_somos.html">Quem somos</a></li>
-              <li><a class="rodape-link" href="Projetos.html">Projetos</a></li>
-              <li><a class="rodape-link" href="Contato.html">Contato</a></li>
-              <li><a class="rodape-link" href="inscricao.html">Participe</a></li>
+              <li><a class="rodape-link" href="../Quem somos">Quem somos</a></li>
+              <li><a class="rodape-link" href="../Projetos">Projetos</a></li>
+              <li><a class="rodape-link" href="../Contato">Contato</a></li>
+              <li><a class="rodape-link" href="../Participe">Participe</a></li>
           </ul>
       </div>
       <div class="col-10 col-md-5">
@@ -323,15 +341,20 @@
     <div class="col">
       <p class="text-center copyright" style="font-weight: 300;">
         <br>
-        <span style="font-size: 27px;opacity: 0.80;filter: grayscale(100%);">
-          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
-            <i class="fa fa-facebook"></i>
-          </a>
+        
+        <span class="media-icons-2">
+          <!--MEDIA ICONS-->
           <a href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
             <i class="fa fa-twitter"></i>
           </a>
+          <a href="mailto:tecs@ime.usp.br">
+            <i class="fa fa-envelope"></i>
+          </a>
           <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
             <i class="fa fa-telegram"></i>
+          </a>
+          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
+            <i class="fa fa-facebook"></i>
           </a>
           <a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
             <i class="fa fa-instagram"></i>
@@ -340,14 +363,16 @@
         <br>
       </p>
       <div class="fique-em-casa text-center">
-        <span class="fique-em-casa-normal">... ah, e </span>
+        <!--colorful text-->
+        <span class="fique-em-casa-normal">… ah, e </span>
         <span class="fique-em-casa-destaque">#FiqueEmCasa</span>
         <span class="fique-em-casa-normal">se puder </span>
+        <!--colorful text-->
         <i class="fa fa-heart-o"></i>
       </div>
       <div class="text-center" style="padding-top: 1rem;padding-bottom: 2rem;">
         <img 
-          src="./assets/img/Logos/tecs3.svg" 
+          src="../assets/img/Logos/tecs3.svg" 
           style="max-width: 7rem;opacity: 1;filter: invert(100%);"
           alt="TECS com Comput{ação social} escrito ao lado"
         >
@@ -355,6 +380,6 @@
     </div> <!--col-->
   </div> <!--row d-flex-->
 
-  <script src="./assets/js/navbar-autohide.js"></script>
+  <script src="../assets/js/navbar-autohide.js"></script>
 </body>
 </html>

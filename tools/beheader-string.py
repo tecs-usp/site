@@ -3,10 +3,14 @@ import sys
 import os
 import re
 
+folder = "." #Folder containing all the HTML files to be altered (just for declaring the variable, actually)
 regex = '".[\\./]+' # Matches "./, "../, "../../, ".., etc.
-replace = '"https://tecs.ime.usp.br/'
-folder = "." #Folder containing all the HTML files to be altered.
-safe = True
+#replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
+replace = '"../../'
+
+
+#safe = True
+safe = False
 
 def update_file (filename):
     with open(filename, "r") as f:

@@ -3,12 +3,15 @@ import sys
 import os
 import re
 
-victim = "index.html" # Where to extract the head from.
+victim = "index.html" # Where to extract the content from.
 folder = "." #Folder containing all the HTML files to have their matching content replaced.
 #regex = "<!DOCTYPE[\s\S]+head>" # replace head, starting at the beginning of the document
 # # Matches something that starts with <!DOCTYPE, ends with head> and that contains
-# either whitespace or not whitespace in-between.
-regex = "<!--FOOTER-->[\s\S]+</body>" # replace footer
+# #either whitespace or not whitespace in-between.
+regex = '</title>' + "[\s\S]+" + '</head>' # replace head
+#regex = '<body>' +'[\s\S]+' + 'também é padding-->' # replace navbar
+#regex = "<!--FOOTER-->" + "[\s\S]+" + "</body>" # replace footer
+
 new_head = None
 SUBCAP = 1
 
@@ -23,14 +26,14 @@ def update_head (filename):
 def behead (victim, folder):
     global new_head
 
-    # Extract head from victim.
+    # Extract content from victim.
     with open(victim, "r") as f:
         match = re.search(regex, f.read())
         if not match:
             raise Exception(f"No match for {regex} was found in {victim}")
         new_head = match.group()
     
-    # Replace head in all files
+    # Replace content in all files
     rootdir = os.path.abspath(folder)
     # from: https://stackoverflow.com/a/30255302
     for subdir, dirs, files in os.walk(rootdir):
@@ -42,9 +45,10 @@ def behead (victim, folder):
                 update_head(filepath)
 
 def print_help():
-    message = """Helper script to extract the head from a specific HTML file and replicate it
- in all HTML files contained in the given folder.
-Usage: python tools/beheader.py [FILE WITH NEW HEAD] [FOLDER CONTAINING HTML FILES]
+    message = """Helper script to extract content (specified by a regex inside this script) 
+from a specific HTML file and replicate it
+in all HTML files contained in the given folder.
+Usage: python tools/beheader.py [FILE WITH NEW CONTENT] [FOLDER CONTAINING HTML FILES]
 (Note: Running from project root.)
 """
     print(message)

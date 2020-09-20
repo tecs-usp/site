@@ -48,13 +48,53 @@ html, body {
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .media-icons-1 {
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* navbar expansion (md breakpoint) */
 @media (min-width: 768px) {
   .navbar.navbar-light.navbar-expand-md {
     padding: 1rem 10rem .6rem 9rem;
     font-weight: 700;
   }
+
+  #navcol-1 {
+    margin-right: 11rem;
+  }
+
   .carousel-inner {
     height: 80vh;
+  }
+
+  .media-icons-1 {
+    padding-left: 5rem;
+    margin-right: -5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #navcol-1 {
+    margin-right: 9rem;
+  }
+
+  .media-icons-1 {
+    padding-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navcol-1 {
+    margin-right: 11rem;
+  }
+
+  .media-icons-1 {
+    padding-left: 5rem;
+    margin-right: -5rem;
   }
 }
 
@@ -71,6 +111,36 @@ html, body {
   background-color:#1094ab;
   height: 83px; /*era o padding do div embaixo da navbar; melhor deixar um tamanho relativo?*/
 }
+
+.media-icons-1 {
+  min-width: max-content;
+  font-size: 16px;
+  opacity: 0.9;
+  filter: brightness(0) invert(100%); /* turn white */
+}
+
+.media-icons-1 a {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.media-icons-2 {
+  font-size: 27px;
+  opacity: 0.8;
+  filter: grayscale(100%);
+}
+
+.media-icons-2 a {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+/** Prevents social media icons from being underlined on hover.
+  * Overrides Bootstrap's _hover.scss. */
+.media-icons-1 a:hover,.media-icons-2 a:hover {
+  text-decoration: none !important;
+}
+  
 
 /*for text in general*/
 div.text-thing.container {
@@ -99,6 +169,7 @@ div.text-thing.container {
 }
 
 .text-thing h1 {
+  margin-top: 1rem;
 	font-weight: 600;
 	font-size: 3.3rem;
 	white-space: pre-line;
@@ -109,7 +180,7 @@ div.text-thing.container {
 	white-space: pre-line;
 }
 
-/*criar um div vazio com isso*/
+/*criar um div vazio com isso....talvez?*/
 .text-thing .h2-spacing {
   margin-bottom: 2.5rem;
 }
@@ -125,7 +196,6 @@ div.text-thing.container {
 }
 
 img.image-thing1 {
-	margin-top: 1rem;
 	margin-bottom: 2rem;
 	width: 100%;
 	max-width: 700px;
