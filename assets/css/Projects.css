@@ -57,13 +57,13 @@ span.tab-thing-entire {
   top: 0;
   height: inherit;
   width: inherit;
-  transition: opacity,right 0.8s;
+  transition: right 1.2s; /* hover-off */
   position: absolute;
 }
 
 span.tab-thing-entire:hover {
   right: -16rem;
-  transition: opacity,right 0.8s;
+  transition: right 0.8s;
 }
 
 div.tab-thing-tab {
@@ -75,7 +75,6 @@ div.tab-thing-tab {
   top: 0;
   height: inherit;
   width: 3rem;
-  transition: opacity,right 0.8s; /*hover off*/
   background: rgba(221, 227, 228, 0.7); /*IE9 doesn't like #RGBA or rgb() with alpha; #64c4d2;*/
   border-radius: 25px 0 0 25px;
 }
