@@ -1,8 +1,8 @@
-@media (min-width: 992px) {
-  .col.text-center.text-md-center.text-lg-center.rodape-coluna {
+/*@media (min-width: 992px) {
+  .text-center.text-md-center.text-lg-center.rodape-coluna {
     padding-left: 6em;
   }
-}
+}*/
 
 iframe.maps-google {
   height: 250px;
@@ -97,6 +97,14 @@ iframe.maps-google {
 
 .col-lg-3.item.social {
   padding-top: 0px;
+}
+
+div.rodape-coluna {
+  margin-top: 1rem;
+}
+
+.rodape-titulo {
+  margin-bottom: 0.5rem;
 }
 
 .rodape-link {

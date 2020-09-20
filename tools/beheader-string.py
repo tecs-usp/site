@@ -4,8 +4,10 @@ import os
 import re
 
 folder = "." #Folder containing all the HTML files to be altered (just for declaring the variable, actually)
-#regex = '".[\\./]+' # Matches "./, "../, "../../, ".., etc.
-#replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
+regex = '".[\\./]+' # Matches "./, "../, "../../, ".., etc.
+replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
+#regex = 'index.html"'
+#replace = '"'
 
 
 #safe = True

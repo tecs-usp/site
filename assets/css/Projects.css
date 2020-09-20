@@ -112,6 +112,16 @@ div.tab-thing-contents {
   border: 0.4rem solid #fcb421;
 }
 
+/* CONTAINER RULES */
+/* FIXME: .text-thing seems too vague to be used here but it's a small apge, so oh well
+** that said, this is the cause of a lot of weir ddisplay problems.*/
+@media (min-width: 450px) {
+  .text-thing {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 @media (min-width: 990px) {
   .text-thing {
     padding-left: 13rem;
