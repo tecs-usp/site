@@ -27,15 +27,14 @@
   <script src="./assets/js/script-fallback.js"></script>
 
   <link rel="icon" type="image/png" sizes="578x588" href="./assets/img/Logos/grafo%20logo%20br.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/utils.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/Footer-Clean.css">
-  <link rel="stylesheet" href="./assets/css/Map-Clean.css">
-  
+	
   <!--coisas de bootstrap (leave it to script-fallback.js) START-->
   <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" onerror="scriptFallback(this);" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
   <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
@@ -48,31 +47,48 @@
 
 <body>
   <!--NAVBAR START-->
-  <div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
-    <div class="container-fluid">
-      <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font" style="color: rgb(15,122,228);">
-        <div class="container-fluid">
-          <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;">
-              <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
-          </button>
-          <a class="navbar-brand" href="./">
-            <img src="./assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
-            <img id="logo-principal" src="./assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
+	<div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
+    <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font">
+      <div class="container-fluid">
+        <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;">
+          <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
+        </button>
+        <a class="navbar-brand " href="index.html">
+          <img src="./assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
+          <img id="logo-principal" src="./assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
+        </a>
+        <div class="collapse navbar-collapse row" id="navcol-1">
+          <ul class="nav navbar-nav ml-auto d-md-none d-lg-flex" style="min-width: max-content;">
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="./Quem somos">Quem somos</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="./Projetos">Projetos</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="./Contato">Contato</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="./Participe">Participe</a></li>
+          </ul>
+        </div>
+        
+        <span class="media-icons-1 row">
+          <!--MEDIA ICONS-->
+          <a class="collapse navbar-collapse" href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
+            <i class="fa fa-twitter"></i>
           </a>
-          <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link" href="Quem_somos.html">Quem somos</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="Projetos.html">Projetos</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="./Contato/">Contato</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="Participe.html">Participe</a></li>
-            </ul>
-          </div>
-        </div> <!--container-fluid-->
-      </nav>
-    </div> <!--container-fluid-->
+          <a href="mailto:tecs@ime.usp.br">
+            <i class="fa fa-envelope"></i>
+          </a>
+          <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
+            <i class="fa fa-telegram"></i>
+          </a>
+          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="collapse navbar-collapse" href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </span>
+      </div> <!--container-fluid-->
+    </nav>
   </div> <!--#navbar-total.secondary-blue-bg-->
   <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
-  <!--NAVBAR ANDY-->
+  <!--NAVBAR END-->
 
   <div class="container-fluid">
       <!-- <div style="width: 2px;height: 1.8rem;"></div> -->
@@ -179,30 +195,30 @@
       </div> -->
   </div> <!--container-fluid-->
 
-  <!--Mapinha-->
+  <!--MAP-->
   <div class="col-12 col-sm-6 offset-sm-3 ">
     <iframe class="maps-google d-xl-flex" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEsbBjboQzORZ2YGR6E2bbAezZePedofg&amp;q=IMEUSP&amp;zoom=13"></iframe>
   </div>
 
-  <!--FOOTER-->
+  <!--FOOTER INDEX START-->
   <div class="row d-block d-sm-flex">
     <div class="col-12 col-sm-4 offset-sm-2 text-center text-md-center text-lg-center rodape-coluna" style="padding-right: 15px;padding-left: 0px;">
       <p class="text-center text-sm-center text-md-center text-lg-center text-xl-center rodape-titulo"><strong>Nosso grupo</strong></p>
       <ul class="list-unstyled text-center text-sm-center text-md-center text-lg-center text-xl-center">
-        <li><a class="rodape-link" href="Quem_somos.html">Quem somos</a></li>
-        <li><a class="rodape-link" href="Projetos.html">Projetos</a></li>
-        <li><a class="rodape-link" href="Contato.html">Contato</a></li>
-        <li><a class="rodape-link" href="inscricao.html">Participe</a></li>
+        <li><a class="rodape-link" href="./Quem_somos.html">Quem somos</a></li>
+        <li><a class="rodape-link" href="./Projetos.html">Projetos</a></li>
+        <li><a class="rodape-link" href="./Contato.html">Contato</a></li>
+        <li><a class="rodape-link" href="./Participe.html">Participe</a></li>
       </ul>
     </div>
     <div class="col-12 col-sm-4 text-center text-md-center text-lg-center rodape-coluna">
       <p class="text-center text-sm-center text-md-center text-lg-center text-xl-center rodape-titulo"><strong>Parceiros</strong></p>
       <ul class="list-unstyled text-center text-sm-center text-md-center text-lg-center text-xl-center">
-        <li><a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank">Efestus</a></li>
-        <li><a class="rodape-link" target="_blank" href="https://tecna.ime.usp.br/">TECNA</a></li>
-        <li><a class="rodape-link" href="https://techshift.org" target="_blank" style="font-family: 'Titillium Web', sans-serif;">TechShift</a></li>
-        <li><a class="rodape-link" href="https://www.ime.usp.br" target="_blank">IME-USP</a></li>
-        <li><a class="rodape-link" href="https://www5.usp.br" target="_blank">USP</a></li>
+        <li><a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank" rel="noopener">Efestus</a></li>
+        <!--<li><a class="rodape-link" href="https://tecna.ime.usp.br/" target="_blank" rel="noopener">TECNA</a></li>-->
+        <li><a class="rodape-link" href="https://techshift.org" target="_blank" rel="noopener">TechShift</a></li>
+        <li><a class="rodape-link" href="https://www.ime.usp.br" target="_blank" rel="noopener">IME-USP</a></li>
+        <li><a class="rodape-link" href="https://www5.usp.br" target="_blank" rel="noopener">USP</a></li>
       </ul>
     </div>
   </div>
@@ -210,15 +226,19 @@
     <div class="col">
       <p class="text-center copyright" style="font-weight: 300;">
         <br>
+        <!--MEDIA ICONS 2-->
         <span style="font-size: 27px;opacity: 0.80;filter: grayscale(100%);">
-          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
-            <i class="fa fa-facebook"></i>
-          </a>
           <a href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
             <i class="fa fa-twitter"></i>
           </a>
+          <a href="mailto:tecs@ime.usp.br">
+            <i class="fa fa-envelope"></i>
+          </a>
           <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
             <i class="fa fa-telegram"></i>
+          </a>
+          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
+            <i class="fa fa-facebook"></i>
           </a>
           <a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
             <i class="fa fa-instagram"></i>
@@ -227,7 +247,7 @@
         <br>
       </p>
       <div class="fique-em-casa text-center">
-        <span class="fique-em-casa-normal">... ah, e </span>
+        <span class="fique-em-casa-normal">… ah, e </span>
         <span class="fique-em-casa-destaque">#FiqueEmCasa</span>
         <span class="fique-em-casa-normal">se puder </span>
         <i class="fa fa-heart-o"></i>
@@ -241,6 +261,7 @@
       </div>
     </div> <!--col-->
   </div> <!--row d-flex-->
+  <!--FOOTER INDEX END-->
 
   <script src="./assets/js/navbar-autohide.js"></script>
 </body>
