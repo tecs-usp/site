@@ -20,6 +20,30 @@ html, body {
   padding: 0;
 }
 
+/* CONTAINER RULES */
+/* mobile */
+@media (max-width: 450px) {
+  div.container {
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 450px) {
+  div.container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 990px) {
+  div.container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #ffffff !important;
 }
@@ -132,8 +156,8 @@ html, body {
 }
 
 .media-icons-2 a {
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 /** Prevents social media icons from being underlined on hover.
@@ -220,12 +244,13 @@ img.image-thing-double {
 	margin-bottom: 2rem;
 	width: 100%;
 	max-width: 400px;
-	display: block-inline;
-	margin-left: auto;
-  margin-right: auto;
+	display: block-inline; /* likely redundant*/
+	margin-left: 0;
+  margin-right: 0;
+  border-radius: 10px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 992px) {
   .image-thing-double {
     margin-bottom: 0 !important;
     margin-top: 0 !important;

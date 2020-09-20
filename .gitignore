@@ -1,2 +1,3 @@
 *.bsdesign
 .vscode/
+build/
