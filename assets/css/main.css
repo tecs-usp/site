@@ -10,8 +10,38 @@ body {
   /* width: 98vw; */
 }
 
+/* prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .container-fluid {
   padding: 0;
+}
+
+/* CONTAINER RULES */
+/* mobile */
+@media (max-width: 450px) {
+  div.container {
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 450px) {
+  div.container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 990px) {
+  div.container {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -43,12 +73,318 @@ body {
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .media-icons-1 {
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* navbar expansion (md breakpoint) */
 @media (min-width: 768px) {
   .navbar.navbar-light.navbar-expand-md {
     padding: 1rem 10rem .6rem 9rem;
     font-weight: 700;
   }
+
+  #navcol-1 {
+    margin-right: 11rem;
+  }
+
   .carousel-inner {
     height: 80vh;
   }
+
+  .media-icons-1 {
+    padding-left: 5rem;
+    margin-right: -5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #navcol-1 {
+    margin-right: 9rem;
+  }
+
+  .media-icons-1 {
+    padding-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navcol-1 {
+    margin-right: 11rem;
+  }
+
+  .media-icons-1 {
+    padding-left: 5rem;
+    margin-right: -5rem;
+  }
+}
+
+#navbar-total {
+  top: 0; /* Stay on top */
+  transition: top 0.35s; /* Transition effect when sliding down (and up) */
+  
+  /*color: rgb(15,122,228); // era #0f7ae4*/
+  color: #1094ab; /*cor oficial fica melhor?*/
+}
+
+/*Pro fundo atrás da navbar não ficar branco; também é padding*/
+.pseudo-background { 
+  background-color:#1094ab;
+  height: 83px; /*era o padding do div embaixo da navbar; melhor deixar um tamanho relativo?*/
+}
+
+.media-icons-1 {
+  min-width: max-content;
+  font-size: 16px;
+  opacity: 0.9;
+  filter: brightness(0) invert(100%); /* turn white */
+}
+
+.media-icons-1 a {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.media-icons-2 {
+  font-size: 27px;
+  opacity: 0.8;
+  filter: grayscale(100%);
+}
+
+.media-icons-2 a {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/** Prevents social media icons from being underlined on hover.
+  * Overrides Bootstrap's _hover.scss. */
+.media-icons-1 a:hover,.media-icons-2 a:hover {
+  text-decoration: none !important;
+}
+  
+
+/*for text in general*/
+div.text-thing.container {
+  margin-top: 30px;
+}
+
+.text-thing {
+  font-weight: 300;
+}
+
+.text-thing p {
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  font-size: 1.25rem;
+}
+
+.text-thing h2 {
+  /*margin-bottom: 2.5rem;*/
+  text-align: left;
+  font-weight: 600;
+}
+
+.text-thing.text-thing-h2-top h2 {
+  margin-top: 2.2rem;
+}
+
+.text-thing h1 {
+  margin-top: 1rem;
+	font-weight: 600;
+	font-size: 3.3rem;
+	white-space: pre-line;
+}
+
+.text-thing h6.after-title {
+	font-style: italic;
+	white-space: pre-line;
+}
+
+/*criar um div vazio com isso....talvez?*/
+.text-thing .h2-spacing {
+  margin-bottom: 2.5rem;
+}
+
+.text-thing-tecs-1 {
+  color: #64c4d2;
+  font-weight: 600;
+}
+
+.text-thing-tecs-2 {
+  color: #999999;
+  font-weight: 600;
+}
+
+img.image-thing1 {
+	margin-bottom: 2rem;
+	width: 100%;
+	max-width: 700px;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+/* imagem do portal */
+img.image-thing2 {
+	margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+img.image-thing-double {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	width: 100%;
+	max-width: 400px;
+	display: block-inline; /* likely redundant*/
+	margin-left: 0;
+  margin-right: 0;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .image-thing-double {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+.text-thing ul {
+  margin-left: 3rem;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+span.rainbow-text {
+  background: linear-gradient(270deg, #EB51E5 9.83%, #6752E3 31.76%, #52BB41 52.35%, #FAB811 74.73%, #F17935 91.29%, #F95858 102.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
+}
+
+blockquote {
+  padding: 15px;
+  background: #dad3d334;
+  border: 1px solid #999999;
+  border-left-width: 10px;
+}
+
+/* mobile */
+/*@media only screen and (max-width: 700px){*/
+  div.container.text-thing {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+/*}*/
+
+@media only screen and (min-width: 700px) {
+  div.container.text-thing {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+#modal-trigger {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#modal-trigger:hover {
+  opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  width: 80%;
+  text-align: justify;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0.4)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal {
+    overflow: auto;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .close {
+    right: 15px;
+    top: 10px;
+  }
+} 
+
+/* class to prevent scrolling */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
