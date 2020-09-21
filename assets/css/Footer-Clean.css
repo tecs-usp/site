@@ -1,7 +1,12 @@
-@media (min-width: 992px) {
-  .col.text-center.text-md-center.text-lg-center.rodape-coluna {
+/*@media (min-width: 992px) {
+  .text-center.text-md-center.text-lg-center.rodape-coluna {
     padding-left: 6em;
   }
+}*/
+
+iframe.maps-google {
+  height: 250px;
+  width: 100%;
 }
 
 .footer-clean {
@@ -94,6 +99,14 @@
   padding-top: 0px;
 }
 
+div.rodape-coluna {
+  margin-top: 1rem;
+}
+
+.rodape-titulo {
+  margin-bottom: 0.5rem;
+}
+
 .rodape-link {
   color: #000000;
   opacity: 0.5;
@@ -128,18 +141,23 @@
   line-height: 28px;
 }
 
-.text-justify.paragrafo-simples {
-  letter-spacing: 0.5px;
-  line-height: 30px;
-  text-indent: 3em;
-  font-size: 17px;
+/*fique-em-casa contém fique-emcasa-normal e fique-emcasa-destaque*/
+.fique-em-casa {
+  margin-bottom: 1rem;
 }
 
-@media (min-width: 990px) {
-  .text-justify.paragrafo-simples {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
+.fique-em-casa-normal, .fique-em-casa-destaque {
+  white-space: pre;
+  filter: brightness(82%) grayscale(0%);
+}
+
+.fique-em-casa-destaque {
+  color: #fcb421;
+}
+
+.fa-heart-o {
+  color: #fcb421;
+  /*filter: contrast(77%); prefiro sem; opiniões? é algo muito pequeno (de tamanho e importância), though*/
 }
 
 @media (min-width: 300px) {

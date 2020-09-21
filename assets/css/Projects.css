@@ -1,0 +1,168 @@
+/*Não sei se "projects" é a melhor tradução. Pensem aí.*/
+
+/* NOT CURRENTLY USED */
+.text-thing h1 {
+  margin-bottom: 2rem;
+}
+
+.tab-thing h3,.tab-thing h4,.tab-thing a {
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+
+span.h5-green {
+  color:greenyellow;
+}
+
+span.h5-yellow {
+  color: #e2e465;
+}
+
+.h5-left {
+  margin-right: 23px;
+}
+
+.container div.row {
+  justify-content: center;
+}
+
+/** To position things inside the img, we need a div with relative position containing
+ *  both the img and the text. */
+div.tab-thing {
+  position: relative;
+  display: flex;
+  overflow: hidden; /* don't show scrollbars if something goes off-screen*/
+  /*height: 400px;*/
+  /*height: 25rem;*/
+  height: 80vh;
+  max-width: 40.8rem;
+  margin-top: 3rem;
+  /* NOTE: padding (from .col) creates white borders around the images*/
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tab-thing img {
+  object-fit: cover; /* NOTE: maybe crop differently?*/
+  height: inherit;
+  width: 100%; /* already comes from .w-100*/
+}
+
+span.tab-thing-entire {
+  right: -40.8rem; /* -(img-width) */
+  top: 0;
+  height: inherit;
+  width: inherit;
+  transition: right 1.2s; /* hover-off */
+  position: absolute;
+}
+
+span.tab-thing-entire:hover {
+  right: -16rem;
+  transition: right 0.8s;
+}
+
+div.tab-thing-tab {
+  display: flex;
+  align-items: center; /* center vertically*/
+  justify-content: center;  /* center horizontally */
+  position: absolute;
+  right: 40.8rem; /* img-width */
+  top: 0;
+  height: inherit;
+  width: 3rem;
+  background: rgba(221, 227, 228, 0.7); /*IE9 doesn't like #RGBA or rgb() with alpha; #64c4d2;*/
+  border-radius: 25px 0 0 25px;
+}
+
+i.fa-angle-left {
+  color: #333333;
+  font-size: 7rem;
+  opacity: 1;
+}
+
+div.tab-thing-contents {
+  position: absolute;
+  right: 0rem;
+  top: 0;
+  height: inherit;
+  width: inherit;
+  opacity: 0.95;
+  transition: opacity,right 0.8s; /*hover off*/
+  background: rgba(100, 196, 210); /*#64c4d2;*/
+  background: linear-gradient(45deg, #1094AB 0%, #64C4D2 100%);
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
+.tab-thing button {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 18rem;
+  width: 8rem;
+  color: #ffffff;
+  background: #fcb421;
+  border-radius: 50px;
+  border: 0.4rem solid #fcb421;
+}
+
+/* CONTAINER RULES */
+/* FIXME: .text-thing seems too vague to be used here but it's a small apge, so oh well
+** that said, this is the cause of a lot of weir ddisplay problems.*/
+@media (min-width: 450px) {
+  .text-thing {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 990px) {
+  .text-thing {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .container.text-thing {
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  div.tab-thing {
+    left: -5px;
+    height: 50vh;
+    width: 22rem;
+    padding: 0;
+    margin: 0;
+    max-width: 22rem;
+  }
+
+  .tab-thing img {
+    width: 100% !important;
+  }
+
+  span.tab-thing-entire {
+    right: -22rem;
+  }
+
+  span.tab-thing-entire:hover {
+    right: -1rem;
+    transition: opacity,right 0.8s;
+  }
+
+  div.tab-thing-tab {
+    right: 22rem;
+  }
+  .tab-thing button {
+    right: 1rem;
+  }
+}
