@@ -78,6 +78,11 @@ html, body {
     padding-left: 2rem;
     padding-right: 1.5rem;
   }
+
+  /* Ensures footer icons and such are aligned*/
+  .artigos-tecs-item {
+    margin-right: 0 !important;
+  }
 }
 
 /* navbar expansion (md breakpoint) */
