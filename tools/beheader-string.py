@@ -4,10 +4,10 @@ import os
 import re
 
 folder = "." #Folder containing all the HTML files to be altered (just for declaring the variable, actually)
-#regex = '".[\\./]+' # Matches "./, "../, "../../, ".., etc.
-#replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
-regex = 'nav navbar-nav ml-auto d-md-none d-lg-flex'
-replace = 'nav navbar-nav d-md-none d-lg-flex offset-1 col-10'
+regex = '".[\\./]+' # Matches "./, "../, "../../, ".., etc.
+replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
+#regex = 'nav navbar-nav ml-auto d-md-none d-lg-flex'
+#replace = 'nav navbar-nav d-md-none d-lg-flex offset-1 col-10'
 
 
 #safe = True
