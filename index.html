@@ -96,6 +96,10 @@
       <div class="slide-painel">
         <!-- <h3 class="text-center">Apresentação dos grupos de extensão 2020</h3>
         <p class="texto-stand-bixes" style="font-size: 16px;opacity: 0.70;">Nos apresentamos para os ingressantes do IME deste ano!</p> -->
+        
+        <!--Please be aware that nested carousels are not supported, and carousels are generally 
+          not compliant with accessibility standards.-->
+
         <div class="carousel slide slide-painel" data-ride="carousel" id="carousel-1">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active slide-painel">
@@ -142,14 +146,25 @@
             </div>
           </div> <!--div carousel-inner-->
           <div>
-              <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                  <span class="sr-only">Next</span>
-              </a>
+            <a
+              class="carousel-control-prev" 
+              onclick="$('.carousel').carousel('prev')"
+              role="button" 
+              data-slide="prev"
+            >
+            <!--JS allows us to avoid using href which would display a link in the status bar. -->
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next" 
+              onclick="$('.carousel').carousel('next')"
+              role="button" 
+              data-slide="next"
+            >                  
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
