@@ -88,7 +88,16 @@
     </nav>
   </div> <!--#navbar-total.secondary-blue-bg-->
   <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
-  <!--NAVBAR ANDY-->
+  <!--NAVBAR END-->
+
+  <script>
+    /* enable popper tooltips */
+    setTimeout(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    }, 5000);
+  </script>
+  <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
+  <script src="../assets/js/smart-forms.min.js"></script>
 
   <div class="text-thing container">
 		<div class="text-thing text-center">
@@ -115,6 +124,52 @@
         Centro de Competência em Software Livre (CCSL) do Instituto de Matemática e Estatística da USP.
         O endereço é: Rua do Matão, 1010 - Cidade Universitária, São Paulo - SP, 05508-090, Brasil.
       </p>
+    </div>
+
+    <div class="contact-clean col-12">
+      <form class="text-center" data-bss-recipient="1987d4d9cf5dd78f8ec3fbd1ffba4be8" data-bss-subject="Contato via site">
+        <h2 class="text-center">Mensagens / críticas / sugestões</h2>
+  
+        <div class="form-group order-1">
+          <input 
+            class="form-control" 
+            type="text" 
+            name="Nome" 
+            placeholder="Nome" 
+            required="" 
+            minlength="2" 
+            inputmode="latin-name" 
+            autofocus=""
+          >
+        </div>
+        <div class="form-group order-2">
+          <input
+           class="form-control" 
+           type="text" 
+           data-toggle="tooltip" 
+           data-bs-tooltip="" 
+           name="Email" 
+           placeholder="Email (opcional)" 
+           title="Caso queira receber uma resposta nossa." 
+           minlength="3" 
+           inputmode="email">
+        </div>
+        <div class="form-group order-3">
+          <textarea
+           class="form-control" 
+           type="text" 
+           name="Mensagem" 
+           placeholder="Escreva aqui sua mensagem.  :)"
+           required=""
+          >
+          </textarea>
+        </div>
+        
+        <button class="btn btn-primary order-4" type="submit">Enviar</button>
+        <div class="form-row text-center justify-content-center align-items-center">
+          <img class= "logo-preto" src="../assets/img/Logos/Tecs%20A3%20preto.png">
+        </div>
+      </form>
     </div>
   </div>
 
