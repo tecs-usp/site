@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# create build folder
+# empty old build folder and create a new one
+rm -rf build/
 mkdir -p build
 
 # copy all project files to the build folder
