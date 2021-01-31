@@ -59,6 +59,7 @@ html, body {
   margin-right: 1.5rem;
   display: flex;
   justify-content: center;
+  max-width: 40% !important;
 }
 
 .container-fluid > .artigos-tecs .artigos-tecs-item a {
