@@ -21,13 +21,10 @@ GTs atuais do Tecs
 --------
 
  ## Navbar
-   * Talvez fazer uma navbar que desaparece quando você desce a tela e que reaparece quando sobe?
-     * Tipo https://www.nestle.com.br/ (com barra desaparecendo) ?
-     * Tipo https://www.devolverdigital.com/ (com barra desaparecendo pra dentro) ?
-     * Tipo https://www.tilibra.com.br/ (com barra diminuindo) ?
-     * Tipo https://worldofwarcraft.com/pt-br/ (com barra e logo diminuindo) ?
-   --> Tem o problema dos scroll-linked effects, mas bem...
-
+* Tipo https://www.nestle.com.br/ (com barra desaparecendo) ?
+* Tipo https://www.devolverdigital.com/ (com barra desaparecendo pra dentro) ?
+* Tipo https://www.tilibra.com.br/ (com barra diminuindo) ?
+* Tipo https://worldofwarcraft.com/pt-br/ (com barra e logo diminuindo) ?
 
   ## Páginas dos GTs atuais
    * Página separada ou popup?
