@@ -43,7 +43,6 @@ GTs atuais do Tecs
   * Parte histórica: construção de páginas dos GTs finalizados
   
 
-
 # Fase 2 (pendências menores)
 -----
 * Integrar master com o tecs.ime.usp.br
@@ -60,6 +59,7 @@ GTs atuais do Tecs
 # Fase 3 (pendências futuras)
 ----
 * Acessibilidade (procurar, em primeiro lugar, guias específicos e detalhados de organizações que mexem com isso, e depois exemplos concretos)
+  * Olhar Movimento Web para Todos
 * Organizar e comentar os arquivos HTML/CSS/JS para legado
 * Rever Orientações/explicação das coisas num google document
 * Traduzir para inglês e espanhol
