@@ -25,8 +25,8 @@ html, body {
 @media (max-width: 450px) {
   div.container {
     padding: 0;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -78,6 +78,11 @@ html, body {
   .media-icons-1 {
     padding-left: 2rem;
     padding-right: 1.5rem;
+  }
+
+  /* Ensures footer icons and such are aligned*/
+  .artigos-tecs-item {
+    margin-right: 0 !important;
   }
 }
 
@@ -137,6 +142,15 @@ html, body {
   background-color:#1094ab;
   height: 83px; /*era o padding do div embaixo da navbar; melhor deixar um tamanho relativo?*/
 }
+
+/*.carousel-caption span {
+  background-color: rgba(153, 153, 153, 0.3);
+  border-radius: 10px;
+  padding: 30px 70px 30px 70px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.5rem;
+}*/
 
 .media-icons-1 {
   min-width: max-content;

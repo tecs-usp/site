@@ -27,6 +27,7 @@ window.onscroll = function() {
       document.getElementById("navbar").style.top = "-21%"; // joga completamente pra cima da tela a navbar
     }*/
     navbar.style.top = (-Math.min(threshold, window.scrollY) ) + 'px'; // esconde progressivamente a navbar
+    $('.collapse').collapse("hide"); // collapse menu on scroll down
   }
   prevScrollpos = currentScrollPos;
 };

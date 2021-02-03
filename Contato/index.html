@@ -11,7 +11,7 @@
 
   <!--MÍDIAS SOCIAIS START-->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="../assets/img/Logos/site novo.svg">
+  <meta name="twitter:image" content="https://tecs.ime.usp.br/assets/img/Promos/site-novo-curto.png">
   <meta name="twitter:title" content="TECS">
   <meta name="twitter:description" content="Grupo de comput{ação social} da USP">
   <meta name="twitter:site" content="@tecsusp">
@@ -20,7 +20,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tecs | Grupo de comput{ação social} da USP">
   <meta property="og:description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta property="og:image" content="../assets/img/Logos/site novo.svg">
+  <meta property="og:image" content="https://tecs.ime.usp.br/assets/img/Promos/site-novo-curto.png">
   <!--MÍDIAS SOCIAIS END-->
 
   <!--Loads jQuery and Bootstrap.-->
@@ -58,7 +58,7 @@
           <img id="logo-principal" src="../assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
         </a>
         <div class="collapse navbar-collapse row" id="navcol-1">
-          <ul class="nav navbar-nav ml-auto d-md-none d-lg-flex" style="min-width: max-content;">
+          <ul class="nav navbar-nav d-md-none d-lg-flex offset-1 col-10" style="min-width: max-content;">
             <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../Quem somos">Quem somos</a></li>
             <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../Projetos">Projetos</a></li>
             <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../Contato">Contato</a></li>
@@ -88,7 +88,16 @@
     </nav>
   </div> <!--#navbar-total.secondary-blue-bg-->
   <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
-  <!--NAVBAR ANDY-->
+  <!--NAVBAR END-->
+
+  <script>
+    /* enable popper tooltips */
+    setTimeout(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    }, 5000);
+  </script>
+  <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
+  <script src="../assets/js/smart-forms.min.js"></script>
 
   <div class="text-thing container">
 		<div class="text-thing text-center">
@@ -115,6 +124,52 @@
         Centro de Competência em Software Livre (CCSL) do Instituto de Matemática e Estatística da USP.
         O endereço é: Rua do Matão, 1010 - Cidade Universitária, São Paulo - SP, 05508-090, Brasil.
       </p>
+    </div>
+
+    <div class="contact-clean col-12">
+      <form class="text-center" data-bss-recipient="1987d4d9cf5dd78f8ec3fbd1ffba4be8" data-bss-subject="Contato via site">
+        <h2 class="text-center">Mensagens / críticas / sugestões</h2>
+  
+        <div class="form-group order-1">
+          <input 
+            class="form-control" 
+            type="text" 
+            name="Nome" 
+            placeholder="Nome" 
+            required="" 
+            minlength="2" 
+            inputmode="latin-name" 
+            autofocus=""
+          >
+        </div>
+        <div class="form-group order-2">
+          <input
+           class="form-control" 
+           type="text" 
+           data-toggle="tooltip" 
+           data-bs-tooltip="" 
+           name="Email" 
+           placeholder="Email (opcional)" 
+           title="Caso queira receber uma resposta nossa." 
+           minlength="3" 
+           inputmode="email">
+        </div>
+        <div class="form-group order-3">
+          <textarea
+           class="form-control" 
+           type="text" 
+           name="Mensagem" 
+           placeholder="Escreva aqui sua mensagem.  :)"
+           required=""
+          >
+          </textarea>
+        </div>
+        
+        <button class="btn btn-primary order-4" type="submit">Enviar</button>
+        <div class="form-row text-center justify-content-center align-items-center">
+          <img class= "logo-preto" src="../assets/img/Logos/Tecs%20A3%20preto.png">
+        </div>
+      </form>
     </div>
   </div>
 
