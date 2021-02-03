@@ -1,6 +1,6 @@
 Preview
 ------
-https://tecs-usp.github.io/site
+[https://tecs-usp.github.io/](https://tecs-usp.github.io/)
 
 Notion
 ------
