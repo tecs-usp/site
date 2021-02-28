@@ -409,6 +409,6 @@ blockquote {
   justify-content: center;
 }
 
-.img-container-flexbox img {
+.img-container-flexbox a {
   margin: 10%;
 }
