@@ -403,3 +403,12 @@ blockquote {
   height: 100%;
   overflow: hidden;
 }
+
+.img-container-flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container-flexbox img {
+  margin: 10%;
+}
