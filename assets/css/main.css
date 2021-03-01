@@ -412,3 +412,11 @@ blockquote {
 .img-container-flexbox a {
   margin: 10%;
 }
+
+#logo_usp {
+  max-width: 15vw;
+}
+
+#logo_ime {
+  max-width: 30vw;
+}
