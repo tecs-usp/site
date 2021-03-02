@@ -417,6 +417,10 @@ blockquote {
   max-width: 15vw;
 }
 
-#logo_ime {
+#logo_ime, #logo_caelum, #logo_tecna  {
   max-width: 30vw;
+}
+
+#logo_alura {
+  max-width: 20vw;
 }
