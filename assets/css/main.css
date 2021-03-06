@@ -308,7 +308,7 @@ blockquote {
   }
 }
 
-
+/*Modal stuff START*/
 /* Style the Image Used to Trigger the Modal */
 #modal-trigger {
   border-radius: 10px;
@@ -403,24 +403,57 @@ blockquote {
   height: 100%;
   overflow: hidden;
 }
+/*Modal stuff END*/
 
-.img-container-flexbox {
+
+/* vestibulandas-inscricao-2021 START*/
+.vestibulandas-answer {
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.container-vestibulandas div {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
 
-.img-container-flexbox a {
-  margin: 10%;
+/*Line with 2 logos.*/
+.container-vestibulandas .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-#logo_usp {
-  max-width: 15vw;
+/*Single logo.*/
+.container-vestibulandas img {
+  max-height: 75px;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
-#logo_ime, #logo_caelum, #logo_tecna  {
-  max-width: 30vw;
+.container-vestibulandas b {
+  font-size: 1.2rem;
 }
 
-#logo_alura {
-  max-width: 20vw;
+@media only screen and (max-width: 768px) {
+  .container-vestibulandas .row {
+    padding-top: 0;
+  }
+  .container-vestibulandas img {
+    max-height: 40px;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .container-vestibulandas b {
+    font-size: 1rem;
+  }
 }
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .container-vestibulandas img {
+    margin-bottom: 1.5rem;
+  }
+}
+/* vestibulandas-inscricao-2021 EMD.*/

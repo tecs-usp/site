@@ -23,6 +23,8 @@
   <meta property="og:image" content="https://tecs.ime.usp.br/assets/img/Logos/TECS-logo-1614555814.png">
   <!--MÍDIAS SOCIAIS END-->
 
+  <!--Makes sure the host isnt www.tecs.ime.usp.br instead of tecs.ime.usp.br-->
+  <script src="https://tecs.ime.usp.br/assets/js/change-host.js"></script>
   <!--Loads jQuery and Bootstrap.-->
   <script src="../assets/js/script-fallback.js"></script>
 
@@ -142,48 +144,54 @@
         </ul>
       </p>
       <!--Form embed via JS-->
-      <script src="//www.ime.usp.br/~tecs/tecs/web/webform/inscricao_curso_de_introducao_a_/share.js"></script>
+      <script src="//tecs.ime.usp.br/tecs/web/webform/inscricao_curso_de_introducao_a_/share.js"></script>
       
       <h2 id="duvidas_frequentes">Dúvidas frequentes</h2>
-      <ul>
-        <li>
-          <b>Tive um problema na inscrição, o que eu faço?</b>
-          <p class="text-justify">
-            <a href="mailto:tecs@ime.usp.br">Envie um e-mail</a> para o Tecs, descrevendo o problema, e de preferência com capturas de tela. 
-          </p>
-        </li>
-        <li>
-          <b>Terminei o ensino médio em dois anos mas já estou na faculdade, posso fazer o curso?</b>
-          <p class="text-justify">
-            Como este curso objetiva incentivar o ingresso no Ensino Superior em áreas de tecnologia como Computação, a oferta é para meninas que ainda não estejam cursando uma faculdade. 
-          </p>
-        </li>
-        <li>
-          <b>Não faço parte do público-alvo mas estou muito interessada. Posso fazer o curso?</b>
-          <p class="text-justify">
-            Infelizmente, não. Nossa sugestão é acompanhar as comunidades femininas de programação, como as <a href="http://brasil.pyladies.com/locations/">PyLadies Brasil</a> e seus capítulos locais, que também oferecem cursos e workshops de programação em Python para mulheres.
-          </p>
-        </li>
-      </ul>
-      
+
+      <blockquote>Tive um problema na inscrição, o que eu faço?</blockquote>
+      <p class="text-justify vestibulandas-answer">
+        <a href="mailto:tecs@ime.usp.br">Envie um e-mail</a> para o Tecs, descrevendo o problema, e de preferência com capturas de tela. 
+      </p>
+      <blockquote>Terminei o ensino médio há menos de dois anos mas já estou na faculdade, posso fazer o curso?</blockquote>
+      <p class="text-justify vestibulandas-answer">
+        Como este curso objetiva incentivar o ingresso no Ensino Superior em áreas de tecnologia como Computação, a oferta é para meninas que ainda não estejam cursando uma faculdade. 
+      </p>
+      <blockquote>Não faço parte do público-alvo, mas estou muito interessada. Posso fazer o curso?</blockquote>
+      <p class="text-justify vestibulandas-answer">
+        Infelizmente, não. Nossa sugestão é acompanhar as comunidades femininas de programação, como as <a href="https://brasil.pyladies.com/locations/">PyLadies Brasil</a> e seus capítulos locais, que também oferecem cursos e workshops de programação em Python para mulheres.
+      </p>
 
       <h2 id="apoio">Apoio</h2>
-      <div class="img-container-flexbox">
-        <a href="https://www.ime.usp.br/"><img src="/assets/img/Vestibulandas/logo_ime_inline.png" id="logo_ime"></a>
-        <a href="https://www5.usp.br/"><img src="/assets/img/Vestibulandas/logo_usp.png" id="logo_usp"></a>
-      </div>
-      <div class="img-container-flexbox">
-        <a href="https://www.alura.com.br/"><img src="/assets/img/Vestibulandas/logo_alura.png" id="logo_alura"></a>
-        <a href="https://www.caelum.com.br/"><img src="/assets/img/Vestibulandas/logo_caelum.png" id="logo_caelum"></a>
-      </div>
-      <div class="img-container-flexbox">
-        <a href="http://tecna.ime.usp.br/"><img src="/assets/img/Vestibulandas/logo_tecna.png" id="logo_tecna"></a>
-        <a href="https://bcc.ime.usp.br/principal/news/2020/01/07/pipa_resultado_2020_1.html">... e Ex-Alunes do BCC!</a>
-      </div>
-      <!--<h2 id="calendario_curso">Calendário do curso</h2>
-      <p class="text-justify"></p>-->
     </div> <!--text-thing text-thing-h2-top lead-->
   </div> <!--text-thing container-->
+
+  <div class="container-vestibulandas">   
+    <div class="row centered">
+      <div class="container-vestibulandas-logo col-7 col-lg-4">
+        <a href="https://www.ime.usp.br/"><img src="../assets/img/Vestibulandas/logo_ime_inline.png" id="logo_ime"></a>
+      </div>
+      <div class="container-vestibulandas-logo col-7 col-lg-4">
+        <a href="https://www5.usp.br/"><img src="../assets/img/Vestibulandas/logo_usp.png" id="logo_usp"></a>
+      </div>
+    </div>
+    <div class="row centered">
+      <div class="container-vestibulandas-logo col-7 col-lg-4">
+        <a href="https://www.caelum.com.br/"><img src="../assets/img/Vestibulandas/logo_caelum.png" id="logo_caelum"></a>
+      </div>
+      <div class="container-vestibulandas-logo col-7 col-lg-4">
+        <a href="https://www.alura.com.br/"><img src="../assets/img/Vestibulandas/logo_alura.png" id="logo_alura"></a>
+      </div>
+    </div>
+    <div class="row centered">
+      <div class="container-vestibulandas-logo col-7 col-lg-4">
+        <img src="../assets/img/Vestibulandas/logo_tecna.png" id="logo_tecna">
+      </div>
+      <div class="container-vestibulandas-logo container-vestibulandas-ex-alunes text-thing col-7 col-lg-4">
+        <a href="https://bcc.ime.usp.br/principal/news/2020/01/07/pipa_resultado_2020_1.html">...<b>e Ex-Alunes do BCC!</b></a>
+      </div>
+    </div>
+  </div> 
+
 
   <!--FOOTER-->
 	<footer>
