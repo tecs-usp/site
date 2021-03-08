@@ -456,4 +456,13 @@ blockquote {
     margin-bottom: 1.5rem;
   }
 }
-/* vestibulandas-inscricao-2021 EMD.*/
+/* vestibulandas-inscricao-2021 END.*/
+
+
+/* Participe */
+.participe-forms {
+  padding: 0;
+}
+.participe-forms iframe {
+  border: 0;
+}

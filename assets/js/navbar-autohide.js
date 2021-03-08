@@ -31,3 +31,5 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 };
+
+Array.prototype.map.call(document.getElementsByClassName("nav-link"), (item) => (item.innerHTML == "Contato") && (Math.random() > 0.99) ? (item.innerHTML = "ContaTecs") : "");
