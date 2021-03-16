@@ -1,0 +1,88 @@
+section{
+    display: block;
+    width: 90% !important;
+    max-width: 800px;
+
+}
+
+.titles{
+    color: rgb(255, 255, 255);
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    /* background-color: blue; */
+    font-size: 30pt;
+    text-align: center;
+}
+#ola{
+    font-weight: 600;
+}
+#bem-vindes{
+    font-size: 20pt;
+    /* color: #fcb421; */
+    letter-spacing: 0.9pt;
+    /* margin-bottom: 1rem; */
+}
+
+#line{
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 340px){
+    #iconesX {
+        display: none;
+    }
+}
+
+.explicacoes > h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.explicacoes h4{
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: medium;
+    align
+}
+
+.paragr4fo, .explicacoes>p, .card-body>p{
+    text-indent: 12pt;
+    text-align: justify;
+    letter-spacing: 0.7pt;
+}
+
+
+/* @keyframes desce{
+    from {
+        background-image: linear-gradient(to bottom, #1094ab 100%, white);
+    }
+    to {
+        background-image: linear-gradient(to bottom, #1094ab 40%, white);
+    }
+} */
+.grad-blue{
+    display: block;
+    width: 100%;
+    height: 170px;
+    background-image: linear-gradient(to bottom, #1094ab 40%, white);
+    /* animation-name: desce;
+    animation-duration: 1s; */
+}
+
+.menugts{
+    margin-bottom: 2rem;
+}
+
+.titles{
+    width: 100%;
+    height: 100px;
+}
+
+#foot{
+    margin-top: 1rem;
+}
