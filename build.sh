@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# empty old build folder and create a new one
+# Empty old build folder and create a new one
 rm -rf build/
 mkdir -p build
 
-# copy all project files to the build folder
+# Copy all project files to the build folder
 shopt -s extglob # enable extglob
-cp -r ./!(build) -t build # copy all files in the current directory (except build/) to build/
+pattern_match=!(build|*.sh|LICENSE|README.md) # http://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pattern-Matching
+cp -r ./$pattern_match -t build # copy all files in the current directory (except those in $pattern_match) to build/
 
 # rsync solution
-# rsync -av --progress . build --exclude build
+# rsync -av --progress . build --exclude=PATTERN
 
-python tools/beheader-string.py build
+python tools/beheader-string.py build -m absolute-paths
