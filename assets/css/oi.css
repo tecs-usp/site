@@ -1,5 +1,9 @@
 /*
     Estilos da página de recepção des ingressantes
+    
+    Duas cores padrões:
+        azul: #1094ab
+        amarelo: #fcb421
 */
 
 section{
@@ -22,9 +26,7 @@ section{
 }
 #bem-vindes{
     font-size: 20pt;
-    /* color: #fcb421; */
     letter-spacing: 0.9pt;
-    /* margin-bottom: 1rem; */
 }
 
 #line{
@@ -34,6 +36,10 @@ section{
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 1rem;
+}
+
+#textos a{
+    color: #006d80;
 }
 
 @media(max-width: 340px){
@@ -62,7 +68,7 @@ section{
 
 .imagem{
     width: 65vw;
-    max-width: 450px;
+    max-width: 450px !important;
     margin: 1rem auto;
 }
 .imagem>img{
@@ -92,6 +98,11 @@ section{
 
 .gt>p{
     font-size: 11pt !important;
+}
+
+hr{
+    opacity: 60%;
+    margin-bottom: 1.3rem;
 }
 
 .grad-blue{
