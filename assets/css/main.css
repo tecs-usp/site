@@ -23,7 +23,11 @@ html, body {
 /* CONTAINER RULES */
 /* mobile */
 @media (max-width: 450px) {
-  div.container {
+  div.container {@media(max-width: 340px){
+    #iconesX {
+        display: none;
+    }
+}
     padding: 0;
     padding-left: 5px;
     padding-right: 5px;
