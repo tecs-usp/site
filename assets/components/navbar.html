@@ -1,0 +1,126 @@
+<!-- Só pra tirar os ícones de contato da navbar qnd a viewport é pequena -->
+<style>
+  @media(max-width: 340px){
+    #iconesX {
+        display: none !important;
+    }
+  }
+</style>
+
+<body>
+  <nav>
+      <div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
+        <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font">
+          <div class="container-fluid">
+            <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1"
+              style="padding-right: 8px;padding-left: 8px;">
+              <span class="navbar-toggler-icon"
+                style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
+            </button>
+            <a class="navbar-brand " href="https://tecs.ime.usp.br">
+              <img src="https://tecs.ime.usp.br/assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;"
+                alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
+              <img id="logo-principal" src="https://tecs.ime.usp.br/assets/img/Logos/tecs4.png"
+                alt="Tecs (escrito em caixa alta, na cor branca)">
+            </a>
+
+            <div class="collapse navbar-collapse row" id="navcol-1">
+              <ul class="nav navbar-nav mr-auto d-md-none d-lg-flex" style="min-width: max-content; padding-left: 2rem; margin-bottom: 2rem; margin-top: 1rem;">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link d-inline-block" href="/inscricao-meninas-2021/">
+                    Curso para Meninas
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link d-inline-block" href="/Quem somos">
+                    Quem somos
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link d-inline-block" href="/Projetos">
+                    Projetos
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link d-inline-block" href="/Contato">
+                    Contato
+                  </a>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link d-inline-block" href="/Participe">
+                    Participe
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+            <span class="media-icons-1 row" id="iconesX">
+              <!--MEDIA ICONS-->
+              <a class="collapse navbar-collapse" href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="mailto:tecs@ime.usp.br">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
+                <i class="fa fa-telegram"></i>
+              </a>
+              <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="collapse navbar-collapse" href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank"
+                rel="noopener">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </span>
+          </div>
+          <!--container-fluid-->
+        </nav>
+      </div>
+      <div class="pseudo-background"></div>
+      <!--pro fundo não ficar branco; também é padding-->
+  </nav>
+
+  <script>
+    /**
+     * Quando o usuário rola para baixo, esconde a navbar. Quando rola para cima, mostra a navbar.
+     * FIXME: https://developer.mozilla.org/docs/Mozilla/Performance/ScrollLinkedEffects
+    * */
+
+    var prevScrollpos = window.pageYOffset; // inicializa a posição de rolagem
+    var navbar = document.getElementById("navbar-total");
+    var threshold = 90; // valor temporário, mas provavelmente ok
+
+    /* Descobre até onde devemos 'segurar' a navbar.*/
+    window.onload = function() {
+      threshold = navbar.offsetHeight; // valor errado antes de carregar a página, então precisa ser aqui
+    }
+
+    /*Quando o usuário rola para baixo, abaixa gradualmente a navbar. 
+    Quando rola para cima, mostra a navbar. */
+    window.onscroll = function() {
+      /* compara as posições de rolagem anterior e atual*/
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        navbar.style.top = "0";
+      } else {
+        /*if (currentScrollPos < threshold) {
+          document.getElementById("navbar").style.top = "-7%"; // joga um pouco pra cima a navbar
+          //document.getElementById() diminui logo tecs
+        } else {
+          document.getElementById("navbar").style.top = "-21%"; // joga completamente pra cima da tela a navbar
+        }*/
+        navbar.style.top = (-Math.min(threshold, window.scrollY) ) + 'px'; // esconde progressivamente a navbar
+        $('.collapse').collapse("hide"); // collapse menu on scroll down
+      }
+      prevScrollpos = currentScrollPos;
+    };
+
+    Array.prototype.map.call(document.getElementsByClassName("nav-link"), (item) => (item.innerHTML == "Contato") && (Math.random() > 0.99) ? (item.innerHTML = "ContaTecs") : "");
+  </script>
+</body>
