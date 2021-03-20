@@ -30,7 +30,7 @@ def behead (folder):
         for file in files:
             filepath = subdir + os.sep + file
 
-            if filepath.endswith(".html"):
+            if filepath.endswith(".html") or filepath.endswith(".php"):
                 print("Replacing matches in", filepath, "...")
                 update_file(filepath)
 
