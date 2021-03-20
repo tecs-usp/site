@@ -3,6 +3,7 @@
   
 <head>
   <?php require '../assets/components/head.html'; ?>
+
   <title>TECS | Comece por aqui</title>
   <link rel="stylesheet" href="../assets/css/oi.css">
 </head>
@@ -41,9 +42,20 @@
     <h5>GT Fundação CASA</h5>
     <div class="row">
       <div class="col-md-8 explicacoes">
-        <p>A Fundação CASA (Centro de Atendimento Socioeducativo ao Adolescente) é uma instituição estadual que aplica medidas socioeducativas segundo o Estatuto da Criança e do Adolescente (ECA) e o Sistema Nacional de Atendimento Socioeducativo (SINASE).</p>
-        <p>Mas, mesmo inseridos em medidas de privação de liberdade, esses adolescentes devem ter acesso a educação escolar, cultura, esportes e lazer. E é aí que entra o curso de Introdução à Programação.</p>
-        <p>Desta forma, o curso visa contribuir para o desenvolvimento pessoal e profissional de jovens que cumprem medidas socioeducativas, auxiliando-os no desenvolvimento de competências que ampliem suas possibilidades de inserção no mercado de trabalho, geração de renda e participação na sociedade. Sempre permeado por uma abordagem humanista que dialogue com as vivências individuais de cada aluno, o curso não se restringe ao ensino da técnica pela técnica e põe em destaque a interação e o desenvolvimento de interesses pessoais.</p>
+        <p>A Fundação CASA (Centro de Atendimento Socioeducativo ao Adolescente) é uma 
+            instituição estadual que aplica medidas socioeducativas segundo o Estatuto 
+            da Criança e do Adolescente (ECA) e o Sistema Nacional de Atendimento 
+            Socioeducativo (SINASE).</p>
+        <p>Mas, mesmo inseridos em medidas de privação de liberdade, esses adolescentes
+            devem ter acesso a educação escolar, cultura, esportes e lazer. E é aí que 
+            entra o curso de Introdução à Programação.</p>
+        <p>Desta forma, o curso visa contribuir para o desenvolvimento pessoal 
+            e profissional de jovens que cumprem medidas socioeducativas, auxiliando-os 
+            no desenvolvimento de competências que ampliem suas possibilidades de 
+            inserção no mercado de trabalho, geração de renda e participação na sociedade.
+            Sempre permeado por uma abordagem humanista que dialogue com as vivências 
+            individuais de cada aluno, o curso não se restringe ao ensino da técnica 
+            pela técnica e põe em destaque a interação e o desenvolvimento de interesses pessoais.</p>
         <figure class="col-md-8 imagem">
           <img src="https://tecs.ime.usp.br/assets/img/FCASA/2019-2.jpg" alt="6 pessoas de pé na frente do portão de uma unidade da Fundação CASA.">
           <!--Legenda é redundante para quem está usando um leitor de tela e já ouviu o texto alternativo.
@@ -153,8 +165,20 @@
       </div>
       <div class="col-md-4 explicacoes gt">
         <h6 class="como-ajudar">Como você pode ajudar?</h6>
-        <p>Uma vez que o GT ainda está em fase inicial, a exposição de diferentes propostas acerca da estrutura e execução do curso é muito bem-vinda e incentivada a todos os membros. Além disso, a redação de emails para instituições de interesse em busca de informações sobre salas de informática, disponibilidade de horários e outras questões burocráticas  é uma atividade bastante presente nessa fase. Espera-se, também, que a elaboração/edição do material do curso seja de responsabilidade dos membros, sendo que pretendemos nos basear naquele já desenvolvido pelo GT Vestibulandas. Evidentemente, após a fase de planejamento do curso, a monitoria ou busca por monitores para atuar juntos a alunes será necessária, mas vale ressaltar que essa é uma necessidade de longo-prazo.</p>
-        <p>Vale ressaltar que não é necessário nenhum conhecimento prévio em programação para fazer parte do LGBTecs, uma vez que os membros do grupo estão dispostos a solucionar possíveis dúvidas e/ou orientar maneiras de resolvê-las.</p>
+        <p>Uma vez que o GT ainda está em fase inicial, a exposição de diferentes
+            propostas acerca da estrutura e execução do curso é muito bem-vinda e
+            incentivada a todos os membros. Além disso, a redação de emails para
+            instituições de interesse em busca de informações sobre salas de informática,
+            disponibilidade de horários e outras questões burocráticas  é uma atividade
+            bastante presente nessa fase. Espera-se, também, que a elaboração/edição
+            do material do curso seja de responsabilidade dos membros, sendo que
+            pretendemos nos basear naquele já desenvolvido pelo GT Vestibulandas.
+            Evidentemente, após a fase de planejamento do curso, a monitoria ou busca
+            por monitores para atuar juntos a alunes será necessária, mas vale
+            ressaltar que essa é uma necessidade de longo-prazo.</p>
+        <p>Vale ressaltar que não é necessário nenhum conhecimento prévio em programação
+            para fazer parte do LGBTecs, uma vez que os membros do grupo estão dispostos
+            a solucionar possíveis dúvidas e/ou orientar maneiras de resolvê-las.</p>
       </div>
     </div><hr>
 
@@ -183,9 +207,9 @@
     </div>
     <hr>
     <p>Todos os GTs, isto é, todas as atividades do Tecs se encaixam em pelo menos uma de três categorias (os três pilares do Tecs): ensino, ética ou serviços.</p>
-
   </section>
 
-  <?php require '../assets/components/footer.html'; ?>
+  <?php require '../assets/components/footer2.html'; ?>
+
 </body>
 </html>

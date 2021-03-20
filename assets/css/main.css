@@ -133,6 +133,14 @@ html, body {
   }
 }
 
+/* NOTE: Is there actually a device with a screen this small? */
+@media(max-width: 340px){
+  .media-icons-1.row {
+      display: none !important;
+  }
+}
+
+
 #navbar-total {
   top: 0; /* Stay on top */
   transition: top 0.35s; /* Transition effect when sliding down (and up) */
