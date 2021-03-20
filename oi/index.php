@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
   
 <head>
-  <?php include("../assets/components/head.html");?>
+  <?php require '../assets/components/head.html'; ?>
   <title>TECS | Comece por aqui</title>
+  <link rel="stylesheet" href="../assets/css/oi.css">
 </head>
 
 <body>
-  <?php include("../assets/components/navbar.html");?>
+  <?php require '../assets/components/navbar.html'; ?>
 
   <!-- Só pra configurar o degradê azul -->
   <div class="grad-blue">
@@ -161,7 +162,7 @@
         <h4>Direito e Software</h4>
         <p>MAC0458 - Direito e Software é uma disciplina oferecida pelo IME sob coordenação do Tecs. O objetivo dessa disciplina é apresentar um panorama das diversas intersecções entre Direito e da Tecnologia. Assim, a matéria segue o molde de um ciclo de palestras expostas por convidados especialistas e pesquisadores.</p>
 
-        <div style="height: 2rem;"></div>
+        <div style="height: 2rem;"></div> <!--empty div; use CSS instead-->
 
         <h4>Implicações sociais da Computação</h4>
         <p>MAC0485 - Implicações Sociais da Computação é uma (outra) disciplina oferecida pelo IME sob coordenação do Tecs.</p>
@@ -173,20 +174,16 @@
         </figure>
       </div>
       
-      
       <div class="col-md-4 explicacoes gt">
         <h6 class="como-ajudar">Como você pode ajudar?</h6>
         <p>Você pode ser monitor da matéria (qualquer uma delas) e isso significa participar do planejamento e execução da matéria, realizando convites aos palestrantes, a avaliação dos alunos e o acompanhamento do semestre.</p>
       </div>
     </div>
     <hr>
-
     <p>Todos os GTs, isto é, todas as atividades do Tecs se encaixam em pelo menos uma de três categorias (os três pilares do Tecs): ensino, ética ou serviços.</p>
-
 
   </section>
 
-  <?php include("../assets/components/footer.html");?>
+  <?php require '../assets/components/footer.html'; ?>
 </body>
-
 </html>
