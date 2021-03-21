@@ -8,8 +8,8 @@ replace = None # change this manually
 #   regex = '"\\.[\\./]+' # Matches "./, "../, "../../, ".., etc.
 #   replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
 
-valid_modes = ["absolute-paths", "manual"]
-folder = None # Folder containing all the HTML files to be altered
+valid_modes = ["production-paths", "manual"]
+folder = None # Folder containing all the HTML/PHP files to be altered
 #safe = True # This will create new files (with the suffix 'NEW') instead of overwriting them.
 safe = False
 
@@ -39,12 +39,12 @@ def print_help ():
     print(message)
 
 def main ():
-    """Helper script to mass-replace a string in all HTML files contained 
+    """Helper script to mass-replace a string in all HTML/PHP files contained 
 in the given folder.
 Usage: 
-    python tools/beheader.py [FOLDER CONTAINING HTML FILES] -m [MODE]
+    python tools/beheader.py [FOLDER CONTAINING HTML/PHP FILES] -m [MODE]
 (Note: Run from project root.)
-Valid modes: absolute-paths, manual.
+Valid modes: production-paths, manual.
 """
 
     global regex, replace
@@ -77,9 +77,15 @@ Valid modes: absolute-paths, manual.
             raise Exception(f"Invalid directory '{folder}'.")
         
         # Absolute paths mode
-        if mode == "absolute-paths":
-            regex = '"\\.[\\./]+' # Matches "./, "../, "../../, ".., etc.
-            replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
+        if mode == "production-paths":
+            # Restricts matches to those that start with 'href="' or 'src="'.
+            # For this to work properly, HTML attributes must always use double quotes.
+            look_behind = '((?<=href=")|(?<=src="))' 
+            # Matches '/', './', '..', '../', '../../', etc. The dot msut be double-escaped.
+            dots_and_slashes = '[\\./]+'
+
+            regex = look_behind + dots_and_slashes 
+            replace = 'https://tecs.ime.usp.br/' # NOTE: Trailing slash!
 
         # Manual mode
         if mode == "manual":
@@ -95,7 +101,7 @@ Valid modes: absolute-paths, manual.
         print(f"Replacing all occurrences of\n{regex}\n with\n{replace}\n in {os.path.abspath(folder)} ...\n")
         behead(folder)
     except SystemExit:
-        pass
+        pass # Clean exit; no additional handling needed.
     except:
         print_help()
         for arg in sys.argv:
