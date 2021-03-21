@@ -27,7 +27,10 @@ window.onload = function() {
         document.getElementById("navbar").style.top = "-21%"; // joga completamente pra cima da tela a navbar
       }*/
       navbar.style.top = (-Math.min(threshold, window.scrollY) ) + 'px'; // esconde progressivamente a navbar
-      $('.collapse').collapse("hide"); // for mobile devices, collapse menu on scroll down
+      
+      // for mobile devices, collapse menu on scroll down
+      $('#navcol-1').collapse('hide');
+      $('#tecs-logo,#navbar-social').collapse('show'); // elements that should be shown by default must be shown
     }
     prevScrollpos = currentScrollPos;
   };
