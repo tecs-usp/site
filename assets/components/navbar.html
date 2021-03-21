@@ -3,18 +3,41 @@
 	<!-- Probably kill this <nav> and add the proper role to the <div> below 
 	instead of having a redundant <nav> element-->
 	<div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
-		<nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font">
+		<nav class="navbar navbar-light navbar-expand-lg nav-coll pt-3 text-uppercase secondary-font">
 			<div class="container-fluid">
+				<!--
+						md breakpoint: show 5 icons instead of 3.
+						lg breakpoint: expand navbar.
+				-->
+
+
+				<!-- 
+						Collapse toggle
+
+						Only shows for screens smaller than the expand breakpoint.
+						This will toggle all elements selected by data-target.
+						aria-expanded="false": Indicates that the collapsible element is closed by default.
+						aria-controls="navcol-1": Indicates the id of the collapsible element.
+				-->
 				<button 
 						data-toggle="collapse" 
-						class="navbar-toggler menu-colapsado" 
-						data-target="#navcol-1"
+						class="navbar-toggler menu-colapsado col-1" 
+						data-target=".multi-collapse"
+						aria-expanded="false"
+						aria-controls="navcol-1"
 						style="padding-right: 8px;padding-left: 8px;">
 					<span 
 								class="navbar-toggler-icon"
 								style="filter: brightness(123%) contrast(200%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);"></span>
 				</button>
-				<a class="navbar-brand" href="/">
+
+				<!-- 
+						Home button 
+
+						To show this element by default but hide it when we toggle the navbar, 
+						we use the .collapse.show class.
+				-->
+				<a class="collapse show multi-collapse navbar-collapse navbar-brand offset-1 ml-lg-0 col-2" href="/" id="tecs-logo">
 					<img 
 							src="https://tecs.ime.usp.br/assets/img/Logos/tecs-grafo-branco.png"
 							alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo)."
@@ -24,9 +47,11 @@
 							src="https://tecs.ime.usp.br/assets/img/Logos/tecs4.png"
 							alt="Tecs (escrito em caixa alta, na cor branca)">
 				</a>
-				<div class="collapse navbar-collapse row" id="navcol-1">
+
+				<!-- Main links -->
+				<div class="collapse multi-collapse navbar-collapse col-12 col-lg-6" id="navcol-1">
 					<!-- role="presentation" means to ignore semantic meaning of all (non-focusable) child elements.-->
-					<ul class="nav navbar-nav ml-auto d-md-none d-lg-flex" role="presentation" style="min-width: max-content;">
+					<ul class="nav navbar-nav d-lg-flex offset-1 col-10" role="presentation" style="min-width: max-content;">
 						<li class="nav-item">
 							<a class="nav-link d-inline-block" href="/inscricao-meninas-2021/">Curso para Meninas</a>
 						</li>
@@ -45,9 +70,9 @@
 					</ul>
 				</div>
 
-				<span class="media-icons-1 row">
-					<!--MEDIA ICONS-->
-					<a class="collapse navbar-collapse" href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
+				<!-- Media icons -->
+				<span class="collapse show multi-collapse navbar-collapse media-icons-1 col-1 offset-2" id="navbar-social">
+					<a class="d-none d-md-inline-block" href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
 						<i class="fa fa-twitter"></i>
 					</a>
 					<a href="mailto:tecs@ime.usp.br">
@@ -59,18 +84,16 @@
 					<a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
 						<i class="fa fa-facebook"></i>
 					</a>
-					<a class="collapse navbar-collapse" href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank"
-						rel="noopener">
+					<a class="d-none d-md-inline-block" href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
 						<i class="fa fa-instagram"></i>
 					</a>
 				</span>
-			</div>
-			<!--container-fluid-->
+			</div> <!-- .container-fluid -->
 		</nav>
-	</div>
-	<!--#navbar-total.secondary-blue-bg-->
+	</div> <!-- #navbar-total -->
+	
 	<div class="pseudo-background"></div>
-	<!--pro fundo não ficar branco; também é padding-->
+	<!-- pro fundo não ficar branco; também é padding -->
 
 	<script src="/assets/js/navbar-autohide.js"></script>
 </nav>

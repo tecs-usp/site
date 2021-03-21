@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
+
+/* GENERAL */
+
+/** Breakpoint cheat sheet:
+* Extra small: <576px 	
+* Small (sm): >=576px 	
+* Medium (md): >=768px 	
+* Large (lg): >=992px 	
+* Extra large (xl): >=1200px
+*/
+
+
 * {
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
@@ -7,10 +19,9 @@
 
 body {
   background-color: #ffffff;
-  /* width: 98vw; */
 }
 
-/* prevent horizontal overflow */
+/* Prevents horizontal overflow */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -21,13 +32,10 @@ html, body {
 }
 
 /* CONTAINER RULES */
+
 /* mobile */
 @media (max-width: 450px) {
-  div.container {@media(max-width: 340px){
-    #iconesX {
-        display: none;
-    }
-}
+  .container {
     padding: 0;
     padding-left: 5px;
     padding-right: 5px;
@@ -35,21 +43,22 @@ html, body {
 }
 
 @media (min-width: 450px) {
-  div.container {
+  .container {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
 @media (min-width: 990px) {
-  div.container {
+  .container {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
 .artigos-tecs {
@@ -79,74 +88,23 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .media-icons-1 {
-    padding-left: 2rem;
-    padding-right: 1.5rem;
-  }
-
   /* Ensures footer icons and such are aligned*/
   .artigos-tecs-item {
     margin-right: 0 !important;
   }
 }
 
-/* navbar expansion (md breakpoint) */
-@media (min-width: 768px) {
-  .navbar.navbar-light.navbar-expand-md {
-    padding: 1rem 10rem .6rem 9rem;
-    font-weight: 700;
-  }
-
-  #navcol-1 {
-    margin-right: 11rem;
-  }
-
-  .carousel-inner {
-    height: 80vh;
-  }
-
-  .media-icons-1 {
-    padding-left: 5rem;
-    margin-right: -5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  #navcol-1 {
-    margin-right: 9rem;
-  }
-
-  .media-icons-1 {
-    padding-left: 0rem;
-    margin-right: 0rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  #navcol-1 {
-    margin-right: 11rem;
-  }
-
-  .media-icons-1 {
-    padding-left: 5rem;
-    margin-right: -5rem;
-  }
-}
-
 /* NOTE: Is there actually a device with a screen this small? */
 @media(max-width: 340px){
-  .media-icons-1.row {
-      display: none !important;
+  #navbar-social a {
+    display: none !important;
   }
 }
-
 
 #navbar-total {
   top: 0; /* Stay on top */
-  transition: top 0.35s; /* Transition effect when sliding down (and up) */
-  
-  /*color: rgb(15,122,228); // era #0f7ae4*/
-  color: #1094ab; /*cor oficial fica melhor?*/
+  transition: top 0.35s ease-in-out; /* Transition effect when sliding down (and up) */
+  color: #1094ab;
 }
 
 /*Pro fundo atrás da navbar não ficar branco; também é padding*/
@@ -164,16 +122,16 @@ html, body {
   font-size: 1.5rem;
 }*/
 
-.media-icons-1 {
+#navbar-social {
   min-width: max-content;
   font-size: 16px;
   opacity: 0.9;
   filter: brightness(0) invert(100%); /* turn white */
 }
 
-.media-icons-1 a {
-  margin-left: 3px;
-  margin-right: 3px;
+#navbar-social a {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .media-icons-2 {
@@ -189,13 +147,13 @@ html, body {
 
 /** Prevents social media icons from being underlined on hover.
   * Overrides Bootstrap's _hover.scss. */
-.media-icons-1 a:hover,.media-icons-2 a:hover {
+#navbar-social a:hover,.media-icons-2 a:hover {
   text-decoration: none !important;
 }
   
 
 /*for text in general*/
-div.text-thing.container {
+.text-thing.container {
   margin-top: 30px;
 }
 
@@ -247,7 +205,7 @@ div.text-thing.container {
   font-weight: 600;
 }
 
-img.image-thing1 {
+.image-thing1 {
 	margin-bottom: 2rem;
 	width: 100%;
 	max-width: 700px;
@@ -257,7 +215,7 @@ img.image-thing1 {
 }
 
 /* imagem do portal */
-img.image-thing2 {
+.image-thing2 {
 	margin-bottom: 2rem;
   width: 100%;
   max-width: 800px;
@@ -266,7 +224,7 @@ img.image-thing2 {
   margin-right: auto;
 }
 
-img.image-thing-double {
+.image-thing-double {
 	margin-top: 1rem;
 	margin-bottom: 2rem;
 	width: 100%;
@@ -307,14 +265,14 @@ blockquote {
 
 /* mobile */
 /*@media only screen and (max-width: 700px){*/
-  div.container.text-thing {
+  .container.text-thing {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
   }
 /*}*/
 
 @media only screen and (min-width: 700px) {
-  div.container.text-thing {
+  .container.text-thing {
     padding-left: 10rem;
     padding-right: 10rem;
   }
