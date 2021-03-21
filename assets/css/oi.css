@@ -1,122 +1,121 @@
 /*
-    Estilos da página de recepção des ingressantes
-    
-    Duas cores padrões:
-        azul: #1094ab
-        amarelo: #fcb421
+  Estilos da página de recepção des ingressantes
+  
+  Duas cores padrões:
+    azul: #1094ab
+    amarelo: #fcb421
 */
 
-section{
-    display: block;
-    width: 90% !important;
-    max-width: 800px;
+section {
+  display: block;
+  width: 90% !important;
+  max-width: 800px;
 
 }
 
-.titles{
-    color: rgb(255, 255, 255);
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
-    /* background-color: blue; */
-    font-size: 30pt;
-    text-align: center;
+.titles {
+  color: rgb(255, 255, 255);
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  /* background-color: blue; */
+  font-size: 30pt;
+  text-align: center;
 }
-#ola{
-    font-weight: 600;
+#ola {
+  font-weight: 600;
 }
-#bem-vindes{
-    font-size: 20pt;
-    letter-spacing: 0.9pt;
-}
-
-#line{
-    width: 90%;
-    max-width: 800px;
-    display: block;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+#bem-vindes {
+  font-size: 20pt;
+  letter-spacing: 0.9pt;
 }
 
-#textos a{
-    color: #006d80;
+#line {
+  width: 90%;
+  max-width: 800px;
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
-@media(max-width: 340px){
-    #iconesX {
-        display: none;
-    }
+#textos a {
+  color: #006d80;
 }
 
-.explicacoes > h3{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+@media(max-width: 340px) {
+  #iconesX {
+    display: none;
+  }
 }
 
-.explicacoes h4{
-    margin-bottom: 1rem;
-    font-style: italic;
-    font-size: medium;
-    align
+.explicacoes > h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.paragr4fo, .explicacoes>p, .card-body>p{
-    text-indent: 12pt;
-    text-align: justify;
-    letter-spacing: 0.7pt;
+.explicacoes h4 {
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: medium;
 }
 
-.imagem{
-    width: 65vw;
-    max-width: 450px !important;
-    margin: 1rem auto;
-}
-.imagem>img{
-    width: 100%;
-}
-.imagem>figcaption{
-    margin-top: 0.5rem;
-    text-align: center;
-    letter-spacing: 0.7pt;
-    font-size: 10pt;
-    font-style: italic;
+.paragr4fo, .explicacoes>p, .card-body>p {
+  text-indent: 12pt;
+  text-align: justify;
+  letter-spacing: 0.7pt;
 }
 
-.como-ajudar{
-    font-size: 13pt;
-    font-weight: 600;
+.imagem {
+  width: 65vw;
+  max-width: 450px !important;
+  margin: 1rem auto;
 }
-.como-ajudar-lista{
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    list-style-type: "\2605";
+.imagem>img {
+  width: 100%;
 }
-
-.gt{
-    opacity: 65%;
-}
-
-.gt>p{
-    font-size: 11pt !important;
+.imagem>figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.7pt;
+  font-size: 10pt;
+  font-style: italic;
 }
 
-hr{
-    opacity: 60%;
-    margin-bottom: 1.3rem;
+.como-ajudar {
+  font-size: 13pt;
+  font-weight: 600;
+}
+.como-ajudar-lista {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  list-style-type: "\2605";
 }
 
-.grad-blue{
-    display: block;
-    width: 100%;
-    height: 170px;
-    background-image: linear-gradient(to bottom, #1094ab 40%, white);
+.gt {
+  opacity: 65%;
 }
 
-.titles{
-    width: 100%;
-    height: 100px;
+.gt>p {
+  font-size: 11pt !important;
 }
 
-#foot{
-    margin-top: 4rem;
+hr {
+  opacity: 60%;
+  margin-bottom: 1.3rem;
+}
+
+.grad-blue {
+  display: block;
+  width: 100%;
+  height: 170px;
+  background-image: linear-gradient(to bottom, #1094ab 40%, white);
+}
+
+.titles {
+  width: 100%;
+  height: 100px;
+}
+
+#foot {
+  margin-top: 4rem;
 }

@@ -35,3 +35,8 @@
 .w-70 { width: 70%; }
 .w-80 { width: 80%; }
 .w-90 { width: 90%; }
+
+/* Equivalent (and preferrable) to 'frameborder="0"'. */
+iframe {
+  border: 0;
+}
