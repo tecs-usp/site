@@ -1,3 +1,5 @@
+/* Used in contatos/ and projetos/ */
+
 .contact-clean {
   padding: 80px 0;
 }
@@ -95,47 +97,6 @@
 .contact-clean .logo-preto {
   max-width: 114px;
   padding-top: 35px;
-}
-
-/************************************
-@media (max-width: 600px) {
-  #logo {
-    width: 100%;
-  }
-}
-
-@media (min-width: 601px) {
-  #logo {
-    width: 35rem;
-  }
-}
-
-#macard {
-  background-image: linear-gradient(white, #fcb421);
-}
-
-@media (max-width: 767px) {
-  .navbar.navbar-light.navbar-expand-md.nav-coll {
-    min-width: 270px;
-    max-width: 70%;
-  }
-}
-
-@media (max-width: 341px) {
-  .navbar-light .navbar-brand {
-  }
-}
-***************************************************/
-
-.container.body-db {
-  background-image: linear-gradient(to bottom, #5AACBC 0%, #255582 100%);
-  max-width: 100%;
-  padding-bottom: 38px;
-}
-
-.acc-texto {
-  color: #805807;
-  padding-top: 2rem;
 }
 
 .Acc-Titulo {
