@@ -56,11 +56,6 @@ html, body {
   }
 }
 
-.navbar-nav .nav-link {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-}
-
 .artigos-tecs {
   display: flex;
   justify-content: center;
@@ -94,23 +89,12 @@ html, body {
   }
 }
 
-/* NOTE: Is there actually a device with a screen this small? */
-@media(max-width: 340px){
-  #navbar-social a {
-    display: none !important;
-  }
-}
+/* NAVBAR START */
 
 #navbar-total {
   top: 0; /* Stay on top */
   transition: top 0.35s ease-in-out; /* Transition effect when sliding down (and up) */
   color: #1094ab;
-}
-
-/*Pro fundo atrás da navbar não ficar branco; também é padding*/
-.pseudo-background { 
-  background-color:#1094ab;
-  height: 83px; /*era o padding do div embaixo da navbar; melhor deixar um tamanho relativo?*/
 }
 
 /*.carousel-caption span {
@@ -122,6 +106,36 @@ html, body {
   font-size: 1.5rem;
 }*/
 
+
+/*@media (max-width: 576px) {*/
+  #logo-principal {
+    width: 101px;
+  }
+/*}*/
+@media (max-width: 350px) {
+  #navbar-social {
+    opacity: 0 !important;
+  }
+}
+@media (max-width: 300px) {
+  #logo-principal {
+    width: 75px;
+  }
+}
+@media (min-width: 576px) {
+  #logo-principal {
+    width: 140px;
+    margin-right: 2rem;
+  }
+}
+
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* Social media icons */
 #navbar-social {
   min-width: max-content;
   font-size: 16px;
@@ -134,25 +148,46 @@ html, body {
   margin-right: 4px;
 }
 
-.media-icons-2 {
-  font-size: 27px;
-  opacity: 0.8;
-  filter: grayscale(100%);
-}
-
-.media-icons-2 a {
-  margin-left: 16px;
-  margin-right: 16px;
+/*Pro fundo atrás da navbar não ficar branco; também é padding*/
+.pseudo-background { 
+  background-color:#1094ab;
+  height: 83px; /*era o padding do div embaixo da navbar; melhor deixar um tamanho relativo?*/
 }
 
 /** Prevents social media icons from being underlined on hover.
   * Overrides Bootstrap's _hover.scss. */
-#navbar-social a:hover,.media-icons-2 a:hover {
-  text-decoration: none !important;
+  #navbar-social a:hover {
+    text-decoration: none !important;
+  }
+
+/* NAVBAR END */
+
+/* CAROUSEL START */
+.carousel-inner {
+  height: 80vh;
 }
-  
+
+.carousel-item img {
+  min-height: 80vh; /* Some images might 'jiggle' if this isn't the same as the previous value. */
+  object-fit: cover;
+}
+
+/* object-fit: cover looks kinda ugly on less wide screens, so maybe having 2-3 different
+ * settings would be best...
+@media only screen and (min-width: 768px) {
+  .carousel-inner {
+    height: 80vh;
+  }
+
+  .carousel-item img {
+    min-height: 80vh;
+  }
+}*/
+
+/* CAROUSEL END */
 
 /*for text in general*/
+
 .text-thing.container {
   margin-top: 30px;
 }
