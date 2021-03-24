@@ -4,17 +4,17 @@
  * Basically: this is really janky.
  * */
 
-var prevScrollpos = window.pageYOffset; // inicializa a posição de rolagem
-var navbar = document.getElementById("navbar-total");
-var threshold = 90; // valor temporário, mas provavelmente ok
 
-/* Descobre até onde devemos 'segurar' a navbar.*/
-window.onload = function() {
-  threshold = navbar.offsetHeight; // valor errado antes de carregar a página, então precisa ser aqui
+/* Finds out how much we should 'pull' the navbar.
+NOTE: window.onload only allows a single handler! */
+window.addEventListener('load', (e) => {
+  var prevScrollpos = window.pageYOffset; // inicializa a posição de rolagem
+  var navbar = document.getElementById("navbar-total");
+  var threshold = navbar.offsetHeight;
   
   /* Quando o usuário rola para baixo, abaixa gradualmente a navbar. 
    * Quando rola para cima, mostra a navbar. */
-  window.onscroll = function() {
+  window.addEventListener('scroll', (e) => {
     /* compara as posições de rolagem anterior e atual*/
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
@@ -33,7 +33,7 @@ window.onload = function() {
       $('#tecs-logo,#navbar-social').collapse('show'); // elements that should be shown by default must be shown
     }
     prevScrollpos = currentScrollPos;
-  };
-}
+  });
+});
 
 Array.prototype.map.call(document.getElementsByClassName("nav-link"), (item) => (item.innerHTML == "Contato") && (Math.random() > 0.99) ? (item.innerHTML = "ContaTecs") : "");
