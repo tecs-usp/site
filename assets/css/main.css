@@ -109,12 +109,12 @@ html, body {
 
 /*@media (max-width: 576px) {*/
   #logo-principal {
-    width: 101px;
+    width: 100px;
   }
 /*}*/
 @media (max-width: 350px) {
   #navbar-social {
-    opacity: 0 !important;
+    opacity: 0 !important; /* FIXME: If we keep this, we should add JS to add an aria-hidden. */
   }
 }
 @media (max-width: 300px) {

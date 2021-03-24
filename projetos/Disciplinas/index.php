@@ -1,107 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt">
-
+  
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <?php require '../../assets/components/head.html'; ?>
 
   <title>TECS | GT Disciplinas</title>
-  <meta name="description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta name="theme-color" content="#1094ab"> <!--mobile (só chrome?)-->
-
-  <!--MÍDIAS SOCIAIS START-->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://tecs.ime.usp.br/assets/img/Logos/TECS-logo-1614555814.png">
-  <meta name="twitter:title" content="TECS">
-  <meta name="twitter:description" content="Grupo de comput{ação social} da USP">
-  <meta name="twitter:site" content="@tecsusp">
-  <meta property="og:url" content="https://tecs.ime.usp.br">
-  <meta property="og:site_name" content="Tecs | Grupo de comput{ação social} da USP">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Tecs | Grupo de comput{ação social} da USP">
-  <meta property="og:description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta property="og:image" content="https://tecs.ime.usp.br/assets/img/Logos/TECS-logo-1614555814.png">
-  <!--MÍDIAS SOCIAIS END-->
-
-  <!--Makes sure the host isnt www.tecs.ime.usp.br instead of tecs.ime.usp.br-->
-  <script src="https://tecs.ime.usp.br/assets/js/change-host.js"></script>
-  <!--Loads jQuery and Bootstrap.-->
-  <script src="../../assets/js/script-fallback.js"></script>
-
-  <link rel="icon" type="image/png" sizes="578x588" href="https://tecs.ime.usp.br/assets/img/Logos/grafo%20logo%20br.png">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../assets/css/utils.css">
-  <link rel="stylesheet" href="../../assets/css/main.css">
-  <link rel="stylesheet" href="../../assets/css/Footer-Clean.css">
-	
-  <!--coisas de bootstrap (leave it to script-fallback.js) START-->
-  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" onerror="scriptFallback(this);" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
-  <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" onerror="scriptFallback(this);" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
-  <!--coisas de bootstrap END-->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>-->
-  
-  <script src="../../assets/js/img-http-fallback.js"></script>
 </head>
 
 <body>
-  <!--NAVBAR START-->
-	<div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
-    <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font">
-      <div class="container-fluid">
-        <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;">
-          <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
-        </button>
-        <a class="navbar-brand " href="../../">
-          <img src="https://tecs.ime.usp.br/assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
-          <img id="logo-principal" src="https://tecs.ime.usp.br/assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
-        </a>
-        <div class="collapse navbar-collapse row" id="navcol-1">
-          <ul class="nav navbar-nav d-md-none d-lg-flex offset-1 col-10" style="min-width: max-content;">
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../../Quem somos">Quem somos</a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../../Projetos">Projetos</a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../../Contato">Contato</a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="../../Participe">Participe</a></li>
-          </ul>
-        </div>
-        
-        <span class="media-icons-1 row">
-          <!--MEDIA ICONS-->
-          <a class="collapse navbar-collapse" href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a class="" href="mailto:tecs@ime.usp.br">
-            <i class="fa fa-envelope"></i>
-          </a>
-          <a class="" href="https://t.me/tecsusp" target="_blank" rel="noopener">
-            <i class="fa fa-telegram"></i>
-          </a>
-          <a class="" href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a class="collapse navbar-collapse" href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </span>
-      </div> <!--container-fluid-->
-    </nav>
-  </div> <!--#navbar-total.secondary-blue-bg-->
-  <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
-  
-	<script>
-    /* enable popper tooltips */
-    setTimeout(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    }, 5000);
+  <?php require '../../assets/components/navbar.html'; ?>
+
+  <!-- (Hopefully) Enable Popper tooltips -->
+  <script>
+    function tryActivateTooltips(tries=3) {
+      if (typeof Popper !== 'undefined') $('[data-toggle="tooltip"]').tooltip();
+      else if (tries > 0) setTimeout( () => {tryActivateTooltips(tries=tries-1);}, 3000);
+    }
+    tryActivateTooltips();
   </script>
   
 	<div class="container text-center">
 		<div class="text-thing text-center">
 			<h1>GT Disciplinas</h1>
-			<h6 class="after-title">Direito & Software
+			<h6 class="after-title">Direito & Software <!-- Intentional newline -->
         Implicações Sociais da Computação</h6>
     </div>
     <br>
@@ -114,7 +35,7 @@
         data-placement="top"
         src="https://tecs.ime.usp.br/assets/img/Logos/DISCIPLINAS-DS.png" 
         title="Ícone do grupo para a organização da disciplina MAC0458"
-        alt="Ícone do grupo para a organização da disciplina, com 'D&S — MAC0458' escrito sobre um fundo verde."
+        alt="Ícone com 'D & S — MAC0458' escrito sobre um fundo claro."
       >
       <img
         class="image-thing-double"
@@ -123,7 +44,7 @@
         data-placement="top"
         src="https://tecs.ime.usp.br/assets/img/Logos/DISCIPLINAS-ISC.png" 
         title="Ícone do grupo para a organização da disciplina MAC0485"
-        alt="Ícone do grupo para a organização da disciplina, com 'ISC — MAC0485' escrito sobre um fundo verde."
+        alt="Ícone com 'ISC — MAC0485' escrito sobre um fundo escuro."
       >
     </div>
 
@@ -163,9 +84,7 @@
     >
 
     <div class="text-thing text-thing-h2-top">
-      <h2>
-        Direito e Software
-      </h2>
+      <h2>Direito e Software</h2>
       <p>
         Objetivo: apresentar um panorama das diversas intersecções entre a área do Direito
         e da Tecnologia, cobrindo desde governo aberto até discriminação algorítmica, passando
@@ -179,124 +98,11 @@
       class="image-thing1"
       src="https://tecs.ime.usp.br/assets/img/Disciplinas/2019-04-23_Rafael Zanatta(8).jpg"
       style="filter:brightness(110%);"
-      alt=""
+      alt="Palestra em sala de aula do Ime-Usp. Há várias fileiras de carteiras, todas ocupadas, e o Sol brilha por uma janela."
     >
-    
 	</div> <!--container text-center-->
 	
-  <!--FOOTER-->
-  <div class="container-fluid pt-3">
-    <div class="row d-flex justify-content-center align-items-center">
-      <hr class="w-80">
-      <div class="col-11 text-center text-md-center text-lg-center rodape-coluna">
-        <h2 class="text-center font-weight-bold mt-5 mb-4">Parceiros</h2>
-        <div class="row artigos-tecs pb-0">
-          <div class="col-9 col-md-2 artigos-tecs-item">
-            <a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank" rel="noopener">
-              <img 
-                class="w-50 mx-5" 
-                src="https://efestus.icmc.usp.br/wp-content/uploads/2019/03/EfestusDefIcon.png" 
-                alt="Logo do Efestus, um grupo de computação social parecido com o Tecs, mas da USP São Carlos. A parte principal da figura é uma chama."
-                onerror="httpFallback(this)"
-              >
-            </a>
-          </div>
-          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
-            <a class="rodape-link" href="https://www.ime.usp.br" target="_blank" rel="noopener">
-              <img 
-                class="w-20 mx-5" 
-                src="https://ccsl.ime.usp.br/files/unmanaged/logos/logoIME+Texto.png" 
-                alt="Logo do Instituto de Matemática e Estatística da USP (IME-USP). No brasão, identifica-se Arquimedes."
-                onerror="httpFallback(this)"
-              >
-            </a>
-          </div>
-          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
-            <a class="rodape-link" href="https://www5.usp.br" target="_blank" rel="noopener">
-              <img 
-                class="w-50 mx-5" 
-                src="https://www.scs.usp.br/identidadevisual/wp-content/uploads/2013/08/usp-logo-png.png" 
-                alt="Logo da Universidade de São Paulo (USP)"
-                onerror="httpFallback(this)"
-              >
-            </a>
-          </div>
-          <!--
-          <div class="col-9 col-md-2 artigos-tecs-item my-5 my-md-0">
-            <a class="rodape-link tecna" href="https://tecna.ime.usp.br/" target="_blank" rel="noopener">
-              TECNA
-            </a>
-          </div>
-          -->
-          <div class="col-9 col-md-2 artigos-tecs-item mt-5 my-md-0">
-            <a class="rodape-link" href="https://techshift.org" target="_blank" rel="noopener">
-              <img 
-                class="w-60 mx-5" 
-                src="https://www.ffwd.org/wp-content/uploads/TechShiftLogoHighRes.png" 
-                alt="Logo do TechShift, uma aliança global de organizações como o Tecs, que juntam tecnologia e sociedade"
-              >
-            </a>
-          </div>
-        </div> <!--row artigos-tecs-->
-      </div> <!--col-11 text-center-->
-    </div> <!--row d-flex-->
-    <div class="row justify-content-center align-items-center my-5">
-      <div class="col-10 col-md-3 text-center text-md-center text-lg-center rodape-coluna">
-          <ul class="list-unstyled text-center text-sm-center text-md-center align-items-center">
-              <li><a class="rodape-link" href="../../Quem somos">Quem somos</a></li>
-              <li><a class="rodape-link" href="../../Projetos">Projetos</a></li>
-              <li><a class="rodape-link" href="../../Contato">Contato</a></li>
-              <li><a class="rodape-link" href="../../Participe">Participe</a></li>
-          </ul>
-      </div>
-      <div class="col-10 col-md-5">
-        <iframe title="Localização do IME-USP via Google Maps" class="maps-google d-xl-flex" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEsbBjboQzORZ2YGR6E2bbAezZePedofg&amp;q=IMEUSP&amp;zoom=13"></iframe>
-      </div>
-    </div> <!--row justify-content-->
-  </div> <!--container-fluid-->
-  <div class="row d-flex">
-    <div class="col">
-      <p class="text-center copyright" style="font-weight: 300;">
-        <br>
-        <!--MEDIA ICONS 2-->
-        <span class="media-icons-2">
-          <a href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a href="mailto:tecs@ime.usp.br">
-            <i class="fa fa-envelope"></i>
-          </a>
-          <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
-            <i class="fa fa-telegram"></i>
-          </a>
-          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </span>
-        <br>
-      </p>
-      <div class="fique-em-casa text-center">
-        <!--colorful text-->
-        <span class="fique-em-casa-normal">… ah, e </span>
-        <span class="fique-em-casa-destaque">#FiqueEmCasa</span>
-        <span class="fique-em-casa-normal">se puder </span>
-        <!--colorful text-->
-        <i class="fa fa-heart-o"></i>
-      </div>
-      <div class="text-center" style="padding-top: 1rem;padding-bottom: 2rem;">
-        <img 
-          src="https://tecs.ime.usp.br/assets/img/Logos/tecs3.svg" 
-          style="max-width: 7rem;opacity: 1;filter: invert(100%);"
-          alt="TECS com Comput{ação social} escrito ao lado"
-        >
-      </div>
-    </div> <!--col-->
-  </div> <!--row d-flex-->
+  <?php require '../../assets/components/footer.html'; ?>
 
-  <script src="../../assets/js/navbar-autohide.js"></script>
 </body>
-
 </html>

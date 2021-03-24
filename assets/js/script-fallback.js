@@ -1,4 +1,6 @@
-/** FIXME: https://developer.mozilla.org/en-US/docs/Web/API/URL_API  
+/**Loads jQuery, Popper and Bootstrap. 
+ * 
+ * FIXME: https://developer.mozilla.org/en-US/docs/Web/API/URL_API  
  * NO IE SUPPORT T-T
 */
 
