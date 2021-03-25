@@ -21,7 +21,7 @@ header('Content-Type: text/html; charset=UTF-8'); # Might be redundant; idk.
 # Arrays: https://www.php.net/manual/en/language.types.array.php
 $card_info = array(
   array(
-    "card_title" => "Vestibulandas",
+    "card_title" => "Vestibulandas"
     "img_src" => "Vestibulandas/PIPA/Vestibulandas-no-PIPA.jpg",
     "img_alt" => "Pessoa jovem apresenta eslaides para uma plateia no Auditório Imre Simon.",
     "inicio" => 2019,
