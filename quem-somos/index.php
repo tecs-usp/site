@@ -2,7 +2,7 @@
 <html lang="pt">
   
 <head>
-  <?php require '../assets/components/head.html'; ?>
+  <?php requiree '../assets/components/head.html'; ?>
 
   <title>TECS | Quem somos</title>
 </head>
