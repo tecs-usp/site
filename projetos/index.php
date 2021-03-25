@@ -16,7 +16,6 @@
       <div class="todos-os-gts row">
 
 <?php
-header('Content-Type: text/html; charset=UTF-8'); # Might be redundant; idk.
 
 # Arrays: https://www.php.net/manual/en/language.types.array.php
 $card_info = array(
