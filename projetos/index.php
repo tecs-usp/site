@@ -11,89 +11,89 @@
 <body>
   <?php require '../assets/components/navbar.html'; ?>
 	
-	<div class="container text-thing">
-    <div class="todos-os-gts row">
-      <div class="tab-thing col-12">
-        <img 
-          class="w-100 d-block" 
-          src="https://tecs.ime.usp.br/assets/img/Vestibulandas/PIPA/Vestibulandas-no-PIPA.jpg"
-          alt="Pessoa jovem apresenta eslaides para uma plateia no Auditório Imre Simon."
-        >
-        <span class="tab-thing-entire">
-          <div class="tab-thing-tab">
-            <i class="fa fa-angle-left"></i>
-          </div>
-          <div class="tab-thing-contents">
-            <h4 class="row col-6 offset-1"><a href="../projetos/Vestibulandas">Vestibulandas</a></h4>
-            <h5>Início: 2019</h5>
-            <h5>Status: <span class="h5-green">ativo</span></h5>
-            <p class="card-text col-12 col-sm-6">Aulas de programação em Python para alunas que prestarão o vestibular.</p>
-            <a href="../projetos/Vestibulandas"><button>Saiba mais</button></a>
-            <!-- Anchor elements inside buttons or vice-versa are evil, but oh well.-->
-          </div>
-        </span>
+
+    <div class="container text-thing container-projetos">
+      <div class="todos-os-gts row">
+
+<?php
+header('Content-Type: text/html; charset=UTF-8'); # Might be redundant; idk.
+
+# Arrays: https://www.php.net/manual/en/language.types.array.php
+$card_info = array(
+  array(
+    "card_title" => "Vestibulandas",
+    "img_src" => "Vestibulandas/PIPA/Vestibulandas-no-PIPA.jpg",
+    "img_alt" => "Pessoa jovem apresenta eslaides para uma plateia no Auditório Imre Simon.",
+    "inicio" => 2019,
+    "description" => "Aulas de programação em Python para alunas que prestarão o vestibular.",
+    "page_link" => "Vestibulandas"
+  ),
+  array(
+    "card_title" => "Disciplinas",
+    "img_src" => "Disciplinas/IMG_20191029_133103.jpg",
+    "img_alt" => "Professor voltado para o canto esquerdo da sala, de frente para estudantes que fazem anotações em cadernos e laptops. Ao fundo, uma larga lousa de giz com esquemas explicativos.",
+    "inicio" => 2019,
+    "description" => "Disciplinas do IME-USP coordenada pelo Tecs que promovem discussões e reflexões acerca do impacto da Computação na sociedade.",
+    "page_link" => "Disciplinas"
+  ),
+  array(
+    "card_title" => "Fundação CASA",
+    "img_src" => "Promos/FCasaCoelho.png",
+    "img_alt" => "8 pessoas na frente de uma unidade da Fundação CASA. Na 1ª fileira, todas vestem aventais.",
+    "inicio" => 2018,
+    "description" => "Curso de introdução à programação para jovens inseridos em medidas socioeducativas na Fundação CASA.",
+    "page_link" => "FCASA"
+  ),
+  array(
+    "card_title" => "Portal Indígena",
+    "img_src" => "PI/portal_foto.png",
+    "img_alt" => "9 pessoas (uma com camiseta do Tecs), em fileira única, em frente à casa de reza do Instituto de Psicologia da Usp, ao ar livre.",
+    "inicio" => 2019,
+    "description" => "Desenvolvimento de um portal centralizador de páginas web de aldeias indígenas.",
+    "page_link" => "PI"
+  ),
+);
+
+# Só para GTs ativos, mas daria para colocar um if.
+foreach ($card_info as $i => $item) {
+echo <<<END
+<div class="tab-thing col-12">
+  <img 
+    class="d-block" 
+    src="https://tecs.ime.usp.br/assets/img/$item[img_src]"
+    alt="$item[img_alt]"
+  >
+  <span class="tab-thing-entire">
+    <div class="tab-thing-tab">
+      <i class="fa fa-angle-left"></i>
+    </div>
+    <div class="tab-thing-contents">
+      <div class="row col-9 offset-1">
+        <h4><a href="../projetos/$item[page_link]">$item[card_title]</a></h4>
       </div>
+      <div class="row col-4 offset-8"> <!-- FIXME: maybe adjust to lg: 5,7 xl: 4,8 ?-->
+        <h5>Início: 2019</h5>
+        <h5>Status: <span class="h5-green">ativo</span></h5>
+      </div>
+      <div class="col-9 col-sm-6 offset-1">
+        <p class="card-text">$item[description]</p>
+      </div>
+      <div class="row col-4 offset-8 tab-thing-buttondiv">
+        <a href="../projetos/$item[page_link]"><button>Saiba mais</button></a>
+      </div>
+      <!-- Anchor elements inside buttons or vice-versa are evil, but oh well.-->
+    </div>
+  </span>
+</div>
+END; # (END heredoc) This line (with the identifier) must not be indented.
+}
+?>
       
-      <div class="tab-thing col-12">
-        <img 
-          class="w-100 d-block" 
-          src="https://tecs.ime.usp.br/assets/img/Disciplinas/IMG_20191029_133103.jpg"
-          alt="Professor voltado para o canto esquerdo da sala, de frente para estudantes que fazem anotações em cadernos e laptops. Ao fundo, uma larga lousa de giz com esquemas explicativos."
-        >
-        <span class="tab-thing-entire">
-          <div class="tab-thing-tab">
-            <i class="fa fa-angle-left"></i>
-          </div>
-          <div class="tab-thing-contents">
-            <!-- the title needs to occupy more horizontal space for everything to display correctly on mobile -->
-            <h4 class="row col-9 col-sm-6 offset-1"><a href="../projetos/Disciplinas">Disciplinas</a></h4>
-            <h5>Início: 2020</h5>
-            <h5>Status: <span class="h5-green">ativo</span></h5>
-            <p class="card-text col-12 col-sm-6">Disciplinas do IME-USP coordenada pelo Tecs que promovem discussões e reflexões acerca do impacto da Computação na sociedade.</p>
-            <a href="../projetos/Disciplinas"><button>Saiba mais</button></a>
-            <!-- Anchor elements inside buttons or vice-versa are bad, but oh well.-->
-          </div>
-        </span>
-      </div>
 
-      <div class="tab-thing col-12">
-        <img 
-            class="w-100 d-block" 
-            src="https://tecs.ime.usp.br/assets/img/Promos/FCasaCoelho.png"
-            alt="8 pessoas na frente de uma unidade da Fundação CASA. Na 1ª fileira, todas vestem aventais.">
-        <span class="tab-thing-entire">
-          <div class="tab-thing-tab">
-            <i class="fa fa-angle-left"></i>
-          </div>
-          <div class="tab-thing-contents">
-            <h4 class="row col-6 offset-1"><a href="../projetos/FCASA">Fundação CASA</a></h4>
-            <h5>Início: 2018</h5>
-            <h5>Status: <span class="h5-green">ativo</span></h5>
-            <p class="card-text col-12 col-sm-6">Curso de introdução à programação para jovens inseridos em medidas socioeducativas na Fundação CASA.</p>
-            <a href="../projetos/FCASA"><button>Saiba mais</button></a>
-          </div>
-        </span>
-      </div>
 
-      <div class="tab-thing col-12">
-        <img 
-          class="w-100 d-block" 
-          src="https://tecs.ime.usp.br/assets/img/PI/portal_foto.png"
-          alt="9 pessoas (uma com camiseta do Tecs), em fileira única, em frente à casa de reza do Instituto de Psicologia da Usp, ao ar livre."
-        >
-        <span class="tab-thing-entire">
-          <div class="tab-thing-tab">
-            <i class="fa fa-angle-left"></i>
-          </div>
-          <div class="tab-thing-contents">
-            <h4 class="row col-6 offset-1"><a href="../projetos/PI">Portal Indígena</a></h4>
-            <h5>Início: 2019</h5>
-            <h5>Status: <span class="h5-green">ativo</span></h5>
-            <p class="card-text col-12 col-sm-6">Desenvolvimento de um portal centralizador de páginas web de aldeias indígenas.</p>
-            <a href="../projetos/PI"><button>Saiba mais</button></a>
-          </div>
-        </span>
-      </div>
+<h1>OPAPAROUOPAPAROUOPAPAROUOPAPAROUOPAPAROUOPAPAROUOPAPAROU</h1>
+
+
     </div> <!-- .todos-os-gts.row -->
   </div> <!-- .container.text-thing -->
 
