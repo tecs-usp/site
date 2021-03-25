@@ -23,7 +23,8 @@ def update_file (filename):
 
 def behead (folder):    
     """Replace regex matches in all files."""
-    rootdir = os.path.join(os.path.curdir, folder)
+    rootdir = os.path.abspath(os.path.join(os.path.curdir, folder))
+    
 
     # from: https://stackoverflow.com/questions/10377998/how-can-i-iterate-over-files-in-a-given-directory
     for subdir, _dirs, files in os.walk(rootdir): # maybe os.path.abspath(rootdir) ?
