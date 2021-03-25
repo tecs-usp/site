@@ -13,12 +13,12 @@
   margin-left: 0.5rem;
 }
 
-
-span.h5-green {
+/* FIXME: Can we swap these with fancy CSS selectors so we only need one class? */
+.h5-green {
   color:greenyellow;
 }
 
-span.h5-yellow {
+.h5-yellow {
   color: #e2e465;
 }
 
@@ -26,143 +26,126 @@ span.h5-yellow {
   margin-right: 23px;
 }
 
-.container div.row {
-  justify-content: center;
-}
-
-/** To position things inside the img, we need a div with relative position containing
- *  both the img and the text. */
-div.tab-thing {
-  position: relative;
-  display: flex;
-  overflow: hidden; /* don't show scrollbars if something goes off-screen*/
-  /*height: 400px;*/
-  /*height: 25rem;*/
-  height: 80vh;
-  max-width: 40.8rem;
-  margin-top: 3rem;
-  /* NOTE: padding (from .col) creates white borders around the images*/
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.tab-thing img {
-  object-fit: cover; /* NOTE: maybe crop differently?*/
-  height: inherit;
-  width: 100%; /* already comes from .w-100*/
-}
-
-span.tab-thing-entire {
-  right: -40.8rem; /* -(img-width) */
-  top: 0;
-  height: inherit;
-  width: inherit;
-  transition: right 1.2s; /* hover-off */
-  position: absolute;
-}
-
-span.tab-thing-entire:hover {
-  right: -16rem;
-  transition: right 0.8s;
-}
-
-div.tab-thing-tab {
-  display: flex;
-  align-items: center; /* center vertically*/
-  justify-content: center;  /* center horizontally */
-  position: absolute;
-  right: 40.8rem; /* img-width */
-  top: 0;
-  height: inherit;
-  width: 3rem;
-  background: rgba(221, 227, 228, 0.7); /*IE9 doesn't like #RGBA or rgb() with alpha; #64c4d2;*/
-  border-radius: 25px 0 0 25px;
-}
-
-i.fa-angle-left {
+/* Arrow icon */
+.fa-angle-left {
   color: #333333;
   font-size: 7rem;
   opacity: 1;
 }
 
-div.tab-thing-contents {
-  position: absolute;
-  right: 0rem;
+.container .row {
+  justify-content: center;
+}
+
+/** To position things inside the img, we need a div with relative position containing
+ *  both the img and the text. */
+.tab-thing {
+  position: relative;
+  display: flex;
+  overflow: hidden; /* Don't show scrollbars if something goes off-screen*/
+  margin-top: 3rem;
+  /* NOTE: padding (from .col) creates white borders around the images*/
+  padding-left: 0;
+  padding-right: 0;
+  width: 40.8rem;
+}
+
+/* Sizes must be the same for both of these. */
+.tab-thing,.tab-thing-entire {
+  height: 80vh;
+  max-width: 40.8rem;
+}
+
+/* NOTE: Percentages are a must for positioning/sizing these things. */
+
+.tab-thing-entire {
+  right: -91%; /* NOTE: 100% - (width of .tab-thing-tab) */
   top: 0;
-  height: inherit;
-  width: inherit;
+  width: 100%;
+  transition: right 1.2s ease-out; /* hover-off */
+  position: absolute;
+}
+
+.tab-thing-entire:hover {
+  right: 0%;
+  transition: right 0.8s ease-out; /* hover-in */
+}
+
+.tab-thing img {
+  object-fit: cover; /* NOTE: maybe crop differently?*/
+  width: 100%;
+  height: auto;
+}
+
+.tab-thing-tab {
+  display: flex;
+  align-items: center; /* center vertically*/
+  justify-content: center;  /* center horizontally */
+  position: absolute;
+  right: 91%; /* NOTE: 100% - (width of .tab-thing-tab); IE9 doesn't support custom CSS properties. */
+  top: 0;
+  height: 100%;
+  width: 9%;
+  background: rgba(221, 227, 228, 70%); /* #64c4d2; IE9 doesn't like #RGBA or rgb() with alpha. */
+  border-radius: 25px 0 0 25px;
+}
+
+.tab-thing-contents {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 91%; /* NOTE: 100% - (width of .tab-thing-tab) */
   opacity: 0.95;
-  transition: opacity,right 0.8s; /*hover off*/
-  background: rgba(100, 196, 210); /*#64c4d2;*/
+  transition: right 0.8s; /* hover off */
+  background: #1094ab; /* fallback */
   background: linear-gradient(45deg, #1094AB 0%, #64C4D2 100%);
   color: #ffffff;
   text-align: center;
-  font-size: 20px;
   margin: 0;
 }
 
 .tab-thing button {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 18rem;
   width: 8rem;
   color: #ffffff;
   background: #fcb421;
   border-radius: 50px;
   border: 0.4rem solid #fcb421;
+  font-size: 1.25rem;
 }
 
-/* CONTAINER RULES */
-/* FIXME: .text-thing seems too vague to be used here but it's a small apge, so oh well
-** that said, this is the cause of a lot of weir ddisplay problems.*/
-@media (min-width: 450px) {
-  .text-thing {
-    padding-left: 3rem;
-    padding-right: 3rem;
+.tab-thing-buttondiv {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+/* FIXME: Breaks for screens that have a small viewport height and a width smaller than 400px. */
+
+@media (max-width: 992px) {
+  /* Overrides assets/css/main.css */
+  .container-projetos {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
   }
 }
 
-@media (min-width: 990px) {
-  .text-thing {
-    padding-left: 13rem;
-    padding-right: 13rem;
+@media (max-width: 500px) {
+  .tab-thing-buttondiv {
+    right: 10%;
   }
 }
 
-/* mobile */
-@media (max-width: 450px) {
-  .container.text-thing {
-    padding: 0;
-    margin-left: 5px;
-    margin-right: 5px;
+@media (max-width: 400px) {
+  .tab-thing-buttondiv {
+    right: 19%;
   }
+}
 
-  div.tab-thing {
-    left: -5px;
-    height: 50vh;
-    width: 22rem;
-    padding: 0;
-    margin: 0;
-    max-width: 22rem;
-  }
-
-  .tab-thing img {
-    width: 100% !important;
-  }
-
-  span.tab-thing-entire {
-    right: -22rem;
-  }
-
-  span.tab-thing-entire:hover {
-    right: -1rem;
-    transition: opacity,right 0.8s;
-  }
-
-  div.tab-thing-tab {
-    right: 22rem;
-  }
-  .tab-thing button {
-    right: 1rem;
+/* You're on your own at this point. */
+@media (max-width: 310px) {
+  .tab-thing-buttondiv {
+    right: 40%;
+    bottom: 0%;
   }
 }
