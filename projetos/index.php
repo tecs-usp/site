@@ -21,7 +21,7 @@ header('Content-Type: text/html; charset=UTF-8'); # Might be redundant; idk.
 # Arrays: https://www.php.net/manual/en/language.types.array.php
 $card_info = array(
   array(
-    "card_title" => "Vestibulandas"
+    "card_title" => "Vestibulandas",
     "img_src" => "Vestibulandas/PIPA/Vestibulandas-no-PIPA.jpg",
     "img_alt" => "Pessoa jovem apresenta eslaides para uma plateia no Auditório Imre Simon.",
     "inicio" => 2019,
@@ -61,7 +61,7 @@ echo <<<END
   <img 
     class="d-block" 
     src="https://tecs.ime.usp.br/assets/img/$item[img_src]"
-    alt="$item[img_alt]"
+    alt="$item[imga_alt]"
   >
   <span class="tab-thing-entire">
     <div class="tab-thing-tab">
@@ -85,7 +85,7 @@ echo <<<END
     </div>
   </span>
 </div>
-END; # (END heredoc) This line (with the identifier) must not be indented.
+    END; # (END heredoc) This line (with the identifier) must not be indented.
 }
 ?>
       
