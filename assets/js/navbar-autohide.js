@@ -30,7 +30,7 @@ window.addEventListener('load', (e) => {
       
       // for mobile devices, collapse menu on scroll down
       $('#navcol-1').collapse('hide');
-      $('#tecs-logo,#navbar-social').collapse('show'); // elements that should be shown by default must be shown
+      $('#tecs-logo,#navbar-icones-total').collapse('show'); // elements that should be shown by default must be shown
     }
     prevScrollpos = currentScrollPos;
   });
