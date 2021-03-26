@@ -113,7 +113,7 @@ html, body {
   }
 /*}*/
 @media (max-width: 350px) {
-  #navbar-social {
+  #navbar-icones-total {
     opacity: 0 !important; /* FIXME: If we keep this, we should add JS to add an aria-hidden. */
   }
 }
@@ -136,14 +136,14 @@ html, body {
 }
 
 /* Social media icons */
-#navbar-social {
+#navbar-icones-total {
   min-width: max-content;
   font-size: 16px;
   opacity: 0.9;
   filter: brightness(0) invert(100%); /* turn white */
 }
 
-#navbar-social a {
+#navbar-icones-total a {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -156,7 +156,7 @@ html, body {
 
 /** Prevents social media icons from being underlined on hover.
   * Overrides Bootstrap's _hover.scss. */
-  #navbar-social a:hover {
+  #navbar-icones-total a:hover {
     text-decoration: none !important;
   }
 
