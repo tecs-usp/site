@@ -4,13 +4,15 @@ import sys, os, re
 # Change these
 regex = None # change this manually
 replace = None # change this manually
-# Example:
-#   regex = '"\\.[\\./]+' # Matches "./, "../, "../../, ".., etc.
-#   replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
+## Example:
+##   regex = '"\\.[\\./]+' # Matches "./, "../, "../../, ".., etc.
+##   replace = '"https://tecs.ime.usp.br/' # CAREFUL WITH THE SINGLE QUOTE AT THE START
 
+
+EXCLUDE_DIRS = [".git", ".github", ".vscode", "vendor"] # mainly just .git, because it's laarge
 valid_modes = ["production-paths", "manual"]
 folder = None # Folder containing all the HTML/PHP files to be altered
-#safe = True # This will create new files (with the suffix 'NEW') instead of overwriting them.
+#safe = True # If True, create files with the suffix 'NEW' instead of overwriting them.
 safe = False
 
 def update_file (filename):
@@ -23,13 +25,19 @@ def update_file (filename):
 
 def behead (folder):    
     """Replace regex matches in all files."""
-    rootdir = os.path.abspath(os.path.join(os.path.curdir, folder))
+    startdir = os.path.abspath(os.path.join(os.curdir, folder))
     
-
-    # from: https://stackoverflow.com/questions/10377998/how-can-i-iterate-over-files-in-a-given-directory
-    for subdir, _dirs, files in os.walk(rootdir): # maybe os.path.abspath(rootdir) ?
+    # See: https://docs.python.org/3/library/os.html#os.walk
+    for root, dirs, files in os.walk(startdir):
+        # Exclude 'bad' directories from the tree.
+        if ".git" in dirs: # i.e., if we're at the top level...
+            for exc in EXCLUDE_DIRS:
+                if exc in dirs:
+                    dirs.remove(exc)
+                    
+        # Check files and process those that end with '.html' or '.php'.
         for file in files:
-            filepath = subdir + os.sep + file
+            filepath = os.path.join(root, file)
 
             if filepath.endswith(".html") or filepath.endswith(".php"):
                 print("Replacing matches in", filepath, "...")
@@ -79,10 +87,12 @@ Valid modes: production-paths, manual.
         
         # Absolute paths mode
         if mode == "production-paths":
-            # Restricts matches to those that start with 'href="' or 'src="'.
-            # For this to work properly, HTML attributes must always use double quotes.
-            look_behind = '((?<=href=")|(?<=src="))' 
-            # Matches '/', './', '..', '../', '../../', etc. The dot msut be double-escaped.
+            ## Restricts matches to those that start with 'href=' or 'src='
+            ## and then a double or single quote.
+            ## Note that we cannot use alternation ('|') inside lookbehinds
+            ## due to limitations of the 're' module.
+            look_behind = """((?<=href=")|(?<=src=")|(?<=href=')|(?<=src='))"""
+            # Matches '/', './', '..', '../', '../../', etc. The dot must be double-escaped.
             dots_and_slashes = '[\\./]+'
 
             regex = look_behind + dots_and_slashes 
