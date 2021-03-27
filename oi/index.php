@@ -25,7 +25,9 @@
   <!-- Conteúdo em si -->
   <section id="textos" class="container-fluid explicacoes">
     <h3>O Tecs, como um todo</h3>
+
     <p class="paragr4fo">O Tecs foi fundado em setembro de 2017 com o objetivo de fomentar maiores debates e ações dentro e fora da comunidade uspiana sobre a tecnologia, a sociedade e a relação entre elas. Como atividade inaugural do grupo, o Tecs organizou a Semana de Computação Social no IME.</p>
+
     <p>Conforme a Constituição Federal define, as universidades têm <span class="marca-texto">três pilares: ensino, pesquisa e extensão; nós nos encaixamos no pilar da extensão</span>.</p>
       
     <p>Sendo assim, o Tecs é um grupo de extensão que desenvolve projetos focados no impacto social da tecnologia e que é formado majoritariamente por estudantes da USP.</p>

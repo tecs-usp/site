@@ -1,5 +1,6 @@
-*.bsdesign
 .vscode/
 build/
 
+*.bsdesign
 *.txt
+build-deploy.sh
