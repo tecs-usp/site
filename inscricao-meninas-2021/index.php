@@ -1,97 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt">
-
+  
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <?php require '../assets/components/head.html'; ?>
 
   <title>TECS | Inscrição</title>
-  <meta name="description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta name="theme-color" content="#1094ab"> <!--mobile (só chrome?)-->
-
-  <!--MÍDIAS SOCIAIS START-->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://tecs.ime.usp.br/assets/img/Logos/TECS-logo-1614555814.png">
-  <meta name="twitter:title" content="TECS">
-  <meta name="twitter:description" content="Grupo de comput{ação social} da USP">
-  <meta name="twitter:site" content="@tecsusp">
-  <meta property="og:url" content="https://tecs.ime.usp.br">
-  <meta property="og:site_name" content="Tecs | Grupo de comput{ação social} da USP">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Tecs | Grupo de comput{ação social} da USP">
-  <meta property="og:description" content="Um grupo de extensão universitária do IME-USP focado no impacto social da computação e da tecnologia e que atua sob 3 frentes: Educação, Ética e serviços.">
-  <meta property="og:image" content="https://tecs.ime.usp.br/assets/img/Logos/TECS-logo-1614555814.png">
-  <!--MÍDIAS SOCIAIS END-->
-
-  <!--Makes sure the host isnt www.tecs.ime.usp.br instead of tecs.ime.usp.br-->
-  <script src="https://tecs.ime.usp.br/assets/js/change-host.js"></script>
-  <!--Loads jQuery and Bootstrap.-->
-  <script src="https://tecs.ime.usp.br/assets/js/script-fallback.js"></script>
-
-  <link rel="icon" type="image/png" sizes="578x588" href="https://tecs.ime.usp.br/assets/img/Logos/grafo%20logo%20br.png">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  
-	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://tecs.ime.usp.br/assets/css/utils.css">
-  <link rel="stylesheet" href="https://tecs.ime.usp.br/assets/css/main.css">
-  <link rel="stylesheet" href="https://tecs.ime.usp.br/assets/css/Footer-Clean.css">
-  
-  <script src="https://tecs.ime.usp.br/assets/js/img-http-fallback.js"></script>
-
   <style>
     #apoio{
       text-align: center;
       margin-top: 5rem;
       margin-bottom: 2rem;
     }
+    .container-vestibulandas {
+      margin-bottom: 3rem;
+    }
   </style>
 </head>
 
 <body>
-  <!--NAVBAR START-->
-	<div id="navbar-total" class="secondary-blue-bg position-fixed w-100" style="z-index: 10;">
-    <nav class="navbar navbar-light navbar-expand-md nav-coll pt-3 text-uppercase secondary-font">
-      <div class="container-fluid">
-        <button data-toggle="collapse" class="navbar-toggler menu-colapsado" data-target="#navcol-1" style="padding-right: 8px;padding-left: 8px;">
-          <span class="navbar-toggler-icon" style="filter: blur(0px) brightness(123%) contrast(200%) grayscale(0%) hue-rotate(270deg) invert(100%) saturate(114%) sepia(100%);opacity: 1;"></span>
-        </button>
-        <a class="navbar-brand " href="https://tecs.ime.usp.br/">
-          <img src="https://tecs.ime.usp.br/assets/img/Logos/grafo%20logo%20br%20branco.png" style="width: 49px;" alt="Logo branco do Tecs (o mapa do Brasil desenhado como um grafo).">
-          <img id="logo-principal" src="https://tecs.ime.usp.br/assets/img/Logos/tecs4.png" alt="Tecs (escrito em caixa alta, na cor branca)">
-        </a>
-        <div class="collapse navbar-collapse row" id="navcol-1">
-          <ul class="nav navbar-nav d-md-none d-lg-flex offset-1 col-10" style="min-width: max-content;">
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="https://tecs.ime.usp.br/Quem somos">Quem somos</a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="https://tecs.ime.usp.br/Projetos">Projetos</a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="https://tecs.ime.usp.br/Contato">Contato</a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link d-inline-block" href="https://tecs.ime.usp.br/Participe">Participe</a></li>
-          </ul>
-        </div>
-        
-        <span class="media-icons-1 row">
-          <!--MEDIA ICONS-->
-          <a class="collapse navbar-collapse" href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a href="mailto:tecs@ime.usp.br">
-            <i class="fa fa-envelope"></i>
-          </a>
-          <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
-            <i class="fa fa-telegram"></i>
-          </a>
-          <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
-            <i class="fa fa-facebook"></i>
-          </a>
-          <a class="collapse navbar-collapse" href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </span>
-      </div> <!--container-fluid-->
-    </nav>
-  </div> <!--#navbar-total.secondary-blue-bg-->
-  <div class="pseudo-background"></div> <!--pro fundo não ficar branco; também é padding-->
-  <!--NAVBAR ANDY-->
+  <?php require '../assets/components/navbar.html'; ?>
 
   <div class="text-thing container">
     <h1>Curso de Introdução à Programação em Python para Meninas</h1>
@@ -106,7 +33,6 @@
         <li><a href="#publico_alvo">Público-alvo</a></li>
         <li><a href="#como_participar">Como participar</a></li>
         <li><a href="#inscricao">Inscrição</a></li>
-        <!--<li><a href="#duvidas_frequentes">Dúvidas frequentes</a></li>-->
         <li><a href="#apoio">Apoio</a></li>
       </ul>
       <h2 id="sobre_curso">Sobre o curso</h2>
@@ -152,25 +78,6 @@
           <li>Histórico escolar</li>
         </ul>
       </p>
-
-      <!--Form embed via JS-->
-      <script src="//tecs.ime.usp.br/tecs/web/webform/inscricao_curso_de_introducao_a_/share.js"></script>
-
-      <!--<h2 id="duvidas_frequentes">Dúvidas frequentes</h2>
-
-      <blockquote>Tive um problema na inscrição, o que eu faço?</blockquote>
-      <p class="text-justify vestibulandas-answer">
-        <a href="mailto:tecs@ime.usp.br">Envie um e-mail</a> para o Tecs, descrevendo o problema, e de preferência com capturas de tela. 
-      </p>
-      <blockquote>Terminei o ensino médio há menos de dois anos mas já estou na faculdade, posso fazer o curso?</blockquote>
-      <p class="text-justify vestibulandas-answer">
-        Como este curso objetiva incentivar o ingresso no Ensino Superior em áreas de tecnologia como Computação, a oferta é para meninas que ainda não estejam cursando uma faculdade. 
-      </p>
-      <blockquote>Não faço parte do público-alvo, mas estou muito interessada. Posso fazer o curso?</blockquote>
-      <p class="text-justify vestibulandas-answer">
-        Infelizmente, não. Nossa sugestão é acompanhar as comunidades femininas de programação, como as <a href="https://brasil.pyladies.com/locations/">PyLadies Brasil</a> e seus capítulos locais, que também oferecem cursos e workshops de programação em Python para mulheres.
-      </p>-->
-
     </div> <!--text-thing text-thing-h2-top lead-->
   </div> <!--text-thing container-->
 
@@ -205,74 +112,6 @@
   </div> 
 
 
-  <!--FOOTER-->
-	<footer>
-    <div class="row d-block d-sm-flex">
-      <div class="col-12 col-sm-4 offset-sm-2 text-center text-md-center text-lg-center rodape-coluna">
-        <div class="text-center text-sm-center text-md-center text-lg-center text-xl-center rodape-titulo"><strong>Nosso
-            grupo</strong></div>
-        <ul class="list-unstyled text-center text-sm-center text-md-center text-lg-center text-xl-center">
-          <li><a class="rodape-link" href="https://tecs.ime.usp.br/Quem somos">Quem somos</a></li>
-          <li><a class="rodape-link" href="https://tecs.ime.usp.br/Projetos">Projetos</a></li>
-          <li><a class="rodape-link" href="https://tecs.ime.usp.br/Contato">Contato</a></li>
-          <li><a class="rodape-link" href="https://tecs.ime.usp.br/Participe">Participe</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-4 text-center text-md-center text-lg-center rodape-coluna">
-        <div class="text-center text-sm-center text-md-center text-lg-center text-xl-center rodape-titulo">
-          <strong>Parceiros</strong>
-        </div>
-        <ul class="list-unstyled text-center text-sm-center text-md-center text-lg-center text-xl-center">
-          <li><a class="rodape-link" href="https://efestus.icmc.usp.br/" target="_blank" rel="noopener">Efestus</a></li>
-          <!--<li><a class="rodape-link" href="https://tecna.ime.usp.br/" target="_blank" rel="noopener">TECNA</a></li>-->
-          <li><a class="rodape-link" href="https://techshift.org" target="_blank" rel="noopener">TechShift</a></li>
-          <li><a class="rodape-link" href="https://www.ime.usp.br" target="_blank" rel="noopener">IME-USP</a></li>
-          <li><a class="rodape-link" href="https://www5.usp.br" target="_blank" rel="noopener">USP</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row d-flex">
-      <div class="col">
-        <p class="text-center copyright" style="font-weight: 300;">
-          <br>
-          <!--MEDIA ICONS 2-->
-          <span class="media-icons-2">
-            <a href="https://twitter.com/tecsusp/" target="_blank" rel="noopener">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="mailto:tecs@ime.usp.br">
-              <i class="fa fa-envelope"></i>
-            </a>
-            <a href="https://t.me/tecsusp" target="_blank" rel="noopener">
-              <i class="fa fa-telegram"></i>
-            </a>
-            <a href="https://pt-br.facebook.com/tecs.usp/" target="_blank" rel="noopener">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/tecs.usp/?hl=pt-br" target="_blank" rel="noopener">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </span>
-          <br>
-        </p>
-        <div class="fique-em-casa text-center">
-          <span class="fique-em-casa-normal">… ah, e </span>
-          <span class="fique-em-casa-destaque">#FiqueEmCasa</span>
-          <span class="fique-em-casa-normal">se puder </span>
-          <i class="fa fa-heart-o"></i>
-        </div>
-        <div class="text-center" style="padding-top: 1rem;padding-bottom: 2rem;">
-          <img src="https://tecs.ime.usp.br/assets/img/Logos/tecs3.svg" style="max-width: 7rem;opacity: 1;filter: invert(100%);"
-            alt="TECS com Comput{ação social} escrito ao lado">
-        </div>
-      </div>
-      <!--col-->
-    </div>
-    <!--row d-flex-->
-  </footer>
-  <!--FOOTER END-->
-
-  <script src="https://tecs.ime.usp.br/assets/js/navbar-autohide.js"></script>
+  <?php require '../assets/components/footer2.html'; ?>
 </body>
-
 </html>
