@@ -13,7 +13,7 @@ echo "*** Creating build folder and copying files... ***"
 rm -rf build/
 
 # Copy all project files to the build folder.
-rsync -ait --exclude={".*/","build/","phptohtml_temp/","tools/",".*","*.php","*.sh","*.txt","LICENSE","README.md"} . build 
+rsync -ait --exclude={".*/","build/","phptohtml_temp/","paginasSoltas/","tools/",".*","*.php","*.sh","*.txt","LICENSE","README.md"} . build 
 
 # Merge the converted HTML files into the build directory.
 echo ""
