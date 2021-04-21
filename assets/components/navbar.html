@@ -50,24 +50,32 @@
 
 				<!-- Main links -->
 				<div class="collapse multi-collapse navbar-collapse col-12 col-lg-6" id="navcol-1">
-					<!-- role="presentation" means to ignore semantic meaning of all (non-focusable) child elements.-->
-					<ul class="nav navbar-nav d-lg-flex offset-1 col-10" role="presentation" style="min-width: max-content;">
-						<li hidden class="nav-item">
-							<a class="nav-link d-inline-block" href="/inscricao-meninas-2021/">Curso para Meninas</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link d-inline-block" href="/quem-somos/">Quem somos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link d-inline-block" href="/projetos/">Projetos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link d-inline-block" href="/contato/">Contato</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link d-inline-block" href="/participe/">Participe</a>
-						</li>
-					</ul>
+					<div class="navbar-nav d-lg-flex offset-1 col-10">
+						<a class="nav-link d-inline-block" href="/quem-somos/">Quem somos</a>
+						<!-- 
+							Dropdown menu item 
+							The outer href is a fallback and will hopefully be overwritten by JS.
+						-->
+						<div class="nav-item dropdown d-inline-block">
+							<a 
+								class="nav-link dropdown-toggle" 
+								href="/projetos/" 
+								data-toggle="dropdown"
+								id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
+								Projetos
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="/projetos/">Todos</a>
+								<a class="dropdown-item" href="/projetos/Disciplinas/">Disciplinas</a>
+								<a class="dropdown-item" href="/projetos/FCASA/">GT FCASA</a>
+								<a class="dropdown-item" href="/projetos/PI/">Portal Indígena</a>
+								<a class="dropdown-item" href="/projetos/Vestibulandas/">Vestibulandas</a>
+							</div>
+						</div>
+
+						<a class="nav-link d-inline-block" href="/contato/">Contato</a>
+						<a class="nav-link d-inline-block" href="/participe/">Participe</a>
+					</div>
 				</div>
 
 				<!-- 

@@ -5,16 +5,7 @@
   <?php require '../assets/components/head.html'; ?>
 
   <title>TECS | Inscrição</title>
-  <style>
-    #apoio{
-      text-align: center;
-      margin-top: 5rem;
-      margin-bottom: 2rem;
-    }
-    .container-vestibulandas {
-      margin-bottom: 3rem;
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/inscricao-meninas-2021.css">
 </head>
 
 <body>

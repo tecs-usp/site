@@ -113,7 +113,7 @@
 		<!-- Exemplos sites/jogos alunos com tipo scratch.js (?) ...? -->
 	</div>
 	
-  <?php require '../../assets/components/navbar.html'; ?>
+  <?php require '../../assets/components/footer.html'; ?>
 
 </body>
 </html>

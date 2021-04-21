@@ -107,3 +107,8 @@
   color: rgb(0,39,79);
 }
 
+/* Forms stays below the navbar. */
+form {
+  position: relative;
+  z-index: 9;
+}

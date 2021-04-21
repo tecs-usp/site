@@ -56,39 +56,6 @@ html, body {
   }
 }
 
-.artigos-tecs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2.5rem;
-}
-
-.artigos-tecs .artigos-tecs-item {
-  margin-right: 1.5rem;
-  display: flex;
-  justify-content: center;
-  max-width: 40% !important;
-}
-
-.container-fluid > .artigos-tecs .artigos-tecs-item a {
-  text-align: center;
-  color: #ffffff;
-}
-
-.artigos-tecs .artigos-tecs-item a:hover {
-  transition: all 1s ease;
-  color: #999999;
-  text-decoration: none;
-  transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-  /* Ensures footer icons and such are aligned*/
-  .artigos-tecs-item {
-    margin-right: 0 !important;
-  }
-}
-
 /* NAVBAR START */
 
 #navbar-total {
@@ -128,8 +95,12 @@ html, body {
   }
 }
 
+/* Prevents navbar links from wrapping horizontally.*/
+.navbar-nav {
+  min-width: max-content;
+}
 
-.navbar-nav .nav-link {
+.nav-link {
   color: #ffffff !important;
   font-weight: 700 !important;
 }
@@ -161,6 +132,7 @@ html, body {
 
 /* NAVBAR END */
 
+
 /* CAROUSEL START */
 .carousel-inner {
   height: 80vh;
@@ -184,6 +156,43 @@ html, body {
 }*/
 
 /* CAROUSEL END */
+
+/* TECS CARDS START */
+
+.artigos-tecs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.artigos-tecs .artigos-tecs-item {
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  max-width: 40% !important;
+}
+
+.container-fluid > .artigos-tecs .artigos-tecs-item a {
+  text-align: center;
+  color: #ffffff;
+}
+
+.artigos-tecs .artigos-tecs-item a:hover {
+  transition: all 1s ease;
+  color: #999999;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  /* Ensures footer icons and such are aligned*/
+  .artigos-tecs-item {
+    margin-right: 0 !important;
+  }
+}
+
+/* TECS CARDS END */
 
 /*for text in general*/
 
@@ -408,60 +417,6 @@ blockquote {
   overflow: hidden;
 }
 /*Modal stuff END*/
-
-
-/* vestibulandas-inscricao-2021 START*/
-.vestibulandas-answer {
-  margin-bottom: 2rem;
-  margin-top: -1rem;
-  margin-left: 1rem;
-}
-
-.container-vestibulandas div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-/*Line with 2 logos.*/
-.container-vestibulandas .row {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-/*Single logo.*/
-.container-vestibulandas img {
-  max-height: 75px;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.container-vestibulandas b {
-  font-size: 1.2rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .container-vestibulandas .row {
-    padding-top: 0;
-  }
-  .container-vestibulandas img {
-    max-height: 40px;
-    margin: 0;
-    margin-bottom: 1rem;
-  }
-  .container-vestibulandas b {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (min-width:768px) and (max-width:992px) {
-  .container-vestibulandas img {
-    margin-bottom: 1.5rem;
-  }
-}
-/* vestibulandas-inscricao-2021 END.*/
-
 
 /* Participe */
 .participe-forms {

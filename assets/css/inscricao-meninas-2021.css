@@ -1,0 +1,58 @@
+.vestibulandas-answer {
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+.container-vestibulandas div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Line with 2 logos.*/
+.container-vestibulandas .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*Single logo.*/
+.container-vestibulandas img {
+  max-height: 75px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.container-vestibulandas b {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-vestibulandas .row {
+    padding-top: 0;
+  }
+  .container-vestibulandas img {
+    max-height: 40px;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .container-vestibulandas b {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .container-vestibulandas img {
+    margin-bottom: 1.5rem;
+  }
+}
+
+#apoio{
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.container-vestibulandas {
+  margin-bottom: 3rem;
+}

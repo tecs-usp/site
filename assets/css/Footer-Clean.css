@@ -100,7 +100,7 @@ iframe.maps-google {
   padding-top: 0px;
 }
 
-div.rodape-coluna {
+.rodape-coluna {
   margin-top: 1rem;
 }
 
@@ -190,4 +190,3 @@ div.rodape-coluna {
     padding-right: 10pt;
   }
 }
-

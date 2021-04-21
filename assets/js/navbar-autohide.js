@@ -35,5 +35,21 @@ window.addEventListener('load', (e) => {
     prevScrollpos = currentScrollPos;
   });
 });
-
 Array.prototype.map.call(document.getElementsByClassName("nav-link"), (item) => (item.innerHTML == "Contato") && (Math.random() > 0.99) ? (item.innerHTML = "ContaTecs") : "");
+
+/* Changes the fallback href in 'Projetos' to an empty fragment (href="#")... */
+function changeProjetosHref() {
+  console.log("Changing fallback href in 'Projetos' to an empty fragment...");
+  projetosAnchor = document.getElementById("navbarDropdownMenuLink");
+  projetosAnchor.href = "#";
+}
+
+/* ...but only if jquery and bootstrap laoded successfully. */
+window.addEventListener('load', (e) => {
+  const jQueryBootstrapLoaded = (typeof $ === "function") && (typeof $().dropdown === 'function');
+  if (jQueryBootstrapLoaded) {
+    changeProjetosHref();
+  } else {
+    console.error("jQuery and Bootstrap not loaded, so keeping fallback href.");
+  }
+});

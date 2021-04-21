@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
+
 import sys, os
 import subprocess
+
+### TODO: preserve (or manually copy) modified date on write
 
 EXCLUDE_DIRS = [".git", ".github", ".vscode", "vendor"] # mainly just .git, because it's laarge
 
