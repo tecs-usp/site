@@ -6,7 +6,7 @@ set -e # 'set' is a bash builtin
 # Make HTML files out of PHP files and place them in a temp folder.
 echo "*** Converting PHP files into HTML... ***"
 mkdir -p phptohtml_temp
-python tools/php-to-html.py . phptohtml_temp
+python3 tools/php-to-html.py . phptohtml_temp
 
 # Empty old build folder.
 echo "*** Creating build folder and copying files... ***"
@@ -25,6 +25,6 @@ rm -rf phptohtml_temp/
 ## Swap all paths in 'src' and 'href' attributes for paths starting with
 ## 'https://tecs.ime.usp.br/'.
 echo -e "\n*** Swapping paths in 'src' and 'href'... ***"
-python tools/beheader-string.py build -m production-paths
+python3 tools/beheader-string.py build -m production-paths
 
 echo -e "\nDone!"
