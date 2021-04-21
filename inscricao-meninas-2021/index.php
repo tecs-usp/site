@@ -36,8 +36,7 @@
         <li><a href="#apoio">Apoio</a></li>
       </ul>
       <h2 id="sobre_curso">Sobre o curso</h2>
-      <p class="text-justify">
-        O Curso de Introdução à Programação em Python para Meninas é um curso gratuito oferecido pelo <b>Tecs, o grupo de comput{ação} social da USP</b>. O objetivo principal do curso é contribuir para a formação tecnológica de garotas do Ensino Médio por meio do ensino de lógica de programação em Python. Também é objetivo criar incentivos e condições para seu posterior ingresso em cursos de ensino superior em áreas de tecnologia.
+      <p class="text-justify">- Programação em Python para Meninas é um curso gratuito oferecido pelo <b>Tecs, o grupo de comput{ação} social da USP</b>. O objetivo principal do curso é contribuir para a formação tecnológica de garotas do Ensino Médio por meio do ensino de lógica de programação em Python. Também é objetivo criar incentivos e condições para seu posterior ingresso em cursos de ensino superior em áreas de tecnologia.
       </p>
       <h3>Certificado</h3>
       <p class="text-justify">
