@@ -73,7 +73,7 @@
         como, por exemplo: coleta de dados e privacidade, vieses algorítmicos, tecnologia e política
         autoria e propriedade intelectual, ética profissional, …
       </p>
-      <p>Esta é a disciplina que está sendo oferecida — de forma digital — no segundo semestre de 2020. Sua ementa completa pode ser encontrada no sistema USP	
+      <p>Esta disciplina é oferecida no primeiro semestre de cada ano. Sua ementa completa pode ser encontrada no sistema USP	
         <a href="https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=MAC0485">Júpiter web</a>.
       </p>
     </div>
@@ -90,7 +90,7 @@
         e da Tecnologia, cobrindo desde governo aberto até discriminação algorítmica, passando
         por leis que regulamentam a área, como o Marco Civil, a GDPR e a LGPD.
       </p>
-      <p>Esta disciplina será oferecida novamente no primeiro semestre de 2020. Sua ementa completa pode ser encontrada no sistema USP	
+      <p>Esta disciplina é oferecida no segundo semestre de cada ano. Sua ementa completa pode ser encontrada no sistema USP	
         <a href="https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=MAC0458">Júpiter web</a>.
       </p>
     </div>
