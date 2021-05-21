@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
   
 <head>
   <?php require 'assets/components/head.html'; ?>
@@ -18,9 +18,11 @@
         <div class="carousel-inner" role="listbox">
         
           <div class="active slide-painel carousel-item" role="option">
+            <a href="./participe/">
             <img class="w-100 d-block" src="https://tecs.ime.usp.br/assets/img/Carousel/print1.png"
               alt="Captura de tela de uma vídeo-chamada com 12 pessoas, cujas imagens formam um retângulo 4 por 3.">
-          </div>
+            </a>
+            </div>
           <div class="slide-painel carousel-item" role="option">
             <img class="w-100 d-block" src="https://tecs.ime.usp.br/assets/img/Carousel/2DSC05427.jpg"
               alt="Pequeno público reunido em volta de uma pessoa apresentando o Tecs em uma sala.">

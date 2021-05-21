@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
   
 <head>
   <?php require '../assets/components/head.html'; ?>

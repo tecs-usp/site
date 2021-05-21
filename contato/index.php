@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
   
 <head>
   <?php require '../assets/components/head.html'; ?>
@@ -24,7 +24,7 @@
   </script>
 
   <div class="text-thing container">
-		<div class="text-thing text-center">
+		<div class="text-center">
 			<h2>Contato</h2>
       <p>Se quiser conversar com a gente ou só acompanhar mais de perto:</p>
       <ul>
@@ -33,23 +33,32 @@
         <li><a href="https://pt-br.facebook.com/tecs.usp/">Página do Facebook</a></li>
       </ul>
     </div>
-    <div class="text-thing">
+    <div>
       <h2>Reuniões do grupo</h2>
-      <!--
+
       <h6 class="card-subtitle mb-2">Durante a quarentena</h6>
       <p>
-        Enquanto não podemos ir à cidade universitária, faremos nossas reuniões numa sala 
-        virtual do Google Meets. Já que nossas reuniões são abertas, fica o convite para 
-        participar toda <em>terça-feira entre 12h e 13h</em> (link postado no grupo geral do Telegram).
+        Num futuro próximo, todas as nossas reuniões serão realizadas virtualmente numa sala 
+        do Google Meets. Já que nossas reuniões são abertas, fica o convite para 
+        participar toda <em>sexta-feira das 12:30 às 13:30</em>: <a href="https://meet.google.com/cuj-pfdj-tzp">https://meet.google.com/cuj-pfdj-tzp</a> .
       </p>
-      -->
       <p>
-        Se quiser nos visitar depois da quarentena, nossos encontros ocorrem no prédio do 
-        Centro de Competência em Software Livre (CCSL) do Instituto de Matemática e Estatística da USP.
+        Se quiser nos visitar depois da quarentena, nossos encontros ocorrem em uma sala
+        (divulgada no grupo do Telegram) do Instituto de Matemática e Estatística da USP.
         O endereço é: Rua do Matão, 1010 - Cidade Universitária, São Paulo - SP, 05508-090, Brasil.
       </p>
     </div>
 
+    <!--MAP-->
+    <div class="col-12">
+      <iframe 
+          title="Localização do IME-USP via Google Maps" 
+          class="maps-google d-xl-flex"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEsbBjboQzORZ2YGR6E2bbAezZePedofg&amp;q=IMEUSP&amp;zoom=13">
+      </iframe>
+    </div>
+
+    <!-- START Bootstrap Studio contact form -->
     <div class="contact-clean col-12">
       <form class="text-center" data-bss-recipient="1987d4d9cf5dd78f8ec3fbd1ffba4be8" data-bss-subject="Contato via site">
         <h2 class="text-center">Mensagens / críticas / sugestões</h2>
@@ -95,6 +104,7 @@
         </div>
       </form>
     </div>
+    <!-- END Bootstrap Studio contact form -->
   </div>
 
 <?php require '../assets/components/footer.html'; ?>

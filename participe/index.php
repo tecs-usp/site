@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
   
 <head>
   <?php require '../assets/components/head.html'; ?>
@@ -9,12 +9,11 @@
 
 <body>
   <?php require '../assets/components/navbar.html'; ?>
-
   <div class="participe-forms">
     <iframe
       title="Formulário para participação no Tecs"
       class="forms-google col-12 col-md-8 offset-md-2" 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSc7vqMN0fYsRWO32y7q6_dHlUVRsQu99vMSYNDYdnRhpX1SwA/viewform?embedded=true"
+      src="https://docs.google.com/forms/d/e/1FAIpQLScOwyWZMgJl6wh4ucI-EhnO1V9qa0b5vFPj-nfyi1m0Xd61UQ/viewform?embedded=true"
       width="900" 
       height="800" 
     >
