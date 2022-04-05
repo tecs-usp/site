@@ -35,7 +35,7 @@
 		<div class="text-thing text-thing-h2-top">
 			<h2>Origem e objetivos</h2>
 			<p>
-        O Portal Indígena nasceu da parceria entre o Tecs e a <a href="mailto:redeindigena@gmail.com">Rede Indígena da USP</a>, 
+        O Portal Indígena nasceu da parceria entre o Tecs e a <a href="https://redeindigena.ip.usp.br/quem-somos/">Rede Indígena da USP</a>, 
         grupo vinculado ao Instituto de Psicologia que oferece apoio social às aldeias em volta 
         da cidade de São Paulo e a indígenas urbanos. Este grupo faz parte do programa 
         <a href="https://www.prg.usp.br/aprender-na-comunidade/">Aprender na Comunidade</a>,

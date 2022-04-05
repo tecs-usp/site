@@ -31,7 +31,7 @@
 
 			<div class="text-thing text-thing-h2-top lead">
 				<h2>
-					O que é a <a href="http://fundacaocasa.sp.gov.br/View.aspx?title=a-funda%C3%A7%C3%A3o&d=10">Fundação CASA</a>?
+					O que é a <a href="https://fundacaocasa.sp.gov.br/index.php/a-fundacao-casa/">Fundação CASA</a>?
 				</h2>
 				<p>
 					A Fundação CASA (Centro de Atendimento Socioeducativo ao Adolescente)
